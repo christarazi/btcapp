@@ -10,3 +10,8 @@ Changelog
 
 3/4/14  (v.5)
 - Initial code.
+
+3/5/14  (v.8)
+- Added error checking.
+- Updated from defualt icon.
+- Fixed display to work on most devices.
