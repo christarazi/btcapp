@@ -4,48 +4,48 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:padding="5dp"
+        android:padding="3dp"
         >
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Buy:"
+            android:text="Buy: "
             android:id="@+id/buy"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:padding="5dp"/>
+            android:padding="6dp"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Cost:"
+            android:text="Cost: "
             android:id="@+id/cost"
             android:layout_below="@+id/buy"
             android:layout_alignParentStart="true"
-            android:padding="5dp"/>
+            android:padding="6dp"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Sell:"
+            android:text="Sell: "
             android:id="@+id/sell"
             android:layout_below="@+id/cost"
             android:layout_alignParentStart="true"
-            android:padding="5dp"/>
+            android:padding="6dp"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Price:"
+            android:text="Price: "
             android:id="@+id/price"
             android:layout_below="@+id/sell"
             android:layout_alignParentStart="true"
-            android:padding="5dp"/>
+            android:padding="6dp"/>
 
     <EditText
             android:layout_width="wrap_content"
@@ -53,8 +53,10 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editFirst"
-            android:layout_alignBottom="@+id/buy"
-            android:layout_centerHorizontal="true"/>
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/editFifth"
+            android:layout_alignStart="@+id/editFifth"/>
 
     <EditText
             android:layout_width="wrap_content"
@@ -62,8 +64,10 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editSecond"
-            android:layout_alignBottom="@+id/cost"
-            android:layout_centerHorizontal="true"/>
+            android:padding="8dp"
+            android:layout_below="@+id/editFirst"
+            android:layout_alignLeft="@+id/editFirst"
+            android:layout_alignStart="@+id/editFirst"/>
 
     <EditText
             android:layout_width="wrap_content"
@@ -71,16 +75,20 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editThird"
-            android:layout_alignBottom="@+id/sell"
-            android:layout_centerHorizontal="true"/>
+            android:padding="8dp"
+            android:layout_above="@+id/editFourth"
+            android:layout_alignLeft="@+id/editSecond"
+            android:layout_alignStart="@+id/editSecond"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editFourth"
-            android:layout_alignBottom="@+id/price"
-            android:layout_centerHorizontal="true"/>
+            android:padding="8dp"
+            android:layout_alignTop="@+id/price"
+            android:layout_alignLeft="@+id/editThird"
+            android:layout_alignStart="@+id/editThird"/>
 
     <Button
             style="?android:attr/buttonStyleSmall"
@@ -90,17 +98,19 @@
             android:id="@+id/optimize"
             android:textSize="10dp"
             android:layout_below="@+id/editFourth"
-            android:layout_toRightOf="@+id/editFourth"/>
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Note: to optimize, fill the above then the final cost."
+            android:text="Note: to optimize, fill the above then the final cost. This will tell you the best amount of BTC to buy."
             android:id="@+id/optimizeMessage"
             android:layout_below="@+id/editFourth"
             android:layout_alignParentStart="true"
-            android:padding="2dp"
+            android:padding="8dp"
             android:layout_toLeftOf="@+id/optimize"
             android:layout_above="@+id/editFifth"/>
 
@@ -108,22 +118,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Buy:"
+            android:text="Buy: "
             android:id="@+id/buy2"
             android:layout_below="@+id/optimize"
             android:layout_alignParentStart="true"
             android:layout_marginTop="22dp"
-            android:padding="5dp"/>
+            android:padding="6dp"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Cost:"
+            android:text="Cost: "
             android:id="@+id/cost2"
             android:layout_below="@+id/buy2"
             android:layout_alignParentStart="true"
-            android:padding="5dp"/>
+            android:padding="6dp"/>
 
     <EditText
             android:layout_width="wrap_content"
@@ -131,9 +141,10 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editFifth"
-            android:layout_above="@+id/cost2"
-            android:layout_centerHorizontal="true"
-            android:padding="5dp"/>
+            android:padding="8dp"
+            android:layout_alignTop="@+id/buy2"
+            android:layout_alignLeft="@+id/editSixth"
+            android:layout_alignStart="@+id/editSixth"/>
 
     <EditText
             android:layout_width="wrap_content"
@@ -141,17 +152,18 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editSixth"
-            android:layout_below="@+id/buy2"
-            android:layout_centerHorizontal="true"
-            android:padding="5dp"/>
+            android:padding="8dp"
+            android:layout_alignTop="@+id/cost2"
+            android:layout_toRightOf="@+id/price"
+            android:layout_marginLeft="35dp"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calculate"
             android:id="@+id/calculate"
-            android:layout_marginTop="15dp"
-            android:textSize="24dp"
+            android:textSize="16dp"
+            android:padding="10dp"
             android:layout_below="@+id/editSixth"
             android:layout_centerHorizontal="true"/>
 
@@ -159,11 +171,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="..."
             android:id="@+id/resultText"
             android:layout_below="@+id/calculate"
             android:layout_alignParentStart="true"
-            android:padding="5dp"
-            android:layout_marginTop="10dp"/>
+            android:padding="8dp"
+            android:layout_marginTop="6dp"/>
 
 </RelativeLayout>

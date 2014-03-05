@@ -1,6 +1,9 @@
 package com.example.BTC_Break_Even_Calculator;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +12,7 @@ import android.widget.TextView;
 
 import java.lang.Math;
 import java.text.DecimalFormat;
+import java.lang.String;
 
 public class MyActivity extends Activity
 {
@@ -44,20 +48,82 @@ public class MyActivity extends Activity
             @Override
             public void onClick(View v)
             {
-                double buyAmount = Double.valueOf(editFirst.getText().toString());
-                double buyCost = Double.valueOf(editSecond.getText().toString());
-                double sellAmount = Double.valueOf(editThird.getText().toString());
-                double sellPrice = Double.valueOf(editFourth.getText().toString());
-                double buyAmount2 = Double.valueOf(editFifth.getText().toString());
-                double buyCost2 = Double.valueOf(editSixth.getText().toString());
+                double buyAmount, buyCost, sellAmount, sellPrice, buyAmount2, buyCost2, remainder,
+                        totalCost, totalAmount, finalPrice;
+                boolean didItWork = true; boolean validTransaction = true;
 
-                double remainder = Math.abs((buyAmount - sellAmount));
+                try
+                {
+                    buyAmount = Double.valueOf(editFirst.getText().toString());
+                    buyCost = Double.valueOf(editSecond.getText().toString());
+                    sellAmount = Double.valueOf(editThird.getText().toString());
+                    sellPrice = Double.valueOf(editFourth.getText().toString());
+                    buyAmount2 = Double.valueOf(editFifth.getText().toString());
+                    buyCost2 = Double.valueOf(editSixth.getText().toString());
 
-                double totalCost = buyAmount * buyCost;
-                double totalAmount = buyAmount2 + remainder;
-                double finalPrice = totalCost / totalAmount;
+                    remainder = Math.abs((buyAmount - sellAmount));
 
-                editResultText.setText("You need to sell " + String.valueOf(totalAmount) + " BTC at " + String.valueOf(roundTwoDecimals(finalPrice)));
+                    if(sellAmount > buyAmount)
+                    {
+                        // create new dialog popup
+                        final AlertDialog.Builder alertDialog = new AlertDialog.Builder(MyActivity.this);
+
+                        // set title
+                        alertDialog.setTitle("Error");
+
+                        // set dialog message
+                        alertDialog.setMessage("You cannot sell more than you own.");
+                        alertDialog.setCancelable(false);
+                        alertDialog.setNeutralButton("Ok", new DialogInterface.OnClickListener()
+                        {
+                            public void onClick(DialogInterface dialog, int id)
+                            {
+                                // if this button is clicked, close current activity
+                                dialog.cancel();
+                            }
+                        });
+                        alertDialog.show();
+                        validTransaction = false;
+                    }
+
+                    totalCost = buyAmount * buyCost;
+                    totalAmount = buyAmount2 + remainder;
+                    finalPrice = totalCost / totalAmount;
+
+                    if(validTransaction)
+                    {
+                        editResultText.setText("You need to sell " + String.valueOf(totalAmount) + " BTC at " + String.valueOf(roundTwoDecimals(finalPrice)));
+                    }
+                }
+                catch(Exception e)
+                {
+                    didItWork = false;
+                }
+                finally
+                {
+                    if(!didItWork)
+                    {
+                        // create new dialog popup
+                        final AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(MyActivity.this);
+
+                        // set title
+                        alertDialog2.setTitle("Error");
+
+                        // set dialog message
+                        alertDialog2.setMessage("Please fill in all fields.");
+                        alertDialog2.setCancelable(false);
+                        alertDialog2.setNeutralButton("Ok", new DialogInterface.OnClickListener()
+                        {
+                            public void onClick(DialogInterface dialog, int id)
+                            {
+                                // if this button is clicked, close current activity
+                                dialog.cancel();
+                            }
+                        });
+                        alertDialog2.show();
+                    }
+                }
+
             }
         });
 
@@ -66,14 +132,53 @@ public class MyActivity extends Activity
             @Override
             public void onClick(View v)
             {
-                double sellAmount = Double.valueOf(editThird.getText().toString());
-                double sellPrice = Double.valueOf(editFourth.getText().toString());
-                double buyCost2 = Double.valueOf(editSixth.getText().toString());
+                double sellAmount, sellPrice, buyCost2, newBalance, optimalBTC;
+                boolean didItWork = true;
 
-                double newBalance = sellAmount * sellPrice;
-                double optimalBTC = newBalance / buyCost2;
+                try
+                {
+                    sellAmount = Double.valueOf(editThird.getText().toString());
+                    sellPrice = Double.valueOf(editFourth.getText().toString());
+                    buyCost2 = Double.valueOf(editSixth.getText().toString());
 
-                editOptimizeText.setText("The optimal BTC you should buy is " + String.valueOf(optimalBTC) + ".");
+                    String amount = Double.toString(sellAmount);
+                    String price = Double.toString(sellPrice);
+                    String cost = Double.toString(buyCost2);
+
+                    newBalance = sellAmount * sellPrice;
+                    optimalBTC = newBalance / buyCost2;
+
+                    editOptimizeText.setText("The optimal BTC you should buy is " + String.valueOf(optimalBTC) + ".");
+                }
+                catch (Exception e)
+                {
+                    // set bool to false to execute finally block below
+                    didItWork = false;
+                }
+                finally
+                {
+                    if(!didItWork)
+                    {
+                        // create new dialog popup
+                        final AlertDialog.Builder alertDialog3 = new AlertDialog.Builder(MyActivity.this);
+
+                        // set title
+                        alertDialog3.setTitle("Error");
+
+                        // set dialog message
+                        alertDialog3.setMessage("Please look at the note.");
+                        alertDialog3.setCancelable(false);
+                        alertDialog3.setNeutralButton("Ok", new DialogInterface.OnClickListener()
+                        {
+                            public void onClick(DialogInterface dialog, int id)
+                            {
+                                // if this button is clicked, close current activity
+                                dialog.cancel();
+                            }
+                        });
+                        alertDialog3.show();
+                    }
+                }
             }
         });
     }
