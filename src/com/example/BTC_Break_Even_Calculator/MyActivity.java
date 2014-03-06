@@ -24,6 +24,7 @@ public class MyActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        // create text fields and buttons
         final EditText editFirst = (EditText) findViewById(R.id.editFirst);
         final EditText editSecond = (EditText) findViewById(R.id.editSecond);
         final EditText editThird = (EditText) findViewById(R.id.editThird);
@@ -38,6 +39,7 @@ public class MyActivity extends Activity
 
         buttonCalculate.setOnClickListener(new View.OnClickListener()
         {
+            // rounds numbers to two decimal places
             public double roundTwoDecimals(double d)
             {
                 DecimalFormat twoDForm = new DecimalFormat("#.##");
@@ -58,8 +60,10 @@ public class MyActivity extends Activity
                 inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
                         InputMethodManager.HIDE_NOT_ALWAYS);
 
+                // error checking to prevent crashes
                 try
                 {
+                    // get the input entered from the user
                     buyAmount = Double.valueOf(editFirst.getText().toString());
                     buyCost = Double.valueOf(editSecond.getText().toString());
                     sellAmount = Double.valueOf(editThird.getText().toString());
@@ -67,8 +71,10 @@ public class MyActivity extends Activity
                     buyAmount2 = Double.valueOf(editFifth.getText().toString());
                     buyCost2 = Double.valueOf(editSixth.getText().toString());
 
+                    // calculate remainder from the buying and selling
                     remainder = Math.abs((buyAmount - sellAmount));
 
+                    //checks if the user typed in a greater selling amount than buying
                     if(sellAmount > buyAmount)
                     {
                         // create new dialog popup
@@ -89,13 +95,17 @@ public class MyActivity extends Activity
                             }
                         });
                         alertDialog.show();
+
+                        // invalid trans. since selling amount > buying amount
                         validTransaction = false;
                     }
 
+                    // calculations to output
                     totalCost = buyAmount * buyCost;
                     totalAmount = buyAmount2 + remainder;
                     finalPrice = totalCost / totalAmount;
 
+                    // checks if valid
                     if(validTransaction)
                     {
                         editResultText.setText("You need to sell " + String.valueOf(totalAmount) + " BTC at " + String.valueOf(roundTwoDecimals(finalPrice)));
@@ -103,6 +113,7 @@ public class MyActivity extends Activity
                 }
                 catch(Exception e)
                 {
+                    // set bool to false to execute finally block below
                     didItWork = false;
                 }
                 finally
@@ -126,6 +137,8 @@ public class MyActivity extends Activity
                                 dialog.cancel();
                             }
                         });
+
+                        // show the dialog
                         alertDialog2.show();
                     }
                 }
@@ -141,8 +154,10 @@ public class MyActivity extends Activity
                 double sellAmount, sellPrice, buyCost2, newBalance, optimalBTC;
                 boolean didItWork = true;
 
+                // error checking to prevent crashes
                 try
                 {
+                    // get the input entered from the user
                     sellAmount = Double.valueOf(editThird.getText().toString());
                     sellPrice = Double.valueOf(editFourth.getText().toString());
                     buyCost2 = Double.valueOf(editSixth.getText().toString());
@@ -182,6 +197,8 @@ public class MyActivity extends Activity
                                 dialog.cancel();
                             }
                         });
+
+                        // show dialog
                         alertDialog3.show();
                     }
                 }
