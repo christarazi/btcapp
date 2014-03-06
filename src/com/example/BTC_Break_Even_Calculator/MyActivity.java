@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -16,9 +17,7 @@ import java.lang.String;
 
 public class MyActivity extends Activity
 {
-    /**
-     * Called when the activity is first created.
-     */
+     // called when the activity is first created.
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -51,6 +50,13 @@ public class MyActivity extends Activity
                 double buyAmount, buyCost, sellAmount, sellPrice, buyAmount2, buyCost2, remainder,
                         totalCost, totalAmount, finalPrice;
                 boolean didItWork = true; boolean validTransaction = true;
+
+                // dismisses the keyboard
+                InputMethodManager inputManager = (InputMethodManager)
+                        getSystemService(Context.INPUT_METHOD_SERVICE);
+
+                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                        InputMethodManager.HIDE_NOT_ALWAYS);
 
                 try
                 {

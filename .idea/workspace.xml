@@ -82,37 +82,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="1" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2890">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#roundTwoDecimals#0;class#1496:5303" expanded="false" />
-              </folding>
+            <state line="16" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.056603774" vertical-offset="0" max-vertical-offset="2822">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="3145">
               <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="51" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-              <folding>
-                <element signature="e#640#658#0" expanded="true" />
-              </folding>
+            <state line="14" column="51" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="595">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,9 +122,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java" />
       </list>
     </option>
   </component>
@@ -271,6 +266,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -296,19 +304,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -446,7 +441,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -455,7 +449,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.50053936" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.49946064" order="1" side_tool="false" content_ui="tabs" />
@@ -467,7 +460,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -475,13 +470,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -494,8 +489,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -526,37 +521,54 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="69" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#roundTwoDecimals#0;class#1496:5303" expanded="false" />
-          </folding>
+        <state line="17" column="1" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3230">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="84" column="4" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="2958">
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/example/BTC_Break_Even_Calculator/Manifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
+      <provider editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="3145">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="51" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="69" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="84" column="4" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="2958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/com/example/BTC_Break_Even_Calculator/Manifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
-          <folding>
-            <element signature="e#640#658#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -568,36 +580,29 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="43" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1649">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#roundTwoDecimals#0;class#1496:5303" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="84" column="4" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="3145">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/example/BTC_Break_Even_Calculator/Manifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
-          <folding>
-            <element signature="e#640#658#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -609,41 +614,35 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="96" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1156">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#roundTwoDecimals#0;class#1496:5303" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="5" column="30" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1819">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#roundTwoDecimals#0;class#1496:5303" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="69" column="53" selection-start="4486" selection-end="4486" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1479">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
@@ -665,9 +664,7 @@
     </entry>
     <entry file="file://C:/Program Files/Android/android-sdk/sources/android-19/java/lang/StringToReal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.33333334" vertical-offset="600" max-vertical-offset="5185">
-          <folding />
-        </state>
+        <state line="62" column="0" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.33333334" vertical-offset="600" max-vertical-offset="5185" />
       </provider>
     </entry>
     <entry file="file://C:/Program Files/Android/android-sdk/sources/android-19/android/view/View.java">
@@ -679,9 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png">
@@ -691,38 +686,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/example/BTC_Break_Even_Calculator/Manifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.17085427" vertical-offset="0" max-vertical-offset="597">
-          <folding />
-        </state>
+        <state line="6" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.17085427" vertical-offset="0" max-vertical-offset="597" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="51" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="e#640#658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2890">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#roundTwoDecimals#0;class#1496:5303" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="3162">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.056603774" vertical-offset="0" max-vertical-offset="2822">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
