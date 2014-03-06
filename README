@@ -15,3 +15,6 @@ Changelog
 - Added error checking.
 - Updated from defualt icon.
 - Fixed display to work on most devices.
+
+3/5/14  (v.8.1)
+- Fixed keyboard bug.
