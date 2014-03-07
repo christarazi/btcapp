@@ -2,8 +2,10 @@ package com.example.BTC_Break_Even_Calculator;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -81,6 +83,7 @@ public class MyActivity extends Activity
                         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(MyActivity.this);
 
                         // set title
+
                         alertDialog.setTitle("Error");
 
                         // set dialog message
@@ -204,5 +207,82 @@ public class MyActivity extends Activity
                 }
             }
         });
+
+        buttonCalculate.setOnLongClickListener(new View.OnLongClickListener()
+        {
+            @Override
+            public boolean onLongClick(View v)
+            {
+                // string array with messages to print, note: app crashes if the blank string isn't included at the end
+                String[] jokesToPrint =
+                {
+                    "Searching for personal information...please wait.",
+                    "Initializing data transfer.",
+                    "Uploading bank accounts...",
+                    "Uploading credit card information...",
+                    "Uploading Social Security Number...",
+                    "Finalizing identity profile...",
+                    "Running heuristics...",
+                    "Data transfer complete. Thanks for your patience.",
+                    ""
+                };
+
+                // calling the class and passing the string array through to ASyncTask
+                new ProgressUpdater().execute(jokesToPrint);
+                return true;
+            }
+        });
+    }
+
+    // class that changes the dialog (string array) in the background
+    public class ProgressUpdater extends AsyncTask<String, String, Void>
+    {
+        // create index for string array
+        int n = 0;
+        ProgressDialog jokeDialog;
+
+        // create progress dialog object
+        protected void onPreExecute()
+        {
+            jokeDialog = new ProgressDialog(MyActivity.this);
+            jokeDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            jokeDialog.show();
+        }
+
+        // runs in the background, returns void (null), takes in string array (jokesDialog)
+        @Override
+        protected Void doInBackground(String... params)
+        {
+            for (String param : params)
+            {
+                try
+                {
+                    Thread.sleep(1000);
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+
+                // publishes the change (calls onProgressUpdate to main thread on UI)
+                // with a string passed through, increments index by 1
+                publishProgress(params); n++;
+            }
+            return null;
+        }
+
+        // takes in string and changes the dialog message according to the index
+        protected void onProgressUpdate(String... progress)
+        {
+            // having the index at "n" crashes the app, having "n-1" solves the issue
+            jokeDialog.setMessage(progress[n-1]);
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid)
+        {
+            super.onPostExecute(aVoid);
+            jokeDialog.dismiss();
+        }
     }
 }
