@@ -8,14 +8,18 @@ Android app to calculate the break even point for bitcoin trading.
 Changelog
 ====
 
-3/4/14  (v.5)
+3/4/14  (v0.5)
 - Initial code.
 
-3/5/14  (v.8)
+3/5/14  (v0.8)
 - Added error checking.
 - Updated from defualt icon.
 - Fixed display to work on most devices.
 
-3/5/14  (v.8.1)
+3/5/14  (v0.8.1)
 - Fixed keyboard bug.
 - Added new icon.
+
+3/6/14  (v0.9)
+- Optimized for most screen sizes.
+- Replaced with original icon.
