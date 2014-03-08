@@ -217,6 +217,11 @@ public class MyActivity extends Activity
             }
         });
 
+        /*  DISCLAIMER:
+                This section of the app is a prank I've implemented for my friends to have fun with.
+                It does not actually have any access to the user's data.
+                It requires no permissions.
+        */
         buttonCalculate.setOnLongClickListener(new View.OnLongClickListener()
         {
             @Override
