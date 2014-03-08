@@ -19,7 +19,14 @@ import java.lang.String;
 
 public class MyActivity extends Activity
 {
-     // called when the activity is first created.
+    // rounds numbers to two decimal places
+    public double roundTwoDecimals(double d)
+    {
+        DecimalFormat twoDForm = new DecimalFormat("#.##");
+        return Double.valueOf(twoDForm.format(d));
+    }
+
+     // called when the activity is first created
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -39,15 +46,9 @@ public class MyActivity extends Activity
         Button buttonCalculate = (Button) findViewById(R.id.calculate);
         Button buttonOptimize = (Button) findViewById(R.id.optimize);
 
+        // when "Calculate" button is pressed
         buttonCalculate.setOnClickListener(new View.OnClickListener()
         {
-            // rounds numbers to two decimal places
-            public double roundTwoDecimals(double d)
-            {
-                DecimalFormat twoDForm = new DecimalFormat("#.##");
-                return Double.valueOf(twoDForm.format(d));
-            }
-
             @Override
             public void onClick(View v)
             {
@@ -157,6 +158,13 @@ public class MyActivity extends Activity
                 double sellAmount, sellPrice, buyCost2, newBalance, optimalBTC;
                 boolean didItWork = true;
 
+                // dismisses the keyboard
+                InputMethodManager inputManager = (InputMethodManager)
+                        getSystemService(Context.INPUT_METHOD_SERVICE);
+
+                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                        InputMethodManager.HIDE_NOT_ALWAYS);
+
                 // error checking to prevent crashes
                 try
                 {
@@ -172,7 +180,7 @@ public class MyActivity extends Activity
                     newBalance = sellAmount * sellPrice;
                     optimalBTC = newBalance / buyCost2;
 
-                    editOptimizeText.setText("The optimal BTC you should buy is " + String.valueOf(optimalBTC) + ".");
+                    editOptimizeText.setText("The optimal BTC you should buy is " + String.valueOf(roundTwoDecimals(optimalBTC)) + ".");
                 }
                 catch (Exception e)
                 {
@@ -218,7 +226,7 @@ public class MyActivity extends Activity
                 {
                     "Searching for personal information...please wait.",
                     "Initializing data transfer.",
-                    "Uploading bank accounts...",
+                    "Uploading bank records...",
                     "Uploading credit card information...",
                     "Uploading Social Security Number...",
                     "Finalizing identity profile...",
@@ -257,7 +265,7 @@ public class MyActivity extends Activity
             {
                 try
                 {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 }
                 catch (InterruptedException e)
                 {
