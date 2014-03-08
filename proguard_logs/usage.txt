@@ -1,7 +1,7 @@
-com.example.CT_BTC_Break_Even_Calculator.BuildConfig
-com.example.CT_BTC_Break_Even_Calculator.R
-com.example.CT_BTC_Break_Even_Calculator.R$attr
-com.example.CT_BTC_Break_Even_Calculator.R$drawable
-com.example.CT_BTC_Break_Even_Calculator.R$id
-com.example.CT_BTC_Break_Even_Calculator.R$layout
-com.example.CT_BTC_Break_Even_Calculator.R$string
+app.CT.BTC_Break_Even_Calculator.BuildConfig
+app.CT.BTC_Break_Even_Calculator.R
+app.CT.BTC_Break_Even_Calculator.R$attr
+app.CT.BTC_Break_Even_Calculator.R$drawable
+app.CT.BTC_Break_Even_Calculator.R$id
+app.CT.BTC_Break_Even_Calculator.R$layout
+app.CT.BTC_Break_Even_Calculator.R$string

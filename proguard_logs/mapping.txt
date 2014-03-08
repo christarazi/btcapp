@@ -1,7 +1,7 @@
-com.example.CT_BTC_Break_Even_Calculator.MyActivity -> com.example.CT_BTC_Break_Even_Calculator.MyActivity:
+app.CT.BTC_Break_Even_Calculator.MyActivity -> app.CT.BTC_Break_Even_Calculator.MyActivity:
     double roundTwoDecimals(double) -> a
     void onCreate(android.os.Bundle) -> onCreate
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$1 -> com.example.CT_BTC_Break_Even_Calculator.a:
+app.CT.BTC_Break_Even_Calculator.MyActivity$1 -> app.CT.BTC_Break_Even_Calculator.a:
     android.widget.EditText val$editFirst -> a
     android.widget.EditText val$editSecond -> b
     android.widget.EditText val$editThird -> c
@@ -9,31 +9,31 @@ com.example.CT_BTC_Break_Even_Calculator.MyActivity$1 -> com.example.CT_BTC_Brea
     android.widget.EditText val$editFifth -> e
     android.widget.EditText val$editSixth -> f
     android.widget.TextView val$editResultText -> g
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity this$0 -> h
+    app.CT.BTC_Break_Even_Calculator.MyActivity this$0 -> h
     void onClick(android.view.View) -> onClick
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$1$1 -> com.example.CT_BTC_Break_Even_Calculator.b:
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity$1 this$1 -> a
+app.CT.BTC_Break_Even_Calculator.MyActivity$1$1 -> app.CT.BTC_Break_Even_Calculator.b:
+    app.CT.BTC_Break_Even_Calculator.MyActivity$1 this$1 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$1$2 -> com.example.CT_BTC_Break_Even_Calculator.c:
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity$1 this$1 -> a
+app.CT.BTC_Break_Even_Calculator.MyActivity$1$2 -> app.CT.BTC_Break_Even_Calculator.c:
+    app.CT.BTC_Break_Even_Calculator.MyActivity$1 this$1 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$2 -> com.example.CT_BTC_Break_Even_Calculator.d:
+app.CT.BTC_Break_Even_Calculator.MyActivity$2 -> app.CT.BTC_Break_Even_Calculator.d:
     android.widget.EditText val$editThird -> a
     android.widget.EditText val$editFourth -> b
     android.widget.EditText val$editSixth -> c
     android.widget.TextView val$editOptimizeText -> d
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity this$0 -> e
+    app.CT.BTC_Break_Even_Calculator.MyActivity this$0 -> e
     void onClick(android.view.View) -> onClick
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$2$1 -> com.example.CT_BTC_Break_Even_Calculator.e:
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity$2 this$1 -> a
+app.CT.BTC_Break_Even_Calculator.MyActivity$2$1 -> app.CT.BTC_Break_Even_Calculator.e:
+    app.CT.BTC_Break_Even_Calculator.MyActivity$2 this$1 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$3 -> com.example.CT_BTC_Break_Even_Calculator.f:
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity this$0 -> a
+app.CT.BTC_Break_Even_Calculator.MyActivity$3 -> app.CT.BTC_Break_Even_Calculator.f:
+    app.CT.BTC_Break_Even_Calculator.MyActivity this$0 -> a
     boolean onLongClick(android.view.View) -> onLongClick
-com.example.CT_BTC_Break_Even_Calculator.MyActivity$ProgressUpdater -> com.example.CT_BTC_Break_Even_Calculator.g:
+app.CT.BTC_Break_Even_Calculator.MyActivity$ProgressUpdater -> app.CT.BTC_Break_Even_Calculator.g:
     int n -> a
     android.app.ProgressDialog jokeDialog -> b
-    com.example.CT_BTC_Break_Even_Calculator.MyActivity this$0 -> c
+    app.CT.BTC_Break_Even_Calculator.MyActivity this$0 -> c
     void onPreExecute() -> onPreExecute
     java.lang.Void doInBackground(java.lang.String[]) -> a
     void onProgressUpdate(java.lang.String[]) -> b

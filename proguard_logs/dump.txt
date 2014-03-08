@@ -1,10 +1,10 @@
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/MyActivity
++ Program class: app/CT/BTC_Break_Even_Calculator/MyActivity
   Superclass:    android/app/Activity
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x21
-    = public class com.example.CT_BTC_Break_Even_Calculator.MyActivity extends android.app.Activity
+    = public class app.CT.BTC_Break_Even_Calculator.MyActivity extends android.app.Activity
 
 Interfaces (count = 0):
 
@@ -25,29 +25,29 @@ Constant Pool (count = 85):
   + Class [android/widget/Button]
   + Class [android/widget/EditText]
   + Class [android/widget/TextView]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/MyActivity]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/a]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/d]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/f]
+  + Class [app/CT/BTC_Break_Even_Calculator/MyActivity]
+  + Class [app/CT/BTC_Break_Even_Calculator/a]
+  + Class [app/CT/BTC_Break_Even_Calculator/d]
+  + Class [app/CT/BTC_Break_Even_Calculator/f]
   + Class [java/lang/Double]
   + Class [java/text/DecimalFormat]
   + Methodref [android/app/Activity.<init> ()V]
   + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
   + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
   + Methodref [android/widget/Button.setOnLongClickListener (Landroid/view/View$OnLongClickListener;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.setContentView (I)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/a.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/d.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/f.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.setContentView (I)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/a.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/d.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/f.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
   + Methodref [java/lang/Double.doubleValue ()D]
   + Methodref [java/lang/Double.valueOf (Ljava/lang/String;)Ljava/lang/Double;]
   + Methodref [java/text/DecimalFormat.<init> (Ljava/lang/String;)V]
   + Methodref [java/text/DecimalFormat.format (D)Ljava/lang/String;]
   + NameAndType [<init> ()V]
-  + NameAndType [<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
-  + NameAndType [<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
-  + NameAndType [<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + NameAndType [<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
+  + NameAndType [<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + NameAndType [<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [doubleValue ()D]
   + NameAndType [findViewById (I)Landroid/view/View;]
@@ -67,9 +67,9 @@ Constant Pool (count = 85):
   + Utf8 [(Landroid/os/Bundle;)V]
   + Utf8 [(Landroid/view/View$OnClickListener;)V]
   + Utf8 [(Landroid/view/View$OnLongClickListener;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
   + Utf8 [(Ljava/lang/String;)Ljava/lang/Double;]
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [<init>]
@@ -79,10 +79,10 @@ Constant Pool (count = 85):
   + Utf8 [android/widget/Button]
   + Utf8 [android/widget/EditText]
   + Utf8 [android/widget/TextView]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/MyActivity]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/a]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/d]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/f]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/MyActivity]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/a]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/d]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/f]
   + Utf8 [doubleValue]
   + Utf8 [findViewById]
   + Utf8 [format]
@@ -145,12 +145,12 @@ Methods (count = 3):
       [6] ldc #1
         + Integer [2130903040]
       [8] invokevirtual #28
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.setContentView (I)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.setContentView (I)V]
       [11] aload_0 v0
       [12] ldc #2
         + Integer [2131034113]
       [14] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [17] checkcast #15
         + Class [android/widget/EditText]
       [20] astore_2 v2
@@ -158,7 +158,7 @@ Methods (count = 3):
       [22] ldc #3
         + Integer [2131034115]
       [24] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [27] checkcast #15
         + Class [android/widget/EditText]
       [30] astore_3 v3
@@ -166,7 +166,7 @@ Methods (count = 3):
       [32] ldc #4
         + Integer [2131034117]
       [34] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [37] checkcast #15
         + Class [android/widget/EditText]
       [40] astore v4
@@ -174,7 +174,7 @@ Methods (count = 3):
       [43] ldc #5
         + Integer [2131034119]
       [45] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [48] checkcast #15
         + Class [android/widget/EditText]
       [51] astore v5
@@ -182,7 +182,7 @@ Methods (count = 3):
       [54] ldc #8
         + Integer [2131034123]
       [56] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [59] checkcast #15
         + Class [android/widget/EditText]
       [62] astore v6
@@ -190,7 +190,7 @@ Methods (count = 3):
       [65] ldc #9
         + Integer [2131034125]
       [67] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [70] checkcast #15
         + Class [android/widget/EditText]
       [73] astore v7
@@ -198,7 +198,7 @@ Methods (count = 3):
       [76] ldc #11
         + Integer [2131034127]
       [78] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [81] checkcast #16
         + Class [android/widget/TextView]
       [84] astore v8
@@ -206,7 +206,7 @@ Methods (count = 3):
       [87] ldc #6
         + Integer [2131034120]
       [89] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [92] checkcast #16
         + Class [android/widget/TextView]
       [95] astore v9
@@ -214,7 +214,7 @@ Methods (count = 3):
       [98] ldc #10
         + Integer [2131034126]
       [100] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [103] checkcast #14
         + Class [android/widget/Button]
       [106] astore v10
@@ -222,13 +222,13 @@ Methods (count = 3):
       [109] ldc #7
         + Integer [2131034121]
       [111] invokevirtual #27
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.findViewById (I)Landroid/view/View;]
       [114] checkcast #14
         + Class [android/widget/Button]
       [117] astore v11
       [119] aload v10
       [121] new #18
-        + Class [com/example/CT_BTC_Break_Even_Calculator/a]
+        + Class [app/CT/BTC_Break_Even_Calculator/a]
       [124] dup
       [125] aload_0 v0
       [126] aload_2 v2
@@ -239,12 +239,12 @@ Methods (count = 3):
       [134] aload v7
       [136] aload v8
       [138] invokespecial #29
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/a.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/a.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
       [141] invokevirtual #25
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
       [144] aload v11
       [146] new #19
-        + Class [com/example/CT_BTC_Break_Even_Calculator/d]
+        + Class [app/CT/BTC_Break_Even_Calculator/d]
       [149] dup
       [150] aload_0 v0
       [151] aload v4
@@ -252,16 +252,16 @@ Methods (count = 3):
       [155] aload v7
       [157] aload v9
       [159] invokespecial #30
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/d.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/d.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
       [162] invokevirtual #25
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
       [165] aload v10
       [167] new #20
-        + Class [com/example/CT_BTC_Break_Even_Calculator/f]
+        + Class [app/CT/BTC_Break_Even_Calculator/f]
       [170] dup
       [171] aload_0 v0
       [172] invokespecial #31
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/f.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/f.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
       [175] invokevirtual #26
         + Methodref [android/widget/Button.setOnLongClickListener (Landroid/view/View$OnLongClickListener;)V]
       [178] return
@@ -271,12 +271,12 @@ Methods (count = 3):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/a
++ Program class: app/CT/BTC_Break_Even_Calculator/a
   Superclass:    java/lang/Object
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x20
-    = class com.example.CT_BTC_Break_Even_Calculator.a extends java.lang.Object
+    = class app.CT.BTC_Break_Even_Calculator.a extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
@@ -295,10 +295,10 @@ Constant Pool (count = 162):
   + Class [android/view/inputmethod/InputMethodManager]
   + Class [android/widget/EditText]
   + Class [android/widget/TextView]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/MyActivity]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/a]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/b]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/c]
+  + Class [app/CT/BTC_Break_Even_Calculator/MyActivity]
+  + Class [app/CT/BTC_Break_Even_Calculator/a]
+  + Class [app/CT/BTC_Break_Even_Calculator/b]
+  + Class [app/CT/BTC_Break_Even_Calculator/c]
   + Class [java/lang/Double]
   + Class [java/lang/Exception]
   + Class [java/lang/Math]
@@ -306,14 +306,14 @@ Constant Pool (count = 162):
   + Class [java/lang/String]
   + Class [java/lang/StringBuilder]
   + Class [java/lang/Throwable]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.a Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.b Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.c Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.d Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.e Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.f Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.g Landroid/widget/TextView;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.a Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.b Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.c Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.d Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.e Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.f Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.g Landroid/widget/TextView;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
   + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
@@ -324,11 +324,11 @@ Constant Pool (count = 162):
   + Methodref [android/view/inputmethod/InputMethodManager.hideSoftInputFromWindow (Landroid/os/IBinder;I)Z]
   + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
   + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.a (D)D]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/b.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/c.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.a (D)D]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/b.<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/c.<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
   + Methodref [java/lang/Double.doubleValue ()D]
   + Methodref [java/lang/Double.valueOf (Ljava/lang/String;)Ljava/lang/Double;]
   + Methodref [java/lang/Math.abs (D)D]
@@ -340,7 +340,7 @@ Constant Pool (count = 162):
   + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Landroid/content/Context;)V]
-  + NameAndType [<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+  + NameAndType [<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
   + NameAndType [a (D)D]
   + NameAndType [a Landroid/widget/EditText;]
   + NameAndType [abs (D)D]
@@ -356,7 +356,7 @@ Constant Pool (count = 162):
   + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
   + NameAndType [getText ()Landroid/text/Editable;]
   + NameAndType [getWindowToken ()Landroid/os/IBinder;]
-  + NameAndType [h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + NameAndType [h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + NameAndType [hideSoftInputFromWindow (Landroid/os/IBinder;I)Z]
   + NameAndType [setCancelable (Z)Landroid/app/AlertDialog$Builder;]
   + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
@@ -380,8 +380,8 @@ Constant Pool (count = 162):
   + Utf8 [(Landroid/content/Context;)V]
   + Utf8 [(Landroid/os/IBinder;I)Z]
   + Utf8 [(Landroid/view/View;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/a;)V]
   + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
   + Utf8 [(Ljava/lang/CharSequence;)V]
   + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
@@ -394,7 +394,7 @@ Constant Pool (count = 162):
   + Utf8 [Error]
   + Utf8 [Landroid/widget/EditText;]
   + Utf8 [Landroid/widget/TextView;]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Utf8 [Ok]
   + Utf8 [Please fill in all fields.]
   + Utf8 [StackMapTable]
@@ -408,13 +408,13 @@ Constant Pool (count = 162):
   + Utf8 [android/view/inputmethod/InputMethodManager]
   + Utf8 [android/widget/EditText]
   + Utf8 [android/widget/TextView]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/MyActivity]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/a]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/b]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/c]
   + Utf8 [append]
   + Utf8 [b]
   + Utf8 [c]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/MyActivity]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/a]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/b]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/c]
   + Utf8 [d]
   + Utf8 [doubleValue]
   + Utf8 [e]
@@ -466,48 +466,48 @@ Fields (count = 8):
   + Field:        g Landroid/widget/TextView;
     Access flags: 0x1010
       = final synthetic android.widget.TextView g
-  + Field:        h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;
+  + Field:        h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.MyActivity h
+      = final synthetic app.CT.BTC_Break_Even_Calculator.MyActivity h
 
 Methods (count = 2):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V
     Access flags: 0x0
-      = a(com.example.CT_BTC_Break_Even_Calculator.MyActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.TextView)
+      = a(app.CT.BTC_Break_Even_Calculator.MyActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.TextView)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 50, locals = 9, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [5] aload_0 v0
       [6] aload_2 v2
       [7] putfield #25
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.a Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.a Landroid/widget/EditText;]
       [10] aload_0 v0
       [11] aload_3 v3
       [12] putfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.b Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.b Landroid/widget/EditText;]
       [15] aload_0 v0
       [16] aload v4
       [18] putfield #27
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.c Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.c Landroid/widget/EditText;]
       [21] aload_0 v0
       [22] aload v5
       [24] putfield #28
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.d Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.d Landroid/widget/EditText;]
       [27] aload_0 v0
       [28] aload v6
       [30] putfield #29
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.e Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.e Landroid/widget/EditText;]
       [33] aload_0 v0
       [34] aload v7
       [36] putfield #30
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.f Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.f Landroid/widget/EditText;]
       [39] aload_0 v0
       [40] aload v8
       [42] putfield #31
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.g Landroid/widget/TextView;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.g Landroid/widget/TextView;]
       [45] aload_0 v0
       [46] invokespecial #51
         + Methodref [java/lang/Object.<init> ()V]
@@ -525,20 +525,20 @@ Methods (count = 2):
       [4] istore v23
       [6] aload_0 v0
       [7] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [10] ldc #7
         + String [input_method]
       [12] invokevirtual #45
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
       [15] checkcast #11
         + Class [android/view/inputmethod/InputMethodManager]
       [18] astore v24
       [20] aload v24
       [22] aload_0 v0
       [23] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [26] invokevirtual #44
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
       [29] invokevirtual #39
         + Methodref [android/view/View.getWindowToken ()Landroid/os/IBinder;]
       [32] iconst_2
@@ -547,7 +547,7 @@ Methods (count = 2):
       [36] pop
       [37] aload_0 v0
       [38] getfield #25
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.a Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.a Landroid/widget/EditText;]
       [41] invokevirtual #41
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [44] invokevirtual #52
@@ -559,7 +559,7 @@ Methods (count = 2):
       [53] dstore_2 v2
       [54] aload_0 v0
       [55] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.b Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.b Landroid/widget/EditText;]
       [58] invokevirtual #41
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [61] invokevirtual #52
@@ -571,7 +571,7 @@ Methods (count = 2):
       [70] dstore v4
       [72] aload_0 v0
       [73] getfield #27
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.c Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.c Landroid/widget/EditText;]
       [76] invokevirtual #41
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [79] invokevirtual #52
@@ -583,7 +583,7 @@ Methods (count = 2):
       [88] dstore v6
       [90] aload_0 v0
       [91] getfield #28
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.d Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.d Landroid/widget/EditText;]
       [94] invokevirtual #41
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [97] invokevirtual #52
@@ -595,7 +595,7 @@ Methods (count = 2):
       [106] dstore v8
       [108] aload_0 v0
       [109] getfield #29
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.e Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.e Landroid/widget/EditText;]
       [112] invokevirtual #41
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [115] invokevirtual #52
@@ -607,7 +607,7 @@ Methods (count = 2):
       [124] dstore v10
       [126] aload_0 v0
       [127] getfield #30
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.f Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.f Landroid/widget/EditText;]
       [130] invokevirtual #41
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [133] invokevirtual #52
@@ -632,7 +632,7 @@ Methods (count = 2):
       [163] dup
       [164] aload_0 v0
       [165] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [168] invokespecial #33
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [171] astore v25
@@ -657,11 +657,11 @@ Methods (count = 2):
       [198] ldc #3
         + String [Ok]
       [200] new #16
-        + Class [com/example/CT_BTC_Break_Even_Calculator/b]
+        + Class [app/CT/BTC_Break_Even_Calculator/b]
       [203] dup
       [204] aload_0 v0
       [205] invokespecial #46
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/b.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/b.<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
       [208] invokevirtual #36
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [211] pop
@@ -687,7 +687,7 @@ Methods (count = 2):
       [243] ifeq +53 (target=296)
       [246] aload_0 v0
       [247] getfield #31
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.g Landroid/widget/TextView;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.g Landroid/widget/TextView;]
       [250] new #23
         + Class [java/lang/StringBuilder]
       [253] dup
@@ -708,10 +708,10 @@ Methods (count = 2):
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [275] aload_0 v0
       [276] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [279] dload v20
       [281] invokevirtual #43
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.a (D)D]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.a (D)D]
       [284] invokestatic #53
         + Methodref [java/lang/String.valueOf (D)Ljava/lang/String;]
       [287] invokevirtual #55
@@ -727,7 +727,7 @@ Methods (count = 2):
       [304] dup
       [305] aload_0 v0
       [306] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [309] invokespecial #33
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [312] astore v25
@@ -752,11 +752,11 @@ Methods (count = 2):
       [339] ldc #3
         + String [Ok]
       [341] new #17
-        + Class [com/example/CT_BTC_Break_Even_Calculator/c]
+        + Class [app/CT/BTC_Break_Even_Calculator/c]
       [344] dup
       [345] aload_0 v0
       [346] invokespecial #47
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/c.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/c.<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
       [349] invokevirtual #36
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [352] pop
@@ -775,7 +775,7 @@ Methods (count = 2):
       [375] dup
       [376] aload_0 v0
       [377] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [380] invokespecial #33
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [383] astore v25
@@ -800,11 +800,11 @@ Methods (count = 2):
       [410] ldc #3
         + String [Ok]
       [412] new #17
-        + Class [com/example/CT_BTC_Break_Even_Calculator/c]
+        + Class [app/CT/BTC_Break_Even_Calculator/c]
       [415] dup
       [416] aload_0 v0
       [417] invokespecial #47
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/c.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/c.<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
       [420] invokevirtual #36
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [423] pop
@@ -821,7 +821,7 @@ Methods (count = 2):
       [443] dup
       [444] aload_0 v0
       [445] getfield #32
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/a.h Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/a.h Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [448] invokespecial #33
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [451] astore v27
@@ -846,11 +846,11 @@ Methods (count = 2):
       [478] ldc #3
         + String [Ok]
       [480] new #17
-        + Class [com/example/CT_BTC_Break_Even_Calculator/c]
+        + Class [app/CT/BTC_Break_Even_Calculator/c]
       [483] dup
       [484] aload_0 v0
       [485] invokespecial #47
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/c.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/c.<init> (Lapp/CT/BTC_Break_Even_Calculator/a;)V]
       [488] invokevirtual #36
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [491] pop
@@ -869,9 +869,9 @@ Methods (count = 2):
       - ExceptionInfo (433 -> 435: 433):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 6):
-        - [221] Var: [a:com/example/CT_BTC_Break_Even_Calculator/a][a:android/view/View][d][d][d][d][d][d][d][T][T][T][T][T][T][i][i][a:android/view/inputmethod/InputMethodManager], Stack: 
-        - [296] Var: [a:com/example/CT_BTC_Break_Even_Calculator/a][a:android/view/View][d][d][d][d][d][d][d][d][d][d][i][i][a:android/view/inputmethod/InputMethodManager], Stack: 
-        - [362] Var: [a:com/example/CT_BTC_Break_Even_Calculator/a][a:android/view/View][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][i][i][a:android/view/inputmethod/InputMethodManager], Stack: [a:java/lang/Exception]
+        - [221] Var: [a:app/CT/BTC_Break_Even_Calculator/a][a:android/view/View][d][d][d][d][d][d][d][T][T][T][T][T][T][i][i][a:android/view/inputmethod/InputMethodManager], Stack: 
+        - [296] Var: [a:app/CT/BTC_Break_Even_Calculator/a][a:android/view/View][d][d][d][d][d][d][d][d][d][d][i][i][a:android/view/inputmethod/InputMethodManager], Stack: 
+        - [362] Var: [a:app/CT/BTC_Break_Even_Calculator/a][a:android/view/View][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][T][i][i][a:android/view/inputmethod/InputMethodManager], Stack: [a:java/lang/Exception]
         - [433] Var: ..., Stack: [a:java/lang/Throwable]
         - [498] Var: ...[T][a:java/lang/Throwable], Stack: (empty)
         - [501] Var: -2, Stack: (empty)
@@ -879,12 +879,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/b
++ Program class: app/CT/BTC_Break_Even_Calculator/b
   Superclass:    java/lang/Object
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x20
-    = class com.example.CT_BTC_Break_Even_Calculator.b extends java.lang.Object
+    = class app.CT.BTC_Break_Even_Calculator.b extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
@@ -892,43 +892,43 @@ Interfaces (count = 1):
 Constant Pool (count = 24):
   + Class [android/content/DialogInterface]
   + Class [android/content/DialogInterface$OnClickListener]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/b]
+  + Class [app/CT/BTC_Break_Even_Calculator/b]
   + Class [java/lang/Object]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/b.a Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/b.a Lapp/CT/BTC_Break_Even_Calculator/a;]
   + Methodref [java/lang/Object.<init> ()V]
   + InterfaceMethodref [android/content/DialogInterface.cancel ()V]
   + NameAndType [<init> ()V]
-  + NameAndType [a Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+  + NameAndType [a Lapp/CT/BTC_Break_Even_Calculator/a;]
   + NameAndType [cancel ()V]
   + Utf8 [()V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/a;)V]
   + Utf8 [<init>]
   + Utf8 [Code]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/a;]
   + Utf8 [a]
   + Utf8 [android/content/DialogInterface]
   + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/b]
   + Utf8 [cancel]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/b]
   + Utf8 [java/lang/Object]
   + Utf8 [onClick]
 
 Fields (count = 1):
-  + Field:        a Lcom/example/CT_BTC_Break_Even_Calculator/a;
+  + Field:        a Lapp/CT/BTC_Break_Even_Calculator/a;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.a a
+      = final synthetic app.CT.BTC_Break_Even_Calculator.a a
 
 Methods (count = 2):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/a;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/a;)V
     Access flags: 0x0
-      = b(com.example.CT_BTC_Break_Even_Calculator.a)
+      = b(app.CT.BTC_Break_Even_Calculator.a)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #5
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/b.a Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/b.a Lapp/CT/BTC_Break_Even_Calculator/a;]
       [5] aload_0 v0
       [6] invokespecial #6
         + Methodref [java/lang/Object.<init> ()V]
@@ -950,12 +950,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/c
++ Program class: app/CT/BTC_Break_Even_Calculator/c
   Superclass:    java/lang/Object
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x20
-    = class com.example.CT_BTC_Break_Even_Calculator.c extends java.lang.Object
+    = class app.CT.BTC_Break_Even_Calculator.c extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
@@ -963,43 +963,43 @@ Interfaces (count = 1):
 Constant Pool (count = 24):
   + Class [android/content/DialogInterface]
   + Class [android/content/DialogInterface$OnClickListener]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/c]
+  + Class [app/CT/BTC_Break_Even_Calculator/c]
   + Class [java/lang/Object]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/c.a Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/c.a Lapp/CT/BTC_Break_Even_Calculator/a;]
   + Methodref [java/lang/Object.<init> ()V]
   + InterfaceMethodref [android/content/DialogInterface.cancel ()V]
   + NameAndType [<init> ()V]
-  + NameAndType [a Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+  + NameAndType [a Lapp/CT/BTC_Break_Even_Calculator/a;]
   + NameAndType [cancel ()V]
   + Utf8 [()V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/a;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/a;)V]
   + Utf8 [<init>]
   + Utf8 [Code]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/a;]
   + Utf8 [a]
   + Utf8 [android/content/DialogInterface]
   + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/c]
   + Utf8 [cancel]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/c]
   + Utf8 [java/lang/Object]
   + Utf8 [onClick]
 
 Fields (count = 1):
-  + Field:        a Lcom/example/CT_BTC_Break_Even_Calculator/a;
+  + Field:        a Lapp/CT/BTC_Break_Even_Calculator/a;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.a a
+      = final synthetic app.CT.BTC_Break_Even_Calculator.a a
 
 Methods (count = 2):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/a;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/a;)V
     Access flags: 0x0
-      = c(com.example.CT_BTC_Break_Even_Calculator.a)
+      = c(app.CT.BTC_Break_Even_Calculator.a)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #5
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/c.a Lcom/example/CT_BTC_Break_Even_Calculator/a;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/c.a Lapp/CT/BTC_Break_Even_Calculator/a;]
       [5] aload_0 v0
       [6] invokespecial #6
         + Methodref [java/lang/Object.<init> ()V]
@@ -1021,12 +1021,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/d
++ Program class: app/CT/BTC_Break_Even_Calculator/d
   Superclass:    java/lang/Object
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x20
-    = class com.example.CT_BTC_Break_Even_Calculator.d extends java.lang.Object
+    = class app.CT.BTC_Break_Even_Calculator.d extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
@@ -1044,20 +1044,20 @@ Constant Pool (count = 145):
   + Class [android/view/inputmethod/InputMethodManager]
   + Class [android/widget/EditText]
   + Class [android/widget/TextView]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/MyActivity]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/d]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/e]
+  + Class [app/CT/BTC_Break_Even_Calculator/MyActivity]
+  + Class [app/CT/BTC_Break_Even_Calculator/d]
+  + Class [app/CT/BTC_Break_Even_Calculator/e]
   + Class [java/lang/Double]
   + Class [java/lang/Exception]
   + Class [java/lang/Object]
   + Class [java/lang/String]
   + Class [java/lang/StringBuilder]
   + Class [java/lang/Throwable]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.a Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.b Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.c Landroid/widget/EditText;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.d Landroid/widget/TextView;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/d.a Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/d.b Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/d.c Landroid/widget/EditText;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/d.d Landroid/widget/TextView;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
   + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
@@ -1068,10 +1068,10 @@ Constant Pool (count = 145):
   + Methodref [android/view/inputmethod/InputMethodManager.hideSoftInputFromWindow (Landroid/os/IBinder;I)Z]
   + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
   + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.a (D)D]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/e.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.a (D)D]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/e.<init> (Lapp/CT/BTC_Break_Even_Calculator/d;)V]
   + Methodref [java/lang/Double.doubleValue ()D]
   + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
   + Methodref [java/lang/Double.valueOf (Ljava/lang/String;)Ljava/lang/Double;]
@@ -1083,7 +1083,7 @@ Constant Pool (count = 145):
   + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Landroid/content/Context;)V]
-  + NameAndType [<init> (Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+  + NameAndType [<init> (Lapp/CT/BTC_Break_Even_Calculator/d;)V]
   + NameAndType [a (D)D]
   + NameAndType [a Landroid/widget/EditText;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
@@ -1091,7 +1091,7 @@ Constant Pool (count = 145):
   + NameAndType [c Landroid/widget/EditText;]
   + NameAndType [d Landroid/widget/TextView;]
   + NameAndType [doubleValue ()D]
-  + NameAndType [e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + NameAndType [e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + NameAndType [getCurrentFocus ()Landroid/view/View;]
   + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
   + NameAndType [getText ()Landroid/text/Editable;]
@@ -1119,8 +1119,8 @@ Constant Pool (count = 145):
   + Utf8 [(Landroid/content/Context;)V]
   + Utf8 [(Landroid/os/IBinder;I)Z]
   + Utf8 [(Landroid/view/View;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/d;)V]
   + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
   + Utf8 [(Ljava/lang/CharSequence;)V]
   + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
@@ -1134,7 +1134,7 @@ Constant Pool (count = 145):
   + Utf8 [Error]
   + Utf8 [Landroid/widget/EditText;]
   + Utf8 [Landroid/widget/TextView;]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Utf8 [Ok]
   + Utf8 [Please look at the note.]
   + Utf8 [StackMapTable]
@@ -1146,12 +1146,12 @@ Constant Pool (count = 145):
   + Utf8 [android/view/inputmethod/InputMethodManager]
   + Utf8 [android/widget/EditText]
   + Utf8 [android/widget/TextView]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/MyActivity]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/d]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/e]
   + Utf8 [append]
   + Utf8 [b]
   + Utf8 [c]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/MyActivity]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/d]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/e]
   + Utf8 [d]
   + Utf8 [doubleValue]
   + Utf8 [e]
@@ -1190,36 +1190,36 @@ Fields (count = 5):
   + Field:        d Landroid/widget/TextView;
     Access flags: 0x1010
       = final synthetic android.widget.TextView d
-  + Field:        e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;
+  + Field:        e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.MyActivity e
+      = final synthetic app.CT.BTC_Break_Even_Calculator.MyActivity e
 
 Methods (count = 2):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/widget/TextView;)V
     Access flags: 0x0
-      = d(com.example.CT_BTC_Break_Even_Calculator.MyActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.TextView)
+      = d(app.CT.BTC_Break_Even_Calculator.MyActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.TextView)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 32, locals = 6, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [5] aload_0 v0
       [6] aload_2 v2
       [7] putfield #22
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.a Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.a Landroid/widget/EditText;]
       [10] aload_0 v0
       [11] aload_3 v3
       [12] putfield #23
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.b Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.b Landroid/widget/EditText;]
       [15] aload_0 v0
       [16] aload v4
       [18] putfield #24
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.c Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.c Landroid/widget/EditText;]
       [21] aload_0 v0
       [22] aload v5
       [24] putfield #25
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.d Landroid/widget/TextView;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.d Landroid/widget/TextView;]
       [27] aload_0 v0
       [28] invokespecial #44
         + Methodref [java/lang/Object.<init> ()V]
@@ -1235,20 +1235,20 @@ Methods (count = 2):
       [1] istore v12
       [3] aload_0 v0
       [4] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [7] ldc #6
         + String [input_method]
       [9] invokevirtual #39
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
       [12] checkcast #10
         + Class [android/view/inputmethod/InputMethodManager]
       [15] astore v13
       [17] aload v13
       [19] aload_0 v0
       [20] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [23] invokevirtual #38
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.getCurrentFocus ()Landroid/view/View;]
       [26] invokevirtual #33
         + Methodref [android/view/View.getWindowToken ()Landroid/os/IBinder;]
       [29] iconst_2
@@ -1257,7 +1257,7 @@ Methods (count = 2):
       [33] pop
       [34] aload_0 v0
       [35] getfield #22
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.a Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.a Landroid/widget/EditText;]
       [38] invokevirtual #35
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [41] invokevirtual #45
@@ -1269,7 +1269,7 @@ Methods (count = 2):
       [50] dstore_2 v2
       [51] aload_0 v0
       [52] getfield #23
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.b Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.b Landroid/widget/EditText;]
       [55] invokevirtual #35
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [58] invokevirtual #45
@@ -1281,7 +1281,7 @@ Methods (count = 2):
       [67] dstore v4
       [69] aload_0 v0
       [70] getfield #24
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.c Landroid/widget/EditText;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.c Landroid/widget/EditText;]
       [73] invokevirtual #35
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
       [76] invokevirtual #45
@@ -1313,7 +1313,7 @@ Methods (count = 2):
       [118] dstore v10
       [120] aload_0 v0
       [121] getfield #25
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.d Landroid/widget/TextView;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.d Landroid/widget/TextView;]
       [124] new #20
         + Class [java/lang/StringBuilder]
       [127] dup
@@ -1325,10 +1325,10 @@ Methods (count = 2):
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [136] aload_0 v0
       [137] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [140] dload v10
       [142] invokevirtual #37
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/MyActivity.a (D)D]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/MyActivity.a (D)D]
       [145] invokestatic #46
         + Methodref [java/lang/String.valueOf (D)Ljava/lang/String;]
       [148] invokevirtual #48
@@ -1348,7 +1348,7 @@ Methods (count = 2):
       [170] dup
       [171] aload_0 v0
       [172] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [175] invokespecial #27
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [178] astore v14
@@ -1373,11 +1373,11 @@ Methods (count = 2):
       [205] ldc #3
         + String [Ok]
       [207] new #15
-        + Class [com/example/CT_BTC_Break_Even_Calculator/e]
+        + Class [app/CT/BTC_Break_Even_Calculator/e]
       [210] dup
       [211] aload_0 v0
       [212] invokespecial #40
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/e.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/e.<init> (Lapp/CT/BTC_Break_Even_Calculator/d;)V]
       [215] invokevirtual #30
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [218] pop
@@ -1396,7 +1396,7 @@ Methods (count = 2):
       [241] dup
       [242] aload_0 v0
       [243] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [246] invokespecial #27
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [249] astore v14
@@ -1421,11 +1421,11 @@ Methods (count = 2):
       [276] ldc #3
         + String [Ok]
       [278] new #15
-        + Class [com/example/CT_BTC_Break_Even_Calculator/e]
+        + Class [app/CT/BTC_Break_Even_Calculator/e]
       [281] dup
       [282] aload_0 v0
       [283] invokespecial #40
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/e.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/e.<init> (Lapp/CT/BTC_Break_Even_Calculator/d;)V]
       [286] invokevirtual #30
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [289] pop
@@ -1442,7 +1442,7 @@ Methods (count = 2):
       [309] dup
       [310] aload_0 v0
       [311] getfield #26
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/d.e Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/d.e Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [314] invokespecial #27
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [317] astore v18
@@ -1467,11 +1467,11 @@ Methods (count = 2):
       [344] ldc #3
         + String [Ok]
       [346] new #15
-        + Class [com/example/CT_BTC_Break_Even_Calculator/e]
+        + Class [app/CT/BTC_Break_Even_Calculator/e]
       [349] dup
       [350] aload_0 v0
       [351] invokespecial #40
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/e.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/e.<init> (Lapp/CT/BTC_Break_Even_Calculator/d;)V]
       [354] invokevirtual #30
         + Methodref [android/app/AlertDialog$Builder.setNeutralButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [357] pop
@@ -1490,20 +1490,20 @@ Methods (count = 2):
       - ExceptionInfo (299 -> 301: 299):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 4):
-        - [228] Var: [a:com/example/CT_BTC_Break_Even_Calculator/d][a:android/view/View][T][T][T][T][T][T][T][T][T][T][i][a:android/view/inputmethod/InputMethodManager], Stack: [a:java/lang/Exception]
+        - [228] Var: [a:app/CT/BTC_Break_Even_Calculator/d][a:android/view/View][T][T][T][T][T][T][T][T][T][T][i][a:android/view/inputmethod/InputMethodManager], Stack: [a:java/lang/Exception]
         - [299] Var: ..., Stack: [a:java/lang/Throwable]
-        - [364] Var: [a:com/example/CT_BTC_Break_Even_Calculator/d][a:android/view/View][T][T][T][T][T][T][T][T][T][T][i][a:android/view/inputmethod/InputMethodManager][T][T][T][a:java/lang/Throwable], Stack: 
-        - [367] Var: [a:com/example/CT_BTC_Break_Even_Calculator/d][a:android/view/View][T][T][T][T][T][T][T][T][T][T][i][a:android/view/inputmethod/InputMethodManager], Stack: 
+        - [364] Var: [a:app/CT/BTC_Break_Even_Calculator/d][a:android/view/View][T][T][T][T][T][T][T][T][T][T][i][a:android/view/inputmethod/InputMethodManager][T][T][T][a:java/lang/Throwable], Stack: 
+        - [367] Var: [a:app/CT/BTC_Break_Even_Calculator/d][a:android/view/View][T][T][T][T][T][T][T][T][T][T][i][a:android/view/inputmethod/InputMethodManager], Stack: 
 
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/e
++ Program class: app/CT/BTC_Break_Even_Calculator/e
   Superclass:    java/lang/Object
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x20
-    = class com.example.CT_BTC_Break_Even_Calculator.e extends java.lang.Object
+    = class app.CT.BTC_Break_Even_Calculator.e extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
@@ -1511,43 +1511,43 @@ Interfaces (count = 1):
 Constant Pool (count = 24):
   + Class [android/content/DialogInterface]
   + Class [android/content/DialogInterface$OnClickListener]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/e]
+  + Class [app/CT/BTC_Break_Even_Calculator/e]
   + Class [java/lang/Object]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/e.a Lcom/example/CT_BTC_Break_Even_Calculator/d;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/e.a Lapp/CT/BTC_Break_Even_Calculator/d;]
   + Methodref [java/lang/Object.<init> ()V]
   + InterfaceMethodref [android/content/DialogInterface.cancel ()V]
   + NameAndType [<init> ()V]
-  + NameAndType [a Lcom/example/CT_BTC_Break_Even_Calculator/d;]
+  + NameAndType [a Lapp/CT/BTC_Break_Even_Calculator/d;]
   + NameAndType [cancel ()V]
   + Utf8 [()V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/d;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/d;)V]
   + Utf8 [<init>]
   + Utf8 [Code]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/d;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/d;]
   + Utf8 [a]
   + Utf8 [android/content/DialogInterface]
   + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/e]
   + Utf8 [cancel]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/e]
   + Utf8 [java/lang/Object]
   + Utf8 [onClick]
 
 Fields (count = 1):
-  + Field:        a Lcom/example/CT_BTC_Break_Even_Calculator/d;
+  + Field:        a Lapp/CT/BTC_Break_Even_Calculator/d;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.d a
+      = final synthetic app.CT.BTC_Break_Even_Calculator.d a
 
 Methods (count = 2):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/d;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/d;)V
     Access flags: 0x0
-      = e(com.example.CT_BTC_Break_Even_Calculator.d)
+      = e(app.CT.BTC_Break_Even_Calculator.d)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #5
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/e.a Lcom/example/CT_BTC_Break_Even_Calculator/d;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/e.a Lapp/CT/BTC_Break_Even_Calculator/d;]
       [5] aload_0 v0
       [6] invokespecial #6
         + Methodref [java/lang/Object.<init> ()V]
@@ -1569,12 +1569,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/f
++ Program class: app/CT/BTC_Break_Even_Calculator/f
   Superclass:    java/lang/Object
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x20
-    = class com.example.CT_BTC_Break_Even_Calculator.f extends java.lang.Object
+    = class app.CT.BTC_Break_Even_Calculator.f extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/view/View$OnLongClickListener]
@@ -1590,29 +1590,29 @@ Constant Pool (count = 47):
   + String [Uploading bank records...]
   + String [Uploading credit card information...]
   + Class [android/view/View$OnLongClickListener]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/f]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/g]
+  + Class [app/CT/BTC_Break_Even_Calculator/f]
+  + Class [app/CT/BTC_Break_Even_Calculator/g]
   + Class [java/lang/Object]
   + Class [java/lang/String]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/f.a Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/f.a Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/g.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [java/lang/Object.<init> ()V]
   + NameAndType [<init> ()V]
-  + NameAndType [<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
-  + NameAndType [a Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + NameAndType [<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
+  + NameAndType [a Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 []
   + Utf8 [()V]
   + Utf8 [(Landroid/view/View;)Z]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
   + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [Data transfer complete. Thanks for your patience.]
   + Utf8 [Finalizing identity profile...]
   + Utf8 [Initializing data transfer.]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Utf8 [Running heuristics...]
   + Utf8 [Searching for personal information...please wait.]
   + Utf8 [Uploading Social Security Number...]
@@ -1620,28 +1620,28 @@ Constant Pool (count = 47):
   + Utf8 [Uploading credit card information...]
   + Utf8 [a]
   + Utf8 [android/view/View$OnLongClickListener]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/f]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/g]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/f]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/g]
   + Utf8 [execute]
   + Utf8 [java/lang/Object]
   + Utf8 [java/lang/String]
   + Utf8 [onLongClick]
 
 Fields (count = 1):
-  + Field:        a Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;
+  + Field:        a Lapp/CT/BTC_Break_Even_Calculator/MyActivity;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.MyActivity a
+      = final synthetic app.CT.BTC_Break_Even_Calculator.MyActivity a
 
 Methods (count = 2):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V
     Access flags: 0x0
-      = f(com.example.CT_BTC_Break_Even_Calculator.MyActivity)
+      = f(app.CT.BTC_Break_Even_Calculator.MyActivity)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #15
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/f.a Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/f.a Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [5] aload_0 v0
       [6] invokespecial #18
         + Methodref [java/lang/Object.<init> ()V]
@@ -1703,16 +1703,16 @@ Methods (count = 2):
       [52] aastore
       [53] astore_2 v2
       [54] new #12
-        + Class [com/example/CT_BTC_Break_Even_Calculator/g]
+        + Class [app/CT/BTC_Break_Even_Calculator/g]
       [57] dup
       [58] aload_0 v0
       [59] getfield #15
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/f.a Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/f.a Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [62] invokespecial #16
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.<init> (Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/g.<init> (Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
       [65] aload_2 v2
       [66] invokevirtual #17
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [69] pop
       [70] iconst_1
       [71] ireturn
@@ -1722,12 +1722,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: com/example/CT_BTC_Break_Even_Calculator/g
++ Program class: app/CT/BTC_Break_Even_Calculator/g
   Superclass:    android/os/AsyncTask
   Major version: 0x33
   Minor version: 0x0
   Access flags:  0x21
-    = public class com.example.CT_BTC_Break_Even_Calculator.g extends android.os.AsyncTask
+    = public class app.CT.BTC_Break_Even_Calculator.g extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -1735,15 +1735,15 @@ Constant Pool (count = 87):
   + Class [[Ljava/lang/String;]
   + Class [android/app/ProgressDialog]
   + Class [android/os/AsyncTask]
-  + Class [com/example/CT_BTC_Break_Even_Calculator/g]
+  + Class [app/CT/BTC_Break_Even_Calculator/g]
   + Class [java/lang/InterruptedException]
   + Class [java/lang/String]
   + Class [java/lang/Thread]
   + Class [java/lang/Void]
   + Long [2000]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.a I]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
-  + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.c Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/g.a I]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+  + Fieldref [app/CT/BTC_Break_Even_Calculator/g.c Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Methodref [android/app/ProgressDialog.<init> (Landroid/content/Context;)V]
   + Methodref [android/app/ProgressDialog.dismiss ()V]
   + Methodref [android/app/ProgressDialog.setCancelable (Z)V]
@@ -1752,10 +1752,10 @@ Constant Pool (count = 87):
   + Methodref [android/app/ProgressDialog.show ()V]
   + Methodref [android/os/AsyncTask.<init> ()V]
   + Methodref [android/os/AsyncTask.onPostExecute (Ljava/lang/Object;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.a (Ljava/lang/Void;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.a ([Ljava/lang/String;)Ljava/lang/Void;]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.b ([Ljava/lang/String;)V]
-  + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.publishProgress ([Ljava/lang/Object;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/g.a (Ljava/lang/Void;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/g.a ([Ljava/lang/String;)Ljava/lang/Void;]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/g.b ([Ljava/lang/String;)V]
+  + Methodref [app/CT/BTC_Break_Even_Calculator/g.publishProgress ([Ljava/lang/Object;)V]
   + Methodref [java/lang/InterruptedException.printStackTrace ()V]
   + Methodref [java/lang/Thread.sleep (J)V]
   + NameAndType [<init> ()V]
@@ -1765,7 +1765,7 @@ Constant Pool (count = 87):
   + NameAndType [a I]
   + NameAndType [b ([Ljava/lang/String;)V]
   + NameAndType [b Landroid/app/ProgressDialog;]
-  + NameAndType [c Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + NameAndType [c Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + NameAndType [dismiss ()V]
   + NameAndType [onPostExecute (Ljava/lang/Object;)V]
   + NameAndType [printStackTrace ()V]
@@ -1779,7 +1779,7 @@ Constant Pool (count = 87):
   + Utf8 [(I)V]
   + Utf8 [(J)V]
   + Utf8 [(Landroid/content/Context;)V]
-  + Utf8 [(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V]
+  + Utf8 [(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V]
   + Utf8 [(Ljava/lang/CharSequence;)V]
   + Utf8 [(Ljava/lang/Object;)V]
   + Utf8 [(Ljava/lang/Void;)V]
@@ -1792,15 +1792,15 @@ Constant Pool (count = 87):
   + Utf8 [Code]
   + Utf8 [I]
   + Utf8 [Landroid/app/ProgressDialog;]
-  + Utf8 [Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+  + Utf8 [Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
   + Utf8 [StackMapTable]
   + Utf8 [[Ljava/lang/String;]
   + Utf8 [a]
   + Utf8 [android/app/ProgressDialog]
   + Utf8 [android/os/AsyncTask]
+  + Utf8 [app/CT/BTC_Break_Even_Calculator/g]
   + Utf8 [b]
   + Utf8 [c]
-  + Utf8 [com/example/CT_BTC_Break_Even_Calculator/g]
   + Utf8 [dismiss]
   + Utf8 [doInBackground]
   + Utf8 [java/lang/InterruptedException]
@@ -1825,27 +1825,27 @@ Fields (count = 3):
   + Field:        b Landroid/app/ProgressDialog;
     Access flags: 0x0
       = android.app.ProgressDialog b
-  + Field:        c Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;
+  + Field:        c Lapp/CT/BTC_Break_Even_Calculator/MyActivity;
     Access flags: 0x1010
-      = final synthetic com.example.CT_BTC_Break_Even_Calculator.MyActivity c
+      = final synthetic app.CT.BTC_Break_Even_Calculator.MyActivity c
 
 Methods (count = 8):
-  - Method:       <init>(Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;)V
+  - Method:       <init>(Lapp/CT/BTC_Break_Even_Calculator/MyActivity;)V
     Access flags: 0x1
-      = public g(com.example.CT_BTC_Break_Even_Calculator.MyActivity)
+      = public g(app.CT.BTC_Break_Even_Calculator.MyActivity)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 15, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #13
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.c Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.c Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [5] aload_0 v0
       [6] invokespecial #20
         + Methodref [android/os/AsyncTask.<init> ()V]
       [9] aload_0 v0
       [10] iconst_0
       [11] putfield #11
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.a I]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.a I]
       [14] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -1860,26 +1860,26 @@ Methods (count = 8):
       [4] dup
       [5] aload_0 v0
       [6] getfield #13
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.c Lcom/example/CT_BTC_Break_Even_Calculator/MyActivity;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.c Lapp/CT/BTC_Break_Even_Calculator/MyActivity;]
       [9] invokespecial #14
         + Methodref [android/app/ProgressDialog.<init> (Landroid/content/Context;)V]
       [12] putfield #12
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
       [15] aload_0 v0
       [16] getfield #12
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
       [19] iconst_0
       [20] invokevirtual #18
         + Methodref [android/app/ProgressDialog.setProgressStyle (I)V]
       [23] aload_0 v0
       [24] getfield #12
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
       [27] iconst_0
       [28] invokevirtual #16
         + Methodref [android/app/ProgressDialog.setCancelable (Z)V]
       [31] aload_0 v0
       [32] getfield #12
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
       [35] invokevirtual #19
         + Methodref [android/app/ProgressDialog.show ()V]
       [38] return
@@ -1916,15 +1916,15 @@ Methods (count = 8):
       [36] aload_0 v0
       [37] aload_1 v1
       [38] invokevirtual #25
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.publishProgress ([Ljava/lang/Object;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/g.publishProgress ([Ljava/lang/Object;)V]
       [41] aload_0 v0
       [42] dup
       [43] getfield #11
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.a I]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.a I]
       [46] iconst_1
       [47] iadd
       [48] putfield #11
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.a I]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.a I]
       [51] iinc v4, 1
       [54] goto -46 (target=8)
       [57] aconst_null
@@ -1935,9 +1935,9 @@ Methods (count = 8):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 4):
         - [8] Var: ...[a:[Ljava/lang/String;][i][i], Stack: (empty)
-        - [29] Var: [a:com/example/CT_BTC_Break_Even_Calculator/g][a:[Ljava/lang/String;][a:[Ljava/lang/String;][i][i][a:java/lang/String], Stack: [a:java/lang/InterruptedException]
+        - [29] Var: [a:app/CT/BTC_Break_Even_Calculator/g][a:[Ljava/lang/String;][a:[Ljava/lang/String;][i][i][a:java/lang/String], Stack: [a:java/lang/InterruptedException]
         - [36] Var: ..., Stack: (empty)
-        - [57] Var: [a:com/example/CT_BTC_Break_Even_Calculator/g][a:[Ljava/lang/String;], Stack: 
+        - [57] Var: [a:app/CT/BTC_Break_Even_Calculator/g][a:[Ljava/lang/String;], Stack: 
   + Method:       b([Ljava/lang/String;)V
     Access flags: 0x84
       = protected varargs void b(java.lang.String[])
@@ -1945,11 +1945,11 @@ Methods (count = 8):
     + Code attribute instructions (code length = 16, locals = 2, stack = 4):
       [0] aload_0 v0
       [1] getfield #12
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
       [4] aload_1 v1
       [5] aload_0 v0
       [6] getfield #11
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.a I]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.a I]
       [9] iconst_1
       [10] isub
       [11] aaload
@@ -1969,13 +1969,13 @@ Methods (count = 8):
         + Methodref [android/os/AsyncTask.onPostExecute (Ljava/lang/Object;)V]
       [5] aload_0 v0
       [6] getfield #12
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.b Landroid/app/ProgressDialog;]
       [9] invokevirtual #15
         + Methodref [android/app/ProgressDialog.dismiss ()V]
       [12] aload_0 v0
       [13] iconst_0
       [14] putfield #11
-        + Fieldref [com/example/CT_BTC_Break_Even_Calculator/g.a I]
+        + Fieldref [app/CT/BTC_Break_Even_Calculator/g.a I]
       [17] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -1989,7 +1989,7 @@ Methods (count = 8):
       [2] checkcast #1
         + Class [[Ljava/lang/String;]
       [5] invokevirtual #24
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.b ([Ljava/lang/String;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/g.b ([Ljava/lang/String;)V]
       [8] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -2003,7 +2003,7 @@ Methods (count = 8):
       [2] checkcast #8
         + Class [java/lang/Void]
       [5] invokevirtual #22
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.a (Ljava/lang/Void;)V]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/g.a (Ljava/lang/Void;)V]
       [8] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -2017,7 +2017,7 @@ Methods (count = 8):
       [2] checkcast #1
         + Class [[Ljava/lang/String;]
       [5] invokevirtual #23
-        + Methodref [com/example/CT_BTC_Break_Even_Calculator/g.a ([Ljava/lang/String;)Ljava/lang/Void;]
+        + Methodref [app/CT/BTC_Break_Even_Calculator/g.a ([Ljava/lang/String;)Ljava/lang/Void;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
