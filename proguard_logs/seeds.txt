@@ -1,0 +1,22 @@
+com.example.BTC_Break_Even_Calculator.MyActivity
+com.example.BTC_Break_Even_Calculator.MyActivity: MyActivity()
+com.example.BTC_Break_Even_Calculator.R$drawable: int bitcoiniconnew
+com.example.BTC_Break_Even_Calculator.R$drawable: int ic_launcher
+com.example.BTC_Break_Even_Calculator.R$id: int buy
+com.example.BTC_Break_Even_Calculator.R$id: int buy2
+com.example.BTC_Break_Even_Calculator.R$id: int calculate
+com.example.BTC_Break_Even_Calculator.R$id: int cost
+com.example.BTC_Break_Even_Calculator.R$id: int cost2
+com.example.BTC_Break_Even_Calculator.R$id: int editFifth
+com.example.BTC_Break_Even_Calculator.R$id: int editFirst
+com.example.BTC_Break_Even_Calculator.R$id: int editFourth
+com.example.BTC_Break_Even_Calculator.R$id: int editSecond
+com.example.BTC_Break_Even_Calculator.R$id: int editSixth
+com.example.BTC_Break_Even_Calculator.R$id: int editThird
+com.example.BTC_Break_Even_Calculator.R$id: int optimize
+com.example.BTC_Break_Even_Calculator.R$id: int optimizeMessage
+com.example.BTC_Break_Even_Calculator.R$id: int price
+com.example.BTC_Break_Even_Calculator.R$id: int resultText
+com.example.BTC_Break_Even_Calculator.R$id: int sell
+com.example.BTC_Break_Even_Calculator.R$layout: int main
+com.example.BTC_Break_Even_Calculator.R$string: int app_name

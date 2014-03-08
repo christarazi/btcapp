@@ -1,0 +1,7 @@
+com.example.BTC_Break_Even_Calculator.BuildConfig
+com.example.BTC_Break_Even_Calculator.R
+com.example.BTC_Break_Even_Calculator.R$attr
+com.example.BTC_Break_Even_Calculator.R$drawable
+com.example.BTC_Break_Even_Calculator.R$id
+com.example.BTC_Break_Even_Calculator.R$layout
+com.example.BTC_Break_Even_Calculator.R$string
