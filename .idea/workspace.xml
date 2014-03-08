@@ -87,16 +87,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="64" selection-start="10675" selection-end="10675" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4828">
+            <state line="287" column="49" selection-start="11793" selection-end="11793" vertical-scroll-proportion="0.55689657" vertical-offset="4267" max-vertical-offset="4879">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1893#6384#0" expanded="true" />
-                <element signature="e#6373#6374#0" expanded="true" />
-                <element signature="e#9196#10205#0" expanded="true" />
-                <element signature="e#10194#10195#0" expanded="true" />
+                <element signature="e#1927#6418#0" expanded="true" />
+                <element signature="e#6407#6408#0" expanded="true" />
+                <element signature="e#9230#10239#0" expanded="true" />
+                <element signature="e#10228#10229#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="34" selection-start="235" selection-end="235" vertical-scroll-proportion="0.12068965" vertical-offset="15" max-vertical-offset="595">
+            <state line="5" column="34" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -136,8 +136,8 @@
         <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/loadSomeStuff.java" />
         <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/ProgressRunner.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java" />
       </list>
     </option>
   </component>
@@ -525,10 +525,10 @@
         <state line="35" column="81" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="4981">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,10 +555,10 @@
         <state line="84" column="36" selection-start="3703" selection-end="3703" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="4505">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,10 +585,10 @@
         <state line="273" column="9" selection-start="11305" selection-end="11305" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3128">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -615,10 +615,10 @@
         <state line="273" column="9" selection-start="11305" selection-end="11305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,10 +645,10 @@
         <state line="258" column="39" selection-start="10759" selection-end="10759" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3128">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -675,10 +675,10 @@
         <state line="241" column="0" selection-start="10187" selection-end="10187" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3128">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -705,10 +705,10 @@
         <state line="17" column="1" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3230">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,10 +735,10 @@
         <state line="35" column="69" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -775,10 +775,10 @@
         <state line="20" column="43" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1649">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -815,10 +815,10 @@
         <state line="58" column="96" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1156">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,10 +838,10 @@
         <state line="5" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -917,19 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="64" selection-start="10675" selection-end="10675" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4828">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1893#6384#0" expanded="true" />
-            <element signature="e#6373#6374#0" expanded="true" />
-            <element signature="e#9196#10205#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="text-editor">
         <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
@@ -942,8 +929,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="235" selection-end="235" vertical-scroll-proportion="0.12068965" vertical-offset="15" max-vertical-offset="595">
+        <state line="5" column="34" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="595">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="287" column="49" selection-start="11793" selection-end="11793" vertical-scroll-proportion="0.55689657" vertical-offset="4267" max-vertical-offset="4879">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1927#6418#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#9230#10239#0" expanded="true" />
+            <element signature="e#10228#10229#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

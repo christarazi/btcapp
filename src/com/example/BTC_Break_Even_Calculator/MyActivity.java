@@ -3,6 +3,7 @@ package com.example.BTC_Break_Even_Calculator;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -254,6 +255,7 @@ public class MyActivity extends Activity
         {
             jokeDialog = new ProgressDialog(MyActivity.this);
             jokeDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            jokeDialog.setCancelable(false);
             jokeDialog.show();
         }
 
@@ -291,6 +293,7 @@ public class MyActivity extends Activity
         {
             super.onPostExecute(aVoid);
             jokeDialog.dismiss();
+            n = 0;
         }
     }
 }
