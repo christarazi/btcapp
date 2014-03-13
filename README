@@ -30,3 +30,6 @@ Changelog
 - Fixed bug with the dialog crashing.
 - Added extra documentation.
 - Ready for inital release.
+
+3/12/14  (v1.0.1)
+- Added scrollable view.
