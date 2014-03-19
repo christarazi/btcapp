@@ -37,6 +37,6 @@ Changelog
 3/18/14 (v1.0.2)
 - Added ActionBar buttons, "add" and "remove".
 - Added the ability to add/remove text fields for more transactions.
-    Note: the text fields are useless as of this build version.
+*   Note: the text fields are unfunctional as of this build version.    *
 - Cleaned up some dirty code.
 
