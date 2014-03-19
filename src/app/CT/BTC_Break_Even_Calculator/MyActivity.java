@@ -7,7 +7,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewStub;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,7 +37,7 @@ public class MyActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        // create text fields and buttons
+        // initialize text fields and buttons
         final EditText editFirst = (EditText) findViewById(R.id.editFirst);
         final EditText editSecond = (EditText) findViewById(R.id.editSecond);
         final EditText editThird = (EditText) findViewById(R.id.editThird);
@@ -174,10 +177,6 @@ public class MyActivity extends Activity
                     sellPrice = Double.valueOf(editFourth.getText().toString());
                     buyCost2 = Double.valueOf(editSixth.getText().toString());
 
-                    String amount = Double.toString(sellAmount);
-                    String price = Double.toString(sellPrice);
-                    String cost = Double.toString(buyCost2);
-
                     newBalance = sellAmount * sellPrice;
                     optimalBTC = newBalance / buyCost2;
 
@@ -220,7 +219,7 @@ public class MyActivity extends Activity
         /*  DISCLAIMER:
                 This section of the app is a prank I've implemented for my friends to have fun with.
                 It does not actually have any access to the user's data.
-                It requires no permissions.
+                The app has no permissions.
         */
         buttonCalculate.setOnLongClickListener(new View.OnLongClickListener()
         {
@@ -300,5 +299,57 @@ public class MyActivity extends Activity
             jokeDialog.dismiss();
             n = 0;
         }
+    }
+
+    // create menu items
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.main_activity_action_bar, menu);
+        return true;
+    }
+
+    // on click of menu items
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        super.onOptionsItemSelected(item);
+
+        // initialize text fields
+        EditText editFirst2 = (EditText) findViewById(R.id.editFirst2);
+        EditText editSecond2 = (EditText) findViewById(R.id.editSecond2);
+        EditText editThird2 = (EditText) findViewById(R.id.editThird2);
+        EditText editFourth2 = (EditText) findViewById(R.id.editFourth2);
+
+        switch(item.getItemId())
+        {
+            case R.id.addButton:
+                addButtonMenuItem(editFirst2, editSecond2, editThird2, editFourth2);
+                break;
+            case R.id.removeButton:
+                removeButtonMenuItem(editFirst2, editSecond2, editThird2, editFourth2);
+                break;
+            default: break;
+        }
+
+        return true;
+    }
+
+    // adds texts fields initialized above on clock
+    private void addButtonMenuItem(View first, View second, View third, View fourth)
+    {
+        first.setVisibility(View.VISIBLE);
+        second.setVisibility(View.VISIBLE);
+        third.setVisibility(View.VISIBLE);
+        fourth.setVisibility(View.VISIBLE);
+    }
+
+    // hides texts fields initialized above on clock
+    private void removeButtonMenuItem(View first, View second, View third, View fourth)
+    {
+        first.setVisibility(View.GONE);
+        second.setVisibility(View.GONE);
+        third.setVisibility(View.GONE);
+        fourth.setVisibility(View.GONE);
     }
 }

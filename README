@@ -15,7 +15,7 @@ Changelog
 
 3/5/14  (v0.8)
 - Added error checking.
-- Updated from defualt icon.
+- Updated from default icon.
 - Fixed display to work on most devices.
 
 3/5/14  (v0.8.1)
@@ -29,7 +29,14 @@ Changelog
 3/7/14  (v1.0)
 - Fixed bug with the dialog crashing.
 - Added extra documentation.
-- Ready for inital release.
+- Ready for initial release.
 
 3/12/14  (v1.0.1)
 - Added scrollable view.
+
+3/18/14 (v1.0.2)
+- Added ActionBar buttons, "add" and "remove".
+- Added the ability to add/remove text fields for more transactions.
+    Note: the text fields are useless as of this build version.
+- Cleaned up some dirty code.
+
