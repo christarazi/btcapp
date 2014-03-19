@@ -126,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.062068965" vertical-offset="49" max-vertical-offset="629">
+            <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -157,10 +157,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="62" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+            <state line="31" column="28" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5017241" vertical-offset="236" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -1214,16 +1214,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="62" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+        <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.062068965" vertical-offset="49" max-vertical-offset="629">
+        <state line="31" column="28" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5017241" vertical-offset="236" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
