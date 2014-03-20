@@ -40,3 +40,8 @@ Changelog
     Note: the text fields are useless as of this build version.
 - Cleaned up some dirty code.
 
+3/18/14 (v1.0.5)
+- Added additional text fields.
+- Added ability to add one by one.
+- Text fields still not functional.
+

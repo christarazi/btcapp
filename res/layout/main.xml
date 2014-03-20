@@ -62,6 +62,45 @@
                                 android:layout_marginLeft="150dp"
                                 android:layout_marginTop="5dp"
                                 android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFirst3"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFirst4"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFirst5"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -112,6 +151,42 @@
                                 android:paddingLeft="2dp"
                                 android:layout_marginLeft="144dp"
                                 android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editSecond3"
+                            android:layout_alignStart="@+id/editFirst"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="144dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editSecond4"
+                            android:layout_alignStart="@+id/editFirst"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="144dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editSecond5"
+                            android:layout_alignStart="@+id/editFirst"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="144dp"
+                            android:visibility="gone"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -161,6 +236,42 @@
                             android:paddingLeft="2dp"
                             android:layout_marginLeft="150dp"
                             android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editThird3"
+                            android:layout_alignStart="@+id/editSecond"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="150dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editThird4"
+                            android:layout_alignStart="@+id/editSecond"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="150dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editThird5"
+                            android:layout_alignStart="@+id/editSecond"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="150dp"
+                            android:visibility="gone"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -205,6 +316,42 @@
                             android:inputType="numberDecimal"
                             android:ems="10"
                             android:id="@+id/editFourth2"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="140dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFourth3"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="140dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFourth4"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginLeft="140dp"
+                            android:visibility="gone"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFourth5"
                             android:layout_alignParentEnd="true"
                             android:paddingRight="2dp"
                             android:paddingLeft="2dp"

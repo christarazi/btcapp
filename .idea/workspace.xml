@@ -95,41 +95,11 @@
     <leaf>
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="19" selection-start="224" selection-end="224" vertical-scroll-proportion="-0.68" vertical-offset="85" max-vertical-offset="714">
-              <folding>
-                <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-                <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_activity_action_bar.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/main_activity_action_bar.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="629">
+            <state line="401" column="48" selection-start="19440" selection-end="19440" vertical-scroll-proportion="-8.8" vertical-offset="6597" max-vertical-offset="8381">
               <folding />
             </state>
           </provider>
@@ -138,16 +108,11 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="19" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+            <state line="454" column="45" selection-start="17774" selection-end="17774" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
               <folding>
                 <element signature="method#roundTwoDecimals#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
-                <element signature="e#2021#6512#0" expanded="true" />
-                <element signature="e#6501#6502#0" expanded="true" />
                 <element signature="class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#doInBackground#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#onProgressUpdate#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#onPostExecute#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#addButtonMenuItem#0;class#MyActivity#0" expanded="false" />
@@ -160,7 +125,7 @@
       <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="28" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5017241" vertical-offset="236" max-vertical-offset="816">
+            <state line="45" column="35" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.9122203" vertical-offset="235" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -189,10 +154,10 @@
         <option value="$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/DynamicLayout.java" />
         <option value="$PROJECT_DIR$/res/menu/main_activity.xml" />
         <option value="$PROJECT_DIR$/res/menu/main_activity_action_bar.xml" />
-        <option value="$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/MyActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/MyActivity.java" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -351,8 +316,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,6 +386,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -446,19 +424,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -604,7 +569,6 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34930778" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41065484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -612,20 +576,21 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.50089765" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32741398" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263041" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.49910232" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15388711" sideWeight="0.49946064" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Analyze Dataflow from" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Analyze Dataflow to" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -655,16 +620,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="19" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="6120">
+          <folding>
+            <element signature="method#roundTwoDecimals#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#addButtonMenuItem#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#removeButtonMenuItem#0;class#MyActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="278" column="40" selection-start="11491" selection-end="11491" vertical-scroll-proportion="0.0" vertical-offset="4522" max-vertical-offset="4522">
           <folding>
             <element signature="method#roundTwoDecimals#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="e#2021#6512#0" expanded="true" />
-            <element signature="e#6501#6502#0" expanded="true" />
             <element signature="class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onProgressUpdate#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
             <element signature="method#addButtonMenuItem#0;class#MyActivity#0" expanded="false" />
@@ -674,25 +656,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3638">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3638">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -708,12 +678,7 @@
           <folding>
             <element signature="method#roundTwoDecimals#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="e#2021#6512#0" expanded="true" />
-            <element signature="e#6501#6502#0" expanded="true" />
             <element signature="class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onProgressUpdate#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
             <element signature="method#addButtonMenuItem#0;class#MyActivity#0" expanded="false" />
@@ -723,25 +688,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3638">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3638">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -757,12 +710,7 @@
           <folding>
             <element signature="method#roundTwoDecimals#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="e#2021#6512#0" expanded="true" />
-            <element signature="e#6501#6502#0" expanded="true" />
             <element signature="class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onProgressUpdate#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
             <element signature="method#addButtonMenuItem#0;class#MyActivity#0" expanded="false" />
@@ -772,25 +720,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="3638">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="3638">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -808,25 +744,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -837,25 +761,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -866,25 +778,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -895,25 +795,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -924,47 +812,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+      <provider editor-type-id="text-editor">
+        <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3162">
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="86" column="40" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="3145">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -975,25 +839,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="84" column="4" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="2958">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -1009,25 +861,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="84" column="4" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="3145">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -1043,47 +883,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1819">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1819">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="69" column="53" selection-start="4486" selection-end="4486" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1479">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="69" column="53" selection-start="4486" selection-end="4486" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1479">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
@@ -1172,40 +988,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="224" selection-end="224" vertical-scroll-proportion="-0.68" vertical-offset="85" max-vertical-offset="714">
-          <folding>
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#4;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#5;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#6;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-            <element signature="tag#LinearLayout#7;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0" expanded="false" />
-          </folding>
+        <state line="25" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.7091222" vertical-offset="13" max-vertical-offset="595">
+          <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="401" column="48" selection-start="19440" selection-end="19440" vertical-scroll-proportion="-8.8" vertical-offset="6597" max-vertical-offset="8381">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="454" column="45" selection-start="17774" selection-end="17774" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <folding>
             <element signature="method#roundTwoDecimals#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="e#2021#6512#0" expanded="true" />
-            <element signature="e#6501#6502#0" expanded="true" />
             <element signature="class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onProgressUpdate#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPostExecute#0;class#ProgressUpdater#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
             <element signature="method#addButtonMenuItem#0;class#MyActivity#0" expanded="false" />
@@ -1214,16 +1020,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5017241" vertical-offset="236" max-vertical-offset="816">
+        <state line="45" column="35" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.9122203" vertical-offset="235" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
