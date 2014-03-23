@@ -108,7 +108,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.12371134" vertical-offset="13" max-vertical-offset="595">
+            <state line="5" column="37" selection-start="233" selection-end="233" vertical-scroll-proportion="0.12371134" vertical-offset="13" max-vertical-offset="595">
               <folding>
                 <element signature="e#677#695#0" expanded="true" />
               </folding>
@@ -155,8 +155,8 @@
     </FindUsagesManager>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Users\Chris\Documents\IntelliJ IDEA\BTC Break Even Calculator\key.jks" />
-    <option name="KEY_ALIAS" value="alias" />
+    <option name="KEY_STORE_PATH" value="G:\Documents\IntelliJ IDEA\BTC Break Even Calculator\key.jks" />
+    <option name="KEY_ALIAS" value="key" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="IdeDocumentHistory">
@@ -357,7 +357,7 @@
     <property name="ExportedModule" value="BTC Break Even Calculator" />
     <property name="ExportedApkPath" value="C:\Users\Chris\Desktop\BTC Breakeven Calculator.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="true" />
-    <property name="AndroidProguardConfigPaths" value="C:\Program Files\Android\android-sdk\tools\proguard\proguard-android.txt;C:\Users\Chris\Documents\IntelliJ IDEA\BTC Break Even Calculator\proguard-project.txt" />
+    <property name="AndroidProguardConfigPaths" value="C:\Program Files\Android\android-sdk\tools\proguard\proguard-android.txt;G:\Documents\IntelliJ IDEA\BTC Break Even Calculator\proguard-project.txt" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="422" />
     <property name="DEBUGGABLE_DEVICE" value="emulator-5554 (avd)" />
     <property name="DEBUGGABLE_PROCESS" value="app.CT.BTC_Break_Even_Calculator" />
@@ -1089,7 +1089,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="232" selection-end="232" vertical-scroll-proportion="0.12371134" vertical-offset="13" max-vertical-offset="595">
+        <state line="5" column="37" selection-start="233" selection-end="233" vertical-scroll-proportion="0.12371134" vertical-offset="13" max-vertical-offset="595">
           <folding>
             <element signature="e#677#695#0" expanded="true" />
           </folding>

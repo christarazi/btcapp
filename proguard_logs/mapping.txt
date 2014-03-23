@@ -1,6 +1,8 @@
 app.CT.BTC_Break_Even_Calculator.MyActivity -> app.CT.BTC_Break_Even_Calculator.MyActivity:
     double roundTwoDecimals(double) -> a
     void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
 app.CT.BTC_Break_Even_Calculator.MyActivity$1 -> app.CT.BTC_Break_Even_Calculator.a:
     android.widget.EditText val$editFirst -> a
     android.widget.EditText val$editSecond -> b
