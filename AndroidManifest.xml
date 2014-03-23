@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="app.CT.BTC_Break_Even_Calculator"
+          package="app.CT.BTC_Calculator"
           android:versionCode="2"
           android:versionName="1.0.6"
           android:installLocation="auto">
@@ -14,7 +14,7 @@
                  android:allowBackup="true"
                  android:allowClearUserData="true">
 
-        <activity android:name="app.CT.BTC_Break_Even_Calculator.MyActivity"
+        <activity android:name="app.CT.BTC_Calculator.MyActivity"
                   android:label="@string/app_name">
 
             <intent-filter>

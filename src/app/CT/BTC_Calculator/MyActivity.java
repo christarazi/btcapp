@@ -1,4 +1,4 @@
-package app.CT.BTC_Break_Even_Calculator;
+package app.CT.BTC_Calculator;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,6 +14,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import app.CT.BTC_Calculator.R;
 
 import java.text.DecimalFormat;
 
