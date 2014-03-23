@@ -1,8 +1,8 @@
-app.CT.BTC_Calculator.MyActivity -> app.CT.BTC_Calculator.MyActivity:
+app.CT.BTCCalculator.MyActivity -> app.CT.BTCCalculator.MyActivity:
     double roundTwoDecimals(double) -> a
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
-app.CT.BTC_Calculator.MyActivity$1 -> app.CT.BTC_Calculator.a:
+app.CT.BTCCalculator.MyActivity$1 -> app.CT.BTCCalculator.a:
     android.widget.EditText val$editFirst -> a
     android.widget.EditText val$editSecond -> b
     android.widget.EditText val$editThird -> c
@@ -10,31 +10,31 @@ app.CT.BTC_Calculator.MyActivity$1 -> app.CT.BTC_Calculator.a:
     android.widget.EditText val$editFifth -> e
     android.widget.EditText val$editSixth -> f
     android.widget.TextView val$editResultText -> g
-    app.CT.BTC_Calculator.MyActivity this$0 -> h
+    app.CT.BTCCalculator.MyActivity this$0 -> h
     void onClick(android.view.View) -> onClick
-app.CT.BTC_Calculator.MyActivity$1$1 -> app.CT.BTC_Calculator.b:
-    app.CT.BTC_Calculator.MyActivity$1 this$1 -> a
+app.CT.BTCCalculator.MyActivity$1$1 -> app.CT.BTCCalculator.b:
+    app.CT.BTCCalculator.MyActivity$1 this$1 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-app.CT.BTC_Calculator.MyActivity$1$2 -> app.CT.BTC_Calculator.c:
-    app.CT.BTC_Calculator.MyActivity$1 this$1 -> a
+app.CT.BTCCalculator.MyActivity$1$2 -> app.CT.BTCCalculator.c:
+    app.CT.BTCCalculator.MyActivity$1 this$1 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-app.CT.BTC_Calculator.MyActivity$2 -> app.CT.BTC_Calculator.d:
+app.CT.BTCCalculator.MyActivity$2 -> app.CT.BTCCalculator.d:
     android.widget.EditText val$editThird -> a
     android.widget.EditText val$editFourth -> b
     android.widget.EditText val$editSixth -> c
     android.widget.TextView val$editOptimizeText -> d
-    app.CT.BTC_Calculator.MyActivity this$0 -> e
+    app.CT.BTCCalculator.MyActivity this$0 -> e
     void onClick(android.view.View) -> onClick
-app.CT.BTC_Calculator.MyActivity$2$1 -> app.CT.BTC_Calculator.e:
-    app.CT.BTC_Calculator.MyActivity$2 this$1 -> a
+app.CT.BTCCalculator.MyActivity$2$1 -> app.CT.BTCCalculator.e:
+    app.CT.BTCCalculator.MyActivity$2 this$1 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-app.CT.BTC_Calculator.MyActivity$3 -> app.CT.BTC_Calculator.f:
-    app.CT.BTC_Calculator.MyActivity this$0 -> a
+app.CT.BTCCalculator.MyActivity$3 -> app.CT.BTCCalculator.f:
+    app.CT.BTCCalculator.MyActivity this$0 -> a
     boolean onLongClick(android.view.View) -> onLongClick
-app.CT.BTC_Calculator.MyActivity$ProgressUpdater -> app.CT.BTC_Calculator.g:
+app.CT.BTCCalculator.MyActivity$ProgressUpdater -> app.CT.BTCCalculator.g:
     int n -> a
     android.app.ProgressDialog jokeDialog -> b
-    app.CT.BTC_Calculator.MyActivity this$0 -> c
+    app.CT.BTCCalculator.MyActivity this$0 -> c
     void onPreExecute() -> onPreExecute
     java.lang.Void doInBackground(java.lang.String[]) -> a
     void onProgressUpdate(java.lang.String[]) -> b

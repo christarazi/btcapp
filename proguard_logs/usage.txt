@@ -1,8 +1,8 @@
-app.CT.BTC_Calculator.BuildConfig
-app.CT.BTC_Calculator.R
-app.CT.BTC_Calculator.R$attr
-app.CT.BTC_Calculator.R$drawable
-app.CT.BTC_Calculator.R$id
-app.CT.BTC_Calculator.R$layout
-app.CT.BTC_Calculator.R$menu
-app.CT.BTC_Calculator.R$string
+app.CT.BTCCalculator.BuildConfig
+app.CT.BTCCalculator.R
+app.CT.BTCCalculator.R$attr
+app.CT.BTCCalculator.R$drawable
+app.CT.BTCCalculator.R$id
+app.CT.BTCCalculator.R$layout
+app.CT.BTCCalculator.R$menu
+app.CT.BTCCalculator.R$string
