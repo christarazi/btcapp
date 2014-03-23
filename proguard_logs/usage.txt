@@ -1,8 +1,0 @@
-app.CT.BTC_Break_Even_Calculator.BuildConfig
-app.CT.BTC_Break_Even_Calculator.R
-app.CT.BTC_Break_Even_Calculator.R$attr
-app.CT.BTC_Break_Even_Calculator.R$drawable
-app.CT.BTC_Break_Even_Calculator.R$id
-app.CT.BTC_Break_Even_Calculator.R$layout
-app.CT.BTC_Break_Even_Calculator.R$menu
-app.CT.BTC_Break_Even_Calculator.R$string
