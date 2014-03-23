@@ -10,24 +10,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewStub;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import app.CT.BTC_Break_Even_Calculator.R;
 
-import java.lang.Math;
 import java.text.DecimalFormat;
-import java.lang.String;
 
 public class MyActivity extends Activity
 {
-    // counter to count number of times "add" is clicked on action bar
-    public int clickCount = 0;
-
     // rounds numbers to two decimal places
-    public double roundTwoDecimals(double d)
+    double roundTwoDecimals(double d)
     {
         DecimalFormat twoDForm = new DecimalFormat("#.##");
         return Double.valueOf(twoDForm.format(d));
@@ -50,39 +43,6 @@ public class MyActivity extends Activity
         final TextView editResultText = (TextView) findViewById(R.id.resultText);
         final TextView editOptimizeText = (TextView) findViewById(R.id.optimizeMessage);
 
-        // initialize additional text fields to array of EditText elements
-        EditText[] additionalBuyField = new EditText[4];
-        EditText[] additionalCostField = new EditText[4];
-        EditText[] additionalSellField = new EditText[4];
-        EditText[] additionalPriceField = new EditText[4];
-
-        // variables to store id's of text fields from above
-        String firstID, secondID, thirdID, fourthID;
-        int number = 2; int resFirstID, resSecondID, resThirdID, resFourthID;
-
-        // loops through to get the ids' of text fields
-        for(int i = 0; i < 4; i++)
-        {
-            firstID = "editFirst" + number;
-            resFirstID = getResources().getIdentifier(firstID, "id", getPackageName());
-
-            secondID = "editSecond" + number;
-            resSecondID = getResources().getIdentifier(secondID, "id", getPackageName());
-
-            thirdID = "editThird" + number;
-            resThirdID = getResources().getIdentifier(thirdID, "id", getPackageName());
-
-            fourthID = "editFourth" + number;
-            resFourthID = getResources().getIdentifier(fourthID, "id", getPackageName());
-
-            additionalBuyField[i] = (EditText) findViewById(resFirstID);
-            additionalCostField[i] = (EditText) findViewById(resSecondID);
-            additionalSellField[i] = (EditText) findViewById(resThirdID);
-            additionalPriceField[i] = (EditText) findViewById(resFourthID);
-
-            number++;
-        }
-
         // initialize buttons
         Button buttonCalculate = (Button) findViewById(R.id.calculate);
         Button buttonOptimize = (Button) findViewById(R.id.optimize);
@@ -95,7 +55,6 @@ public class MyActivity extends Activity
             {
                 double buyAmount, buyCost, sellAmount, sellPrice, buyAmount2, buyCost2, remainder,
                         totalCost, totalAmount, finalPrice;
-                double additionalFirst[], additonalSecond[], additonalThird[], additonalFourth[];
                 boolean didItWork = true; boolean validTransaction = true;
 
                 // dismisses the keyboard
@@ -353,114 +312,14 @@ public class MyActivity extends Activity
     {
         super.onOptionsItemSelected(item);
 
-        // initialize text fields to array of View elements
-        View[] editAdditionalBuy = new View[4];
-        View[] editAdditionalCost = new View[4];
-        View[] editAdditionalSell = new View[4];
-        View[] editAdditionalPrice = new View[4];
-
-        // variables to store id's of text fields from above
-        String firstID, secondID, thirdID, fourthID;
-        int number = 2; int resFirstID, resSecondID, resThirdID, resFourthID;
-
-        // loops through to get the ids' of text fields
-        for(int i = 0; i < 4; i++)
-        {
-            firstID = "editFirst" + number;
-            resFirstID = getResources().getIdentifier(firstID, "id", getPackageName());
-
-            secondID = "editSecond" + number;
-            resSecondID = getResources().getIdentifier(secondID, "id", getPackageName());
-
-            thirdID = "editThird" + number;
-            resThirdID = getResources().getIdentifier(thirdID, "id", getPackageName());
-
-            fourthID = "editFourth" + number;
-            resFourthID = getResources().getIdentifier(fourthID, "id", getPackageName());
-
-            editAdditionalBuy[i] = findViewById(resFirstID);
-            editAdditionalCost[i] = findViewById(resSecondID);
-            editAdditionalSell[i] = findViewById(resThirdID);
-            editAdditionalPrice[i] = findViewById(resFourthID);
-
-            number++;
-        }
-
         switch(item.getItemId())
         {
             case R.id.addButton:
-                clickCount++;
-                addButtonMenuItem(editAdditionalBuy, editAdditionalCost, editAdditionalSell, editAdditionalPrice, clickCount);
                 break;
-            case R.id.removeButton:
-                removeButtonMenuItem(editAdditionalBuy, editAdditionalCost, editAdditionalSell, editAdditionalPrice);
-                break;
+
             default: break;
         }
 
         return true;
-    }
-
-    // sets texts fields to visible on click one by one
-    private void addButtonMenuItem(View buy[], View cost[], View sell[], View price[], int count)
-    {
-        boolean didItWork = true;
-
-        // error checking to prevent crashes
-        try
-        {
-            for(int i = 0; i < count; i++)
-            {
-                buy[i].setVisibility(View.VISIBLE);
-                cost[i].setVisibility(View.VISIBLE);
-                sell[i].setVisibility(View.VISIBLE);
-                price[i].setVisibility(View.VISIBLE);
-            }
-        }
-        catch(Exception e)
-        {
-            didItWork = false;
-        }
-        finally
-        {
-            if(!didItWork)
-            {
-                // create new dialog popup
-                final AlertDialog.Builder alertDialog4 = new AlertDialog.Builder(MyActivity.this);
-
-                // set title
-                alertDialog4.setTitle("Error");
-
-                // set dialog message
-                alertDialog4.setMessage("Cannot create more text fields. Four is the maximum amount.");
-                alertDialog4.setCancelable(false);
-                alertDialog4.setNeutralButton("Ok", new DialogInterface.OnClickListener()
-                {
-                    public void onClick(DialogInterface dialog, int id)
-                    {
-                        // if this button is clicked, close current activity
-                        dialog.cancel();
-                    }
-                });
-
-                // show dialog
-                alertDialog4.show();
-
-                // reset counter
-                clickCount = 0;
-            }
-        }
-    }
-
-    // sets all texts fields to gone on click
-    private void removeButtonMenuItem(View buy[], View cost[], View sell[], View price[])
-    {
-        for(int i = 0; i < 4; i++)
-        {
-            buy[i].setVisibility(View.GONE);
-            cost[i].setVisibility(View.GONE);
-            sell[i].setVisibility(View.GONE);
-            price[i].setVisibility(View.GONE);
-        }
     }
 }

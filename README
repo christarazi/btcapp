@@ -45,3 +45,6 @@ Changelog
 - Added ability to add one by one.
 - Text fields still not functional.
 
+3/23/14 (v1.0.6)
+- Removed additional text field feature.
+- Updated UI for better aesthetics.
