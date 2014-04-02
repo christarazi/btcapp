@@ -1,10 +1,10 @@
 BTC Break Even Calculator App
 ====
 
-A utility designed to calculate the breakeven point for your Bitcoin transactions. 
-It can help minimize losses for Bitcoin traders.
+A utility designed to calculate the breakeven point and profit for your Bitcoin transactions.
+It can help minimize losses for Bitcoin traders as well maximize profits.
 
-https://play.google.com/store/apps/details?id=app.CT.BTC_Break_Even_Calculator
+https://play.google.com/store/apps/details?id=app.CT.BTCCalculator
 ====
 
 Changelog
@@ -48,3 +48,9 @@ Changelog
 3/23/14 (v1.0.6)
 - Removed additional text field feature.
 - Updated UI for better aesthetics.
+
+4/1/14 (v1.1.0)
+- Changed theme to Holo Light.
+- Added Tabbed Navigation (also swippable).
+- Added new feature - profit calculator.
+- Updated UI for better aesthetics (padding on text fields).

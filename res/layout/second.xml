@@ -1,0 +1,262 @@
+<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayout"
+                    android:gravity="center|fill_horizontal|center_vertical|center_horizontal|clip_horizontal|clip_vertical|fill_vertical">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Buy:"
+                            android:id="@+id/buy"
+                            android:layout_alignParentStart="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginTop="5dp"/>
+
+                    <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFirstProfit"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="BTC"
+                            android:nextFocusDown="@+id/editSecondProfit"
+                            android:textIsSelectable="true"
+                            android:focusable="true"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:clickable="true"
+                            android:imeOptions="actionNext"
+                            android:selectAllOnFocus="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="at "
+                            android:id="@+id/atCostText"
+                            android:layout_alignParentStart="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginTop="10dp"/>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editSecondProfit"
+                            android:layout_alignStart="@+id/editFirstProfit"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="$"
+                            android:nextFocusDown="@+id/editThirdProfit"
+                            android:textIsSelectable="true"
+                            android:focusable="true"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:clickable="true"
+                            android:imeOptions="actionNext"
+                            android:selectAllOnFocus="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/linearLayout2"
+                    android:gravity="center|fill_horizontal|center_vertical|center_horizontal|clip_horizontal|clip_vertical|fill_vertical">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Sell:"
+                            android:id="@+id/sell"
+                            android:layout_alignParentStart="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"/>
+
+                    <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editThirdProfit"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginLeft="52dp"
+                            android:textIsSelectable="true"
+                            android:hint="BTC"
+                            android:nextFocusDown="@+id/editFourthProfit"
+                            android:focusable="true"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:clickable="true"
+                            android:imeOptions="actionNext"
+                            android:selectAllOnFocus="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="at "
+                            android:id="@+id/atPriceText"
+                            android:layout_alignParentStart="true"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:layout_marginTop="5dp"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editFourthProfit"
+                            android:layout_alignStart="@+id/editFirstProfit"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="10dp"
+                            android:textIsSelectable="true"
+                            android:hint="$"
+                            android:nextFocusDown="@+id/editFifth"
+                            android:focusable="true"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:clickable="true"
+                            android:imeOptions="actionNext"
+                            android:selectAllOnFocus="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Transaction fee: "
+                        android:id="@+id/transFee"
+                        android:textSize="12.5dp"
+                        android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/editPercent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="false"
+                            android:hint="%"
+                            android:textIsSelectable="true"
+                            android:layout_alignParentBottom="true"
+                            android:focusable="true"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:clickable="true"
+                            android:imeOptions="actionDone"
+                            android:selectAllOnFocus="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <SeekBar
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/percentageBar"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calculate"
+                        android:id="@+id/calcBtn"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp">
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/calculationsText"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
