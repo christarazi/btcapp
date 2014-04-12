@@ -20,9 +20,11 @@ public class MainActivity extends SherlockFragmentActivity implements Communicat
     private ActionBar          m_actionBar	= null;
 
     // Class constants.
-    private final static String [] m_fragmentClasses = {"app.CT.BTCCalculator.FragmentFirst", "app.CT.BTCCalculator.FragmentSecond"};
-    private final static String [] m_fragmentTitles = {"Breakeven", "Profit"};
-    private final static String ACTIVITY_TAG = "Playing with Tabs";
+    private final static String [] m_fragmentClasses = {"app.CT.BTCCalculator.FragmentFirst",
+                                                        "app.CT.BTCCalculator.FragmentSecond",
+                                                        "app.CT.BTCCalculator.PriceDataFragment"};
+    private final static String [] m_fragmentTitles = {"Breakeven", "Profit", "Price"};
+    private final static String ACTIVITY_TAG = "BTC CALC";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

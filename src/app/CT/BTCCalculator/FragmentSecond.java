@@ -51,11 +51,11 @@ public class FragmentSecond extends Fragment
         editFourthProfit = (EditText) v.findViewById(R.id.editFourthProfit);
         editPercent      = (EditText) v.findViewById(R.id.editPercent);
 
-        seekBar          = (SeekBar) v.findViewById(R.id.percentageBar);
+        seekBar          = (SeekBar)  v.findViewById(R.id.percentageBar);
 
         calculationsText = (TextView) v.findViewById(R.id.calculationsText);
 
-        calcBtn          = (Button) v.findViewById(R.id.calcBtn);
+        calcBtn          = (Button)   v.findViewById(R.id.calcBtn);
 
         // Initialize percentage variable which is attached to seekbar and editPercent.
         final float[] percentage = new float[1];
