@@ -26,6 +26,14 @@ public class MainActivity extends SherlockFragmentActivity implements Communicat
     private final static String [] m_fragmentTitles = {"Breakeven", "Profit", "Price"};
     private final static String ACTIVITY_TAG = "BTC CALC";
 
+    // Interface to allow for the transmission of data through PriceDataFragment to other fragments
+    // in order to use the data for the prices upon request of the user.
+    public interface DataInterface
+    {
+        public String getPriceData();
+        public String getCostData();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -43,7 +51,6 @@ public class MainActivity extends SherlockFragmentActivity implements Communicat
         // Setup Tabs for the ActionBar.
         setUpActionBarWithTabs();
     }
-
 
     // Generates the Action Bar with NAVIGATION_MODE_TABS
     // and adds the Tabs to the ActionBar.

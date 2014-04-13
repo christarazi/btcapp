@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
-public class FragmentFirst extends Fragment
+public class FragmentFirst extends Fragment implements MainActivity.DataInterface
 {
     EditText editFirst;      EditText editSecond;       EditText editThird;
     EditText editFourth;     EditText editFifth;        EditText editSixth;
@@ -375,6 +375,22 @@ public class FragmentFirst extends Fragment
                 return true;
             }
         });
+    }
+
+    // Function from DataInterface to get price data and use the value returned as price.
+    @Override
+    public String getPriceData()
+    {
+        // To be defined.
+        return null;
+    }
+
+    // Function from DataInterface to get cost data and use the value returned as cost.
+    @Override
+    public String getCostData()
+    {
+        // To be defined.
+        return null;
     }
 
     // Class that changes the dialog (string array) in the background.
