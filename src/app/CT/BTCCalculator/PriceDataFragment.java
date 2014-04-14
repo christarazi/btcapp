@@ -9,6 +9,14 @@ import android.widget.TextView;
 
 public class PriceDataFragment extends Fragment
 {
+    // Interface to allow for the transmission of data through PriceDataFragment to other fragments
+    // in order to use the data for the prices upon request of the user.
+    public interface DataInterface
+    {
+        public String getPriceData();
+        public String getCostData();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
