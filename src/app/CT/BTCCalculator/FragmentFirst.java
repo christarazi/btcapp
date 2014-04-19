@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
-public class FragmentFirst extends Fragment implements MainActivity.DataInterface
+public class FragmentFirst extends Fragment implements PriceDataFragment.DataInterface
 {
     EditText editFirst;      EditText editSecond;       EditText editThird;
     EditText editFourth;     EditText editFifth;        EditText editSixth;

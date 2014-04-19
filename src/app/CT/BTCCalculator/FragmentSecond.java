@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class FragmentSecond extends Fragment implements MainActivity.DataInterface
+public class FragmentSecond extends Fragment implements PriceDataFragment.DataInterface
 {
     // Declare variables for the this class.
     private CommunicateToActivity m_callBack = null;

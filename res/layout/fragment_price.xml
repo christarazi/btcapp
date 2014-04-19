@@ -18,7 +18,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Refresh"
-            android:id="@+id/button"
+            android:id="@+id/refreshBtn"
             android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/disclaimer"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"/>
 </RelativeLayout>
