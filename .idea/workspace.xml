@@ -124,7 +124,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="58" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+            <state line="152" column="28" selection-start="5303" selection-end="5303" vertical-scroll-proportion="0.0" vertical-offset="1977" max-vertical-offset="2618">
               <folding />
             </state>
           </provider>
@@ -145,16 +145,16 @@
       <file leaf-file-name="PriceDataFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/PriceDataFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="42" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2686">
+            <state line="68" column="45" selection-start="2204" selection-end="2204" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2686">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentFirst.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FragmentFirst.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentFirst.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5185">
+            <state line="469" column="46" selection-start="17908" selection-end="17908" vertical-scroll-proportion="0.94237286" vertical-offset="5275" max-vertical-offset="6001">
               <folding>
                 <element signature="class#ProgressUpdater#0;class#FragmentFirst#0" expanded="false" />
               </folding>
@@ -171,10 +171,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="menu.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="4" selection-start="110" selection-end="110" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="44" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.9135593" vertical-offset="532" max-vertical-offset="1190">
+            <state line="45" column="35" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -213,8 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/ProgressRunner.java" />
-        <option value="$PROJECT_DIR$/src/com/example/BTC_Break_Even_Calculator/MyActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/dynamimlayout.xml" />
         <option value="$PROJECT_DIR$/res/layout/dynamiclayout.xml" />
         <option value="$PROJECT_DIR$/src/app/CT/BTC_Break_Even_Calculator/DynamicLayout.java" />
@@ -258,12 +268,14 @@
         <option value="$PROJECT_DIR$/res/layout/first.xml" />
         <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/CommunicateToActivity.java" />
         <option value="$PROJECT_DIR$/proguard-project.txt" />
-        <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/BusProvider.java" />
         <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentSecond.java" />
-        <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentFirst.java" />
         <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/PriceDataFragment.java" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/res/layout/menu.xml" />
+        <option value="$PROJECT_DIR$/res/menu/menu.xml" />
+        <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentFirst.java" />
       </list>
     </option>
   </component>
@@ -397,6 +409,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BTC Calculator App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BTC Calculator App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -441,11 +471,11 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="avdold" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="app.CT.BTCCalculator" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Documents\IntelliJ IDEA\BTC Calculator App\src\app\CT\BTCCalculator" />
@@ -457,6 +487,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app.CT.BTCCalculator" />
       <recent name="com.example.BTC_Break_Even_Calculator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Documents\IntelliJ IDEA\BTC Calculator App\res\menu" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.BTC Calculator App">
@@ -691,11 +724,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34238553" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779622" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -705,7 +739,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.50089765" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3163152" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3163152" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263041" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.49910232" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -716,7 +750,6 @@
       <window_info id="Analyze Dataflow from" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34238553" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263041" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="15" y="713" width="1878" height="295" />
       <window_info id="Analyze Dataflow to" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -876,13 +909,6 @@
         <state line="5" column="19" selection-start="181" selection-end="181" vertical-scroll-proportion="0.14604811" vertical-offset="0" max-vertical-offset="582" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/main_activity_action_bar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="181" selection-end="181" vertical-scroll-proportion="0.116838485" vertical-offset="0" max-vertical-offset="582">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ActionBarSherlock Library/ABS/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="354" column="0" selection-start="9928" selection-end="9928" vertical-scroll-proportion="0.33333334" vertical-offset="5620" max-vertical-offset="8041" />
@@ -1006,9 +1032,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+        <state line="45" column="35" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentSecond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3978">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="110" selection-end="110" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
@@ -1023,33 +1066,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="28" selection-start="5303" selection-end="5303" vertical-scroll-proportion="0.0" vertical-offset="1977" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/PriceDataFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="42" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2686">
+        <state line="68" column="45" selection-start="2204" selection-end="2204" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2686">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentFirst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5185">
+        <state line="469" column="46" selection-start="17908" selection-end="17908" vertical-scroll-proportion="0.94237286" vertical-offset="5275" max-vertical-offset="6001">
           <folding>
             <element signature="class#ProgressUpdater#0;class#FragmentFirst#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/CT/BTCCalculator/FragmentSecond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3978">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="44" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.9135593" vertical-offset="532" max-vertical-offset="1190">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,7 +1165,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Otto Library</last-edited>
+          <last-edited>android-support-v4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

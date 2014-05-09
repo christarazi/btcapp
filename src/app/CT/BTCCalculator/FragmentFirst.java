@@ -8,10 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
+import android.view.*;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,6 +37,15 @@ public class FragmentFirst extends Fragment
     {
         rate = mRate;
         Log.d("Chris", "This is coming from the Fragment: " + rate);
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+
+        // Set options menu.
+        this.setHasOptionsMenu(true);
     }
 
     // Create the view.
@@ -425,4 +431,43 @@ public class FragmentFirst extends Fragment
             n = 0;
         }
     }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+    {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch(item.getItemId())
+        {
+            case R.id.AddCurrent: AddCurrent(); break;
+            case R.id.RemoveCurrent: RemoveCurrent(); break;
+        }
+        return false;
+    }
+
+    public void AddCurrent()
+    {
+        EditText editSecond; View v = getView();
+        editSecond = (EditText) v.findViewById(R.id.editSecond);
+
+        editSecond.setText(rate);
+
+        Log.d("Chris", "Called in fragment.");
+    }
+
+    public void RemoveCurrent()
+    {
+        EditText editSecond; View v = getView();
+        editSecond = (EditText) v.findViewById(R.id.editSecond);
+
+        editSecond.setText("");
+
+        Log.d("Chris", "Called in fragment.");
+    }
 }
+

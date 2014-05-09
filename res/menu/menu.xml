@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Add Current Price"
+          android:showAsAction="ifRoom"
+          android:id="@+id/AddCurrent"/>
+
+    <item android:title="Remove Current Price"
+          android:showAsAction="ifRoom"
+          android:id="@+id/RemoveCurrent"/>
+</menu>
