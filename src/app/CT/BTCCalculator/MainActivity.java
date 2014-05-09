@@ -6,13 +6,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.widget.Toast;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 
-public class MainActivity extends SherlockFragmentActivity implements CommunicateToActivity, CommunicateToFragment
+public class MainActivity extends SherlockFragmentActivity
 {
     // Member variables.
     private MyViewPagerAdapter m_adapter 	= null;
@@ -39,6 +37,7 @@ public class MainActivity extends SherlockFragmentActivity implements Communicat
         // Set a Listener and Adapter for the View Pager.
         m_viewPager.setOnPageChangeListener(SimplePageListener);
         m_viewPager.setAdapter(m_adapter);
+        m_viewPager.setOffscreenPageLimit(3);
 
         // Setup Tabs for the ActionBar.
         setUpActionBarWithTabs();
@@ -97,37 +96,6 @@ public class MainActivity extends SherlockFragmentActivity implements Communicat
             m_actionBar.setSelectedNavigationItem(position);
         }
     };
-
-    // Interface callback method.
-    @Override
-    public void SendMessageToParent(String message)
-    {
-        // Toast the user that the communication was a success.
-        Toast.makeText(this, "Successfully communicated back to the parent Activity from ".concat(message), Toast.LENGTH_LONG).show();
-    }
-
-    @Override
-    public void SendMessageToContainingFragmentToast(String message)
-    {
-        // Find the 1st fragment in the viewPager.
-        FragmentFirst currentFragment = (FragmentFirst) m_adapter.instantiateItem(m_viewPager, m_actionBar.getSelectedTab().getPosition());
-
-        // If the currentFragment we want is not null.
-        if(currentFragment != null)
-        {
-            // Log that we found the fragment.
-            // Log.d(ACTIVITY_TAG, "Fragment Found!");
-
-            // Call the updateToast method in the Fragment.
-            currentFragment.updateToast(message);
-        }
-        else
-        {
-            // Log that we failed to find the fragment
-            Log.d(ACTIVITY_TAG, "current fragment cannot be found test");
-        }
-
-    }
 
     // ViewPagerAdapter class.
     private class MyViewPagerAdapter extends FragmentPagerAdapter

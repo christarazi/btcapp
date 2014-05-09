@@ -17,11 +17,9 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class FragmentSecond extends Fragment implements PriceDataFragment.DataInterface
+public class FragmentSecond extends Fragment
 {
     // Declare variables for the this class.
-    private CommunicateToActivity m_callBack = null;
-
     EditText editFirstProfit;  EditText editSecondProfit; EditText editThirdProfit;
     EditText editFourthProfit; EditText editPercent;      SeekBar seekBar;
     TextView calculationsText; Button calcBtn;
@@ -279,32 +277,5 @@ public class FragmentSecond extends Fragment implements PriceDataFragment.DataIn
     {
         // Call to the super class.
         super.onAttach(activity);
-
-        // Attempt to add the Interface.
-        try
-        {
-            m_callBack = (CommunicateToActivity) activity;
-        }
-        catch(ClassCastException e)
-        {
-            // Print to LogCat if the Parent Did not implement the interface.
-            // Log.e(FRAGMENT_TAG , "Failed to implement interface in parent.", e);
-        }
-    }
-
-    // Function from DataInterface to get price data and use the value returned as price.
-    @Override
-    public String getPriceData()
-    {
-        // To be defined.
-        return null;
-    }
-
-    // Function from DataInterface to get cost data and use the value returned as cost.
-    @Override
-    public String getCostData()
-    {
-        // To be defined.
-        return null;
     }
 }

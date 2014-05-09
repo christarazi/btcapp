@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.squareup.otto.Bus;
+import com.squareup.otto.ThreadEnforcer;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -24,12 +26,21 @@ import java.io.InputStreamReader;
 
 public class PriceDataFragment extends Fragment
 {
-    // Interface to allow for the transmission of data through PriceDataFragment to other fragments
-    // in order to use the data for the prices upon request of the user.
-    public interface DataInterface
+    String rate;
+    Bus eventBus = new Bus(ThreadEnforcer.ANY);
+
+    // Sets the rate and calls sendRate() to publish to Otto Event Bus.
+    public void setRate(String mRate)
     {
-        public String getPriceData();
-        public String getCostData();
+        this.rate = mRate;
+        Log.d("Chris", "setRate = " + rate);
+        sendRate();
+    }
+
+    // Otto Event Bus method to publish the rate to the event bus.
+    public void sendRate()
+    {
+        BusProvider.getInstance().post(rate);
     }
 
     // Create the view.
@@ -44,6 +55,9 @@ public class PriceDataFragment extends Fragment
     public void onActivityCreated(Bundle savedInstanceState)
     {
         super.onActivityCreated(savedInstanceState);
+
+        // Register Bus Provider instance.
+        BusProvider.getInstance().register(this);
 
         // Initialize relevant data.
         View v = getView();
@@ -95,7 +109,6 @@ public class PriceDataFragment extends Fragment
             // Initialize Strings to null to be used later.
             InputStream inputStream = null;
             String result = null;
-            String rate = null;
             String firstObject = null;
             String secondObject = null;
 
@@ -151,12 +164,13 @@ public class PriceDataFragment extends Fragment
 
         // After parsing has been completed.
         @Override
-        protected void onPostExecute(String rate)
+        protected void onPostExecute(final String mRate)
         {
-            super.onPostExecute(rate);
+            super.onPostExecute(mRate);
 
             // Set text field with the rate.
-            priceData.setText(rate);
+            priceData.setText(mRate);
+            setRate(mRate);
 
             // Creates a toast that indicates the price has updated.
             Toast message = Toast.makeText(getActivity(), "Updated.", Toast.LENGTH_SHORT);

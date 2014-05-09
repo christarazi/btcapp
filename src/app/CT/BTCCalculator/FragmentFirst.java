@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,16 +16,16 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+import com.squareup.otto.Subscribe;
 
 import java.text.DecimalFormat;
 
-public class FragmentFirst extends Fragment implements PriceDataFragment.DataInterface
+public class FragmentFirst extends Fragment
 {
     EditText editFirst;      EditText editSecond;       EditText editThird;
     EditText editFourth;     EditText editFifth;        EditText editSixth;
     TextView editResultText; TextView editOptimizeText; Button buttonCalculate;
-    Button buttonOptimize;
+    Button buttonOptimize;   String rate;
 
     // Function to take the input and round to two decimals.
     double roundTwoDecimals(double d)
@@ -33,20 +34,12 @@ public class FragmentFirst extends Fragment implements PriceDataFragment.DataInt
         return Double.parseDouble(df.format(d));
     }
 
-    // Function to post a Toast reassuring that communication
-    // has been made between fragment and activity.
-    public void updateToast(String message)
+    // Otto function to subscribe to Event Bus changes.
+    @Subscribe
+    public void onPriceUpdated(String mRate)
     {
-        View v = getView();
-
-        if(v != null)
-        {
-            Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            // Log.d("Chris", "getView() is null");
-        }
+        rate = mRate;
+        Log.d("Chris", "This is coming from the Fragment: " + rate);
     }
 
     // Create the view.
@@ -64,17 +57,10 @@ public class FragmentFirst extends Fragment implements PriceDataFragment.DataInt
     {
         super.onActivityCreated(savedInstanceState);
 
+        // Register Bus Provider instance.
+        BusProvider.getInstance().register(this);
+
         View v = getView();
-
-        if(v != null)
-        {
-            // Log.d("Chris", "Not null");
-
-        }
-        else
-        {
-            // Log.d("Chris", "Null");
-        }
 
         // Initialize text fields.
         editFirst        = (EditText) v.findViewById(R.id.editFirst);
@@ -89,6 +75,15 @@ public class FragmentFirst extends Fragment implements PriceDataFragment.DataInt
         // Initialize buttons.
         buttonCalculate  = (Button) v.findViewById(R.id.calculate);
         buttonOptimize   = (Button) v.findViewById(R.id.optimize);
+        Button buttonTest = (Button) v.findViewById(R.id.test);
+
+        buttonTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Log.d("Chris", "This is coming from the Fragment: " + rate);
+            }
+        });
 
         // Checks whether the first visible EditText element is focused in order to enable
         // and show the keyboard to the user. The corresponding XML element has android:imeOptions="actionNext".
@@ -375,22 +370,6 @@ public class FragmentFirst extends Fragment implements PriceDataFragment.DataInt
                 return true;
             }
         });
-    }
-
-    // Function from DataInterface to get price data and use the value returned as price.
-    @Override
-    public String getPriceData()
-    {
-        // To be defined.
-        return null;
-    }
-
-    // Function from DataInterface to get cost data and use the value returned as cost.
-    @Override
-    public String getCostData()
-    {
-        // To be defined.
-        return null;
     }
 
     // Class that changes the dialog (string array) in the background.
