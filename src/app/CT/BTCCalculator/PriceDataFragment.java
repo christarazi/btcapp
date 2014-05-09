@@ -2,7 +2,6 @@ package app.CT.BTCCalculator;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.actionbarsherlock.app.SherlockFragment;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 import org.apache.http.HttpEntity;
@@ -24,20 +24,20 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class PriceDataFragment extends Fragment
+public class PriceDataFragment extends SherlockFragment
 {
-    String rate;
+    String rate; String time;
     Bus eventBus = new Bus(ThreadEnforcer.ANY);
 
     // Sets the rate and calls sendRate() to publish to Otto Event Bus.
     public void setRate(String mRate)
     {
         this.rate = mRate;
-        Log.d("Chris", "setRate = " + rate);
+        //Log.d("Chris", "setRate = " + rate);
         sendRate();
     }
 
-    // Otto Event Bus method to publish the rate to the event bus.
+    // Otto Event Bus method to publish the rate to the Event Bus.
     public void sendRate()
     {
         BusProvider.getInstance().post(rate);
@@ -92,11 +92,13 @@ public class PriceDataFragment extends Fragment
         // Get view and initialize text field.
         View v = getView();
         TextView priceData = (TextView) v.findViewById(R.id.priceData);
+        TextView timeData = (TextView) v.findViewById(R.id.timeData);
 
         // Connects to the Internet and parses the JSON file.
         @Override
         protected String doInBackground(String... params)
         {
+            // Connect to this URL.
             String url = "http://api.coindesk.com/v1/bpi/currentprice/USD.json";
 
             // Establish HTTP connection and get JSON file.
@@ -109,8 +111,8 @@ public class PriceDataFragment extends Fragment
             // Initialize Strings to null to be used later.
             InputStream inputStream = null;
             String result = null;
-            String firstObject = null;
-            String secondObject = null;
+            String firstString;
+            String secondString;
 
             try
             {
@@ -143,13 +145,19 @@ public class PriceDataFragment extends Fragment
             // Create JSON Objects and get the strings they hold.
             try
             {
+                JSONObject jObjectTime = new JSONObject(result);
+                time = jObjectTime.getString("time");
+
+                JSONObject jObjectTimeSecond = new JSONObject(time);
+                time = jObjectTimeSecond.getString("updateduk");
+
                 JSONObject jObjectFirst = new JSONObject(result);
-                firstObject = jObjectFirst.getString("bpi");
+                firstString = jObjectFirst.getString("bpi");
 
-                JSONObject jObjectSecond = new JSONObject(firstObject);
-                secondObject = jObjectSecond.getString("USD");
+                JSONObject jObjectSecond = new JSONObject(firstString);
+                secondString = jObjectSecond.getString("USD");
 
-                JSONObject jObjectThird = new JSONObject(secondObject);
+                JSONObject jObjectThird = new JSONObject(secondString);
                 rate = jObjectThird.getString("rate");
             }
             catch (JSONException e)
@@ -169,8 +177,9 @@ public class PriceDataFragment extends Fragment
             super.onPostExecute(mRate);
 
             // Set text field with the rate.
-            priceData.setText(mRate);
+            priceData.setText("$" + mRate + " USD/BTC");
             setRate(mRate);
+            timeData.setText(time);
 
             // Creates a toast that indicates the price has updated.
             Toast message = Toast.makeText(getActivity(), "Updated.", Toast.LENGTH_SHORT);

@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Add Current Price"
-          android:showAsAction="ifRoom"
+          android:showAsAction="never"
           android:id="@+id/AddCurrent"/>
 
     <item android:title="Remove Current Price"
-          android:showAsAction="ifRoom"
+          android:showAsAction="never"
           android:id="@+id/RemoveCurrent"/>
 </menu>

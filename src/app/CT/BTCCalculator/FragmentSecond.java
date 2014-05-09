@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -16,13 +15,43 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+import com.squareup.otto.Subscribe;
 
-public class FragmentSecond extends Fragment
+public class FragmentSecond extends SherlockFragment
 {
-    // Declare variables for the this class.
+    // Declare variables for this class.
     EditText editFirstProfit;  EditText editSecondProfit; EditText editThirdProfit;
     EditText editFourthProfit; EditText editPercent;      SeekBar seekBar;
-    TextView calculationsText; Button calcBtn;
+    TextView calculationsText; Button calcBtn;            String rate;
+
+    // Otto function to subscribe to Event Bus changes.
+    @Subscribe
+    public void onPriceUpdated(String mRate)
+    {
+        rate = mRate;
+        //Log.d("Chris", "This is coming from the FragmentSecond: " + rate);
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+
+        // Set options menu.
+        setHasOptionsMenu(true);
+    }
+
+    // Called when the activity is attached to this fragment.
+    @Override
+    public void onAttach(Activity activity)
+    {
+        // Call to the super class.
+        super.onAttach(activity);
+    }
 
     // Create the view.
     @Override
@@ -41,6 +70,9 @@ public class FragmentSecond extends Fragment
 
         // Get View.
         View v = getView();
+
+        // Register Bus Provider instance.
+        BusProvider.getInstance().register(this);
 
         // Initialize text fields.
         editFirstProfit  = (EditText) v.findViewById(R.id.editFirstProfit);
@@ -271,11 +303,41 @@ public class FragmentSecond extends Fragment
 
     }
 
-    // Called when the activity is attached to this fragment.
     @Override
-    public void onAttach(Activity activity)
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {
-        // Call to the super class.
-        super.onAttach(activity);
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch(item.getItemId())
+        {
+            case R.id.AddCurrent: AddCurrent(); break;
+            case R.id.RemoveCurrent: RemoveCurrent(); break;
+        }
+        return false;
+    }
+
+    public void AddCurrent()
+    {
+        EditText editSecondProfit; View v = getView();
+        editSecondProfit = (EditText) v.findViewById(R.id.editSecondProfit);
+
+        editSecondProfit.setText(rate);
+
+        //Log.d("Chris", "Called in fragment.");
+    }
+
+    public void RemoveCurrent()
+    {
+        EditText editSecondProfit; View v = getView();
+        editSecondProfit = (EditText) v.findViewById(R.id.editSecondProfit);
+
+        editSecondProfit.setText("");
+
+        //Log.d("Chris", "Called in fragment.");
     }
 }

@@ -6,18 +6,21 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.*;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.view.MenuInflater;
 import com.squareup.otto.Subscribe;
 
 import java.text.DecimalFormat;
 
-public class FragmentFirst extends Fragment
+public class FragmentFirst extends SherlockFragment
 {
     EditText editFirst;      EditText editSecond;       EditText editThird;
     EditText editFourth;     EditText editFifth;        EditText editSixth;
@@ -45,7 +48,7 @@ public class FragmentFirst extends Fragment
         super.onCreate(savedInstanceState);
 
         // Set options menu.
-        this.setHasOptionsMenu(true);
+        setHasOptionsMenu(true);
     }
 
     // Create the view.
@@ -457,7 +460,7 @@ public class FragmentFirst extends Fragment
 
         editSecond.setText(rate);
 
-        Log.d("Chris", "Called in fragment.");
+        //Log.d("Chris", "Called in fragment.");
     }
 
     public void RemoveCurrent()
@@ -467,7 +470,7 @@ public class FragmentFirst extends Fragment
 
         editSecond.setText("");
 
-        Log.d("Chris", "Called in fragment.");
+        //Log.d("Chris", "Called in fragment.");
     }
 }
 

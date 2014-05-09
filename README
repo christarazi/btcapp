@@ -62,3 +62,8 @@ Changelog
 5/8/14 (v1.5)
 - Added new feature to check CoinDesk.com for current BTC prices.
 - Refactored some code and updated comments.
+
+5/9/14 (v1.5.1)
+- Added Options Menu to allow for the usage of current BTC price in calculator functions.
+- Fixed Fragments to "SherlockFragments" instead of just "Fragment".
+- Updated price page.
