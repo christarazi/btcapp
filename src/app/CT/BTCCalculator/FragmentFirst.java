@@ -6,16 +6,18 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.*;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.squareup.otto.Subscribe;
 
 import java.text.DecimalFormat;
@@ -39,7 +41,7 @@ public class FragmentFirst extends SherlockFragment
     public void onPriceUpdated(String mRate)
     {
         rate = mRate;
-        Log.d("Chris", "This is coming from the Fragment: " + rate);
+        //Log.d("Chris", "This is coming from the Fragment: " + rate);
     }
 
     @Override
@@ -84,15 +86,6 @@ public class FragmentFirst extends SherlockFragment
         // Initialize buttons.
         buttonCalculate  = (Button) v.findViewById(R.id.calculate);
         buttonOptimize   = (Button) v.findViewById(R.id.optimize);
-        Button buttonTest = (Button) v.findViewById(R.id.test);
-
-        buttonTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                Log.d("Chris", "This is coming from the Fragment: " + rate);
-            }
-        });
 
         // Checks whether the first visible EditText element is focused in order to enable
         // and show the keyboard to the user. The corresponding XML element has android:imeOptions="actionNext".
@@ -248,7 +241,8 @@ public class FragmentFirst extends SherlockFragment
                     // Checks if valid.
                     if(validTransaction)
                     {
-                        editResultText.setText("You need to sell " + String.valueOf(totalAmount) + " BTC at " + String.valueOf(roundTwoDecimals(finalPrice)));
+                        editResultText.setText("You need to sell " + String.valueOf(totalAmount) + " BTC at $" +
+                                                String.valueOf(roundTwoDecimals(finalPrice)) + " to break-even.");
                     }
                 }
                 catch(Exception e)
@@ -435,6 +429,7 @@ public class FragmentFirst extends SherlockFragment
         }
     }
 
+    // Create Options Menu.
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {
@@ -442,6 +437,7 @@ public class FragmentFirst extends SherlockFragment
         inflater.inflate(R.menu.menu, menu);
     }
 
+    // When Options Menu items are selected.
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
@@ -453,6 +449,7 @@ public class FragmentFirst extends SherlockFragment
         return false;
     }
 
+    // Adds the current price to the text field.
     public void AddCurrent()
     {
         EditText editSecond; View v = getView();
@@ -463,6 +460,7 @@ public class FragmentFirst extends SherlockFragment
         //Log.d("Chris", "Called in fragment.");
     }
 
+    // Removes the price and sets text field to default.
     public void RemoveCurrent()
     {
         EditText editSecond; View v = getView();

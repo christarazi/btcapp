@@ -239,7 +239,8 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="100dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp">
 
                 <RelativeLayout
                         android:layout_width="fill_parent"
@@ -248,12 +249,73 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:id="@+id/calculationsText"
-                            android:layout_centerVertical="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Fee on the transaction: "
+                            android:layout_marginTop="2dp"
+                            android:id="@+id/feeTransText"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Subtotal: "
+                            android:id="@+id/subtotalText"
+                            android:layout_below="@+id/feeTransText"
+                            android:layout_marginTop="2dp"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Total profit: "
+                            android:id="@+id/totalProfitText"
+                            android:layout_below="@+id/subtotalText"
+                            android:layout_marginTop="2dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="$"
+                            android:id="@+id/feeTrans"
+                            android:layout_alignBaseline="@+id/feeTransText"
+                            android:layout_alignBottom="@+id/feeTransText"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="$"
+                            android:id="@+id/subtotal"
+                            android:layout_alignBaseline="@id/subtotalText"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="$"
+                            android:id="@+id/totalProfit"
+                            android:layout_alignBaseline="@+id/totalProfitText"
+                            android:layout_alignBottom="@+id/totalProfitText"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
                 </RelativeLayout>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/calculationsText"
+                        android:layout_alignParentStart="true"/>
 
             </LinearLayout>
 

@@ -328,20 +328,13 @@
 
                 <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/resultText"
                         android:layout_alignParentStart="true"
                         android:paddingRight="2dp"
                         android:paddingLeft="2dp"
                         android:layout_marginTop="5dp"/>
-
-                <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="New Button"
-                        android:id="@+id/test"
-                        android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
 

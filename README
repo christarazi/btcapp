@@ -59,11 +59,15 @@ Changelog
 - Fixed crashing -- ABS library and ProGuard didn't like each other.
 - Made orientation fixed to portrait.
 
-5/8/14 (v1.5)
+5/8/14 (v1.4.5)
 - Added new feature to check CoinDesk.com for current BTC prices.
 - Refactored some code and updated comments.
 
-5/9/14 (v1.5.1)
+5/9/14 (v1.4.9)
 - Added Options Menu to allow for the usage of current BTC price in calculator functions.
 - Fixed Fragments to "SherlockFragments" instead of just "Fragment".
 - Updated price page.
+
+5/10/14 (v1.5)
+- Updated aesthetics of app.
+- App ready for Play Store deployment.

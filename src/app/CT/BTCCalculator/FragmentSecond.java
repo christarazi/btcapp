@@ -24,9 +24,10 @@ import com.squareup.otto.Subscribe;
 public class FragmentSecond extends SherlockFragment
 {
     // Declare variables for this class.
-    EditText editFirstProfit;  EditText editSecondProfit; EditText editThirdProfit;
-    EditText editFourthProfit; EditText editPercent;      SeekBar seekBar;
-    TextView calculationsText; Button calcBtn;            String rate;
+    EditText editFirstProfit;   EditText editSecondProfit; EditText editThirdProfit;
+    EditText editFourthProfit;  EditText editPercent;      SeekBar seekBar;
+    TextView calculationsText;  TextView feeTransResult;   TextView subtotalResult;
+    TextView totalProfitResult; Button calcBtn;            String rate;
 
     // Otto function to subscribe to Event Bus changes.
     @Subscribe
@@ -84,6 +85,9 @@ public class FragmentSecond extends SherlockFragment
         seekBar          = (SeekBar)  v.findViewById(R.id.percentageBar);
 
         calculationsText = (TextView) v.findViewById(R.id.calculationsText);
+        feeTransResult         = (TextView) v.findViewById(R.id.feeTrans);
+        subtotalResult         = (TextView) v.findViewById(R.id.subtotal);
+        totalProfitResult      = (TextView) v.findViewById(R.id.totalProfit);
 
         calcBtn          = (Button)   v.findViewById(R.id.calcBtn);
 
@@ -257,9 +261,9 @@ public class FragmentSecond extends SherlockFragment
                     // Checks if the user made a profit.
                     if(total > 0)
                     {
-                        calculationsText.setText("Fee on the transaction: $" + fee + ".\n" +
-                                                 "Subtotal: $" + subtotal + ".\n" +
-                                                 "Total profit: $" + total + '.');
+                        feeTransResult.setText("$" + fee);
+                        subtotalResult.setText("$" + subtotal);
+                        totalProfitResult.setText("$" + total);
                     }
                     else
                     {
@@ -303,6 +307,7 @@ public class FragmentSecond extends SherlockFragment
 
     }
 
+    // Create Options Menu.
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {
@@ -310,6 +315,7 @@ public class FragmentSecond extends SherlockFragment
         inflater.inflate(R.menu.menu, menu);
     }
 
+    // When Options Menu items are selected.
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
@@ -321,6 +327,7 @@ public class FragmentSecond extends SherlockFragment
         return false;
     }
 
+    // Adds the current price to the text field.
     public void AddCurrent()
     {
         EditText editSecondProfit; View v = getView();
@@ -331,6 +338,7 @@ public class FragmentSecond extends SherlockFragment
         //Log.d("Chris", "Called in fragment.");
     }
 
+    // Removes the price and sets text field to default.
     public void RemoveCurrent()
     {
         EditText editSecondProfit; View v = getView();

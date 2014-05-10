@@ -2,7 +2,6 @@ package app.CT.BTCCalculator;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,10 +61,6 @@ public class PriceDataFragment extends SherlockFragment
         // Initialize relevant data.
         View v = getView();
 
-        String disclaimer = "Powered by CoinDesk.com. This data was produced from the CoinDesk Bitcoin Price Index (USD). " +
-                            "Non-USD currency data converted using hourly conversion rate from openexchangerates.org.";
-
-        TextView disclaimerText = (TextView) v.findViewById(R.id.disclaimer);
         Button refresh = (Button) v.findViewById(R.id.refreshBtn);
 
         // OnClick listener to refresh the JSON data request.
@@ -78,9 +73,6 @@ public class PriceDataFragment extends SherlockFragment
                 new ConnectInBackground().execute();
             }
         });
-
-        // Set the disclaimer text.
-        disclaimerText.setText(disclaimer);
 
         // Execute the ConnectInBackground class.
         new ConnectInBackground().execute();
@@ -131,7 +123,7 @@ public class PriceDataFragment extends SherlockFragment
                     sb.append(line).append("\n");
                 }
                 result = sb.toString();
-                Log.d("Chris", result);
+                //Log.d("Chris", result);
             }
             catch (Exception e)
             {
