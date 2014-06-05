@@ -25,8 +25,10 @@ import java.io.InputStreamReader;
 
 public class PriceDataFragment extends SherlockFragment
 {
-    String rate; String time;
-    Bus eventBus = new Bus(ThreadEnforcer.ANY);
+    private String rate;
+    private String time;
+
+    private Bus eventBus = new Bus(ThreadEnforcer.ANY);
 
     // Sets the rate and calls sendRate() to publish to Otto Event Bus.
     public void setRate(String mRate)
@@ -59,9 +61,9 @@ public class PriceDataFragment extends SherlockFragment
         BusProvider.getInstance().register(this);
 
         // Initialize relevant data.
-        View v = getView();
+        View view = getView();
 
-        Button refresh = (Button) v.findViewById(R.id.refreshBtn);
+        Button refresh = (Button) view.findViewById(R.id.refreshBtn);
 
         // OnClick listener to refresh the JSON data request.
         refresh.setOnClickListener(new View.OnClickListener()
@@ -82,9 +84,9 @@ public class PriceDataFragment extends SherlockFragment
     public class ConnectInBackground extends AsyncTask<String, String, String>
     {
         // Get view and initialize text field.
-        View v = getView();
-        TextView priceData = (TextView) v.findViewById(R.id.priceData);
-        TextView timeData = (TextView) v.findViewById(R.id.timeData);
+        View view = getView();
+        TextView priceData = (TextView) view.findViewById(R.id.priceData);
+        TextView timeData  = (TextView) view.findViewById(R.id.timeData);
 
         // Connects to the Internet and parses the JSON file.
         @Override

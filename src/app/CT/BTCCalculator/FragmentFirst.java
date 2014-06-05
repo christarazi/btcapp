@@ -24,13 +24,23 @@ import java.text.DecimalFormat;
 
 public class FragmentFirst extends SherlockFragment
 {
-    EditText editFirst;      EditText editSecond;       EditText editThird;
-    EditText editFourth;     EditText editFifth;        EditText editSixth;
-    TextView editResultText; TextView editOptimizeText; Button buttonCalculate;
-    Button buttonOptimize;   String rate;
+    private EditText editFirst;
+    private EditText editSecond;
+    private EditText editThird;
+    private EditText editFourth;
+    private EditText editFifth;
+    private EditText editSixth;
+
+    private TextView editResultText;
+    private TextView editOptimizeText;
+
+    private Button buttonCalculate;
+    private Button buttonOptimize;
+
+    private String rate;
 
     // Function to take the input and round to two decimals.
-    double roundTwoDecimals(double d)
+    public double roundTwoDecimals(double d)
     {
         DecimalFormat df = new DecimalFormat("###.##");
         return Double.parseDouble(df.format(d));
@@ -71,21 +81,21 @@ public class FragmentFirst extends SherlockFragment
         // Register Bus Provider instance.
         BusProvider.getInstance().register(this);
 
-        View v = getView();
+        View view = getView();
 
         // Initialize text fields.
-        editFirst        = (EditText) v.findViewById(R.id.editFirst);
-        editSecond       = (EditText) v.findViewById(R.id.editSecond);
-        editThird        = (EditText) v.findViewById(R.id.editThird);
-        editFourth       = (EditText) v.findViewById(R.id.editFourth);
-        editFifth        = (EditText) v.findViewById(R.id.editFifth);
-        editSixth        = (EditText) v.findViewById(R.id.editSixth);
-        editResultText   = (TextView) v.findViewById(R.id.resultText);
-        editOptimizeText = (TextView) v.findViewById(R.id.optimizeMessage);
+        editFirst        = (EditText) view.findViewById(R.id.editFirst);
+        editSecond       = (EditText) view.findViewById(R.id.editSecond);
+        editThird        = (EditText) view.findViewById(R.id.editThird);
+        editFourth       = (EditText) view.findViewById(R.id.editFourth);
+        editFifth        = (EditText) view.findViewById(R.id.editFifth);
+        editSixth        = (EditText) view.findViewById(R.id.editSixth);
+        editResultText   = (TextView) view.findViewById(R.id.resultText);
+        editOptimizeText = (TextView) view.findViewById(R.id.optimizeMessage);
 
         // Initialize buttons.
-        buttonCalculate  = (Button) v.findViewById(R.id.calculate);
-        buttonOptimize   = (Button) v.findViewById(R.id.optimize);
+        buttonCalculate  = (Button) view.findViewById(R.id.calculate);
+        buttonOptimize   = (Button) view.findViewById(R.id.optimize);
 
         // Checks whether the first visible EditText element is focused in order to enable
         // and show the keyboard to the user. The corresponding XML element has android:imeOptions="actionNext".
@@ -183,7 +193,8 @@ public class FragmentFirst extends SherlockFragment
             {
                 float buyAmount, buyCost, sellAmount, sellPrice, buyAmount2,
                       buyCost2, remainder, totalCost, totalAmount, finalPrice;
-                boolean didItWork = true; boolean validTransaction = true;
+                boolean didItWork = true;
+                boolean validTransaction = true;
 
                 /* Dismisses the keyboard.
                 InputMethodManager inputManager = (InputMethodManager)
@@ -197,12 +208,12 @@ public class FragmentFirst extends SherlockFragment
                 try
                 {
                     // Gets the input entered from the user.
-                    buyAmount = Float.valueOf(editFirst.getText().toString());
-                    buyCost = Float.valueOf(editSecond.getText().toString());
+                    buyAmount  = Float.valueOf(editFirst.getText().toString());
+                    buyCost    = Float.valueOf(editSecond.getText().toString());
                     sellAmount = Float.valueOf(editThird.getText().toString());
-                    sellPrice = Float.valueOf(editFourth.getText().toString());
+                    sellPrice  = Float.valueOf(editFourth.getText().toString());
                     buyAmount2 = Float.valueOf(editFifth.getText().toString());
-                    buyCost2 = Float.valueOf(editSixth.getText().toString());
+                    buyCost2   = Float.valueOf(editSixth.getText().toString());
 
                     // Calculates remainder from the buying and selling.
                     remainder = Math.abs((buyAmount - sellAmount));
@@ -234,9 +245,9 @@ public class FragmentFirst extends SherlockFragment
                     }
 
                     // Calculations to output.
-                    totalCost = buyAmount * buyCost;
+                    totalCost   = buyAmount * buyCost;
                     totalAmount = buyAmount2 + remainder;
-                    finalPrice = totalCost / totalAmount;
+                    finalPrice  = totalCost / totalAmount;
 
                     // Checks if valid.
                     if(validTransaction)
@@ -300,8 +311,8 @@ public class FragmentFirst extends SherlockFragment
                 {
                     // Gets the input entered from the user.
                     sellAmount = Float.valueOf(editThird.getText().toString());
-                    sellPrice = Float.valueOf(editFourth.getText().toString());
-                    buyCost2 = Float.valueOf(editSixth.getText().toString());
+                    sellPrice  = Float.valueOf(editFourth.getText().toString());
+                    buyCost2   = Float.valueOf(editSixth.getText().toString());
 
                     newBalance = sellAmount * sellPrice;
                     optimalBTC = newBalance / buyCost2;
@@ -452,7 +463,9 @@ public class FragmentFirst extends SherlockFragment
     // Adds the current price to the text field.
     public void AddCurrent()
     {
-        EditText editSecond; View v = getView();
+        EditText editSecond;
+        View v = getView();
+
         editSecond = (EditText) v.findViewById(R.id.editSecond);
 
         editSecond.setText(rate);
@@ -463,7 +476,9 @@ public class FragmentFirst extends SherlockFragment
     // Removes the price and sets text field to default.
     public void RemoveCurrent()
     {
-        EditText editSecond; View v = getView();
+        EditText editSecond;
+        View v = getView();
+
         editSecond = (EditText) v.findViewById(R.id.editSecond);
 
         editSecond.setText("");

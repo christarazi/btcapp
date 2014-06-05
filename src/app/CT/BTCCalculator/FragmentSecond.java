@@ -24,10 +24,22 @@ import com.squareup.otto.Subscribe;
 public class FragmentSecond extends SherlockFragment
 {
     // Declare variables for this class.
-    EditText editFirstProfit;   EditText editSecondProfit; EditText editThirdProfit;
-    EditText editFourthProfit;  EditText editPercent;      SeekBar seekBar;
-    TextView calculationsText;  TextView feeTransResult;   TextView subtotalResult;
-    TextView totalProfitResult; Button calcBtn;            String rate;
+    private EditText editFirstProfit;
+    private EditText editSecondProfit;
+    private EditText editThirdProfit;
+    private EditText editFourthProfit;
+    private EditText editPercent;
+
+    private SeekBar seekBar;
+
+    private TextView calculationsText;
+    private TextView feeTransResult;
+    private TextView subtotalResult;
+    private TextView totalProfitResult;
+
+    private Button calcBtn;
+
+    private String rate;
 
     // Otto function to subscribe to Event Bus changes.
     @Subscribe
@@ -70,26 +82,26 @@ public class FragmentSecond extends SherlockFragment
         super.onActivityCreated(savedInstanceState);
 
         // Get View.
-        View v = getView();
+        View view = getView();
 
         // Register Bus Provider instance.
         BusProvider.getInstance().register(this);
 
         // Initialize text fields.
-        editFirstProfit  = (EditText) v.findViewById(R.id.editFirstProfit);
-        editSecondProfit = (EditText) v.findViewById(R.id.editSecondProfit);
-        editThirdProfit  = (EditText) v.findViewById(R.id.editThirdProfit);
-        editFourthProfit = (EditText) v.findViewById(R.id.editFourthProfit);
-        editPercent      = (EditText) v.findViewById(R.id.editPercent);
+        editFirstProfit   = (EditText) view.findViewById(R.id.editFirstProfit);
+        editSecondProfit  = (EditText) view.findViewById(R.id.editSecondProfit);
+        editThirdProfit   = (EditText) view.findViewById(R.id.editThirdProfit);
+        editFourthProfit  = (EditText) view.findViewById(R.id.editFourthProfit);
+        editPercent       = (EditText) view.findViewById(R.id.editPercent);
 
-        seekBar          = (SeekBar)  v.findViewById(R.id.percentageBar);
+        seekBar           = (SeekBar)  view.findViewById(R.id.percentageBar);
 
-        calculationsText = (TextView) v.findViewById(R.id.calculationsText);
-        feeTransResult         = (TextView) v.findViewById(R.id.feeTrans);
-        subtotalResult         = (TextView) v.findViewById(R.id.subtotal);
-        totalProfitResult      = (TextView) v.findViewById(R.id.totalProfit);
+        calculationsText  = (TextView) view.findViewById(R.id.calculationsText);
+        feeTransResult    = (TextView) view.findViewById(R.id.feeTrans);
+        subtotalResult    = (TextView) view.findViewById(R.id.subtotal);
+        totalProfitResult = (TextView) view.findViewById(R.id.totalProfit);
 
-        calcBtn          = (Button)   v.findViewById(R.id.calcBtn);
+        calcBtn           = (Button)   view.findViewById(R.id.calcBtn);
 
         // Initialize percentage variable which is attached to seekbar and editPercent.
         final float[] percentage = new float[1];
@@ -198,8 +210,11 @@ public class FragmentSecond extends SherlockFragment
             public void onClick(View v)
             {
                 float buyAmount, buyCost, sellAmount, sellPrice, remainder,
-                      subtotalCost, subtotalPrice, subtotal, total = 0, fee;
-                boolean didItWork = true; boolean validTransaction = true;
+                      subtotalCost, subtotalPrice, subtotal, fee;
+                float total = 0;
+
+                boolean didItWork = true;
+                boolean validTransaction = true;
 
                 /* Dismisses the keyboard.
                 InputMethodManager inputManager = (InputMethodManager)
@@ -214,10 +229,10 @@ public class FragmentSecond extends SherlockFragment
                 try
                 {
                     // Gets the input entered from the user.
-                    buyAmount = Float.valueOf(editFirstProfit.getText().toString());
-                    buyCost = Float.valueOf(editSecondProfit.getText().toString());
+                    buyAmount  = Float.valueOf(editFirstProfit.getText().toString());
+                    buyCost    = Float.valueOf(editSecondProfit.getText().toString());
                     sellAmount = Float.valueOf(editThirdProfit.getText().toString());
-                    sellPrice = Float.valueOf(editFourthProfit.getText().toString());
+                    sellPrice  = Float.valueOf(editFourthProfit.getText().toString());
 
                     percentage[0] = (float) ((Float.valueOf(editPercent.getText().toString())) / 100.0);
                     percentage[0] = (float) (seekBar.getProgress() / 100.0);
@@ -251,11 +266,11 @@ public class FragmentSecond extends SherlockFragment
                     }
 
                     // Calculations to output.
-                    subtotalCost = buyAmount * buyCost;
+                    subtotalCost  = buyAmount * buyCost;
                     subtotalPrice = sellPrice * sellAmount;
-                    subtotal = subtotalPrice - subtotalCost;
+                    subtotal      = subtotalPrice - subtotalCost;
 
-                    fee = subtotal * percentage[0];
+                    fee   = subtotal * percentage[0];
                     total = subtotal - fee;
 
                     // Checks if the user made a profit.
@@ -330,7 +345,9 @@ public class FragmentSecond extends SherlockFragment
     // Adds the current price to the text field.
     public void AddCurrent()
     {
-        EditText editSecondProfit; View v = getView();
+        EditText editSecondProfit;
+        View v = getView();
+
         editSecondProfit = (EditText) v.findViewById(R.id.editSecondProfit);
 
         editSecondProfit.setText(rate);
@@ -341,7 +358,9 @@ public class FragmentSecond extends SherlockFragment
     // Removes the price and sets text field to default.
     public void RemoveCurrent()
     {
-        EditText editSecondProfit; View v = getView();
+        EditText editSecondProfit;
+        View v = getView();
+
         editSecondProfit = (EditText) v.findViewById(R.id.editSecondProfit);
 
         editSecondProfit.setText("");

@@ -13,16 +13,15 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 public class MainActivity extends SherlockFragmentActivity
 {
     // Member variables.
-    private MyViewPagerAdapter m_adapter 	= null;
-    private ViewPager          m_viewPager 	= null;
-    private ActionBar          m_actionBar	= null;
+    private MyViewPagerAdapter mAdapter   = null;
+    private ViewPager          mViewPager = null;
+    private ActionBar          mActionBar = null;
 
     // Class constants.
-    private final static String [] m_fragmentClasses = {"app.CT.BTCCalculator.FragmentFirst",
+    private final static String[] mFragmentClasses = {"app.CT.BTCCalculator.FragmentFirst",
                                                         "app.CT.BTCCalculator.FragmentSecond",
                                                         "app.CT.BTCCalculator.PriceDataFragment"};
-    private final static String [] m_fragmentTitles = {"Breakeven", "Profit", "Price"};
-    private final static String ACTIVITY_TAG = "BTC CALC";
+    private final static String[] mFragmentTitles = {"Breakeven", "Profit", "Price"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,13 +30,13 @@ public class MainActivity extends SherlockFragmentActivity
         setContentView(R.layout.activity_interface_main);
 
         // Initialize the ViewPager and Adapter.
-        m_viewPager = (ViewPager) findViewById(R.id.pager);
-        m_adapter = new MyViewPagerAdapter(getSupportFragmentManager());
+        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mAdapter = new MyViewPagerAdapter(getSupportFragmentManager());
 
         // Set a Listener and Adapter for the View Pager.
-        m_viewPager.setOnPageChangeListener(SimplePageListener);
-        m_viewPager.setAdapter(m_adapter);
-        m_viewPager.setOffscreenPageLimit(3);
+        mViewPager.setOnPageChangeListener(SimplePageListener);
+        mViewPager.setAdapter(mAdapter);
+        mViewPager.setOffscreenPageLimit(3);
 
         // Setup Tabs for the ActionBar.
         setUpActionBarWithTabs();
@@ -48,18 +47,18 @@ public class MainActivity extends SherlockFragmentActivity
     private void setUpActionBarWithTabs()
     {
         // Initialize the ActionBar and set Navigation Mode.
-        m_actionBar = getSupportActionBar();
-        if (m_actionBar != null)
+        mActionBar = getSupportActionBar();
+        if (mActionBar != null)
         {
-            m_actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+            mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         }
 
-        // Loop through the Class References and Add them to the ActionBar.
-        for(int index = 0; index < m_fragmentClasses.length; index++)
+        // Loop through the Classes and add them to the ActionBar.
+        for(byte index = 0; index < mFragmentClasses.length; index++)
         {
-            if (m_actionBar != null)
+            if (mActionBar != null)
             {
-                m_actionBar.addTab(m_actionBar.newTab().setText(m_fragmentTitles[index]).setTabListener(SimpleTabListener));
+                mActionBar.addTab(mActionBar.newTab().setText(mFragmentTitles[index]).setTabListener(SimpleTabListener));
             }
         }
     }
@@ -67,18 +66,16 @@ public class MainActivity extends SherlockFragmentActivity
     // Listeners.
     private ActionBar.TabListener SimpleTabListener = new ActionBar.TabListener()
     {
-
         @Override public void onTabReselected(Tab tab, FragmentTransaction ft) {}
 
         @Override
         public void onTabSelected(Tab tab, FragmentTransaction ft)
         {
             // Set the current item using the tab's position.
-            m_viewPager.setCurrentItem(tab.getPosition());
+            mViewPager.setCurrentItem(tab.getPosition());
         }
 
         @Override public void onTabUnselected(Tab tab, FragmentTransaction ft) {}
-
     };
 
     private ViewPager.SimpleOnPageChangeListener SimplePageListener = new ViewPager.SimpleOnPageChangeListener()
@@ -93,7 +90,7 @@ public class MainActivity extends SherlockFragmentActivity
         public void onPageSelected(int position)
         {
             // Set the current item at the current position.
-            m_actionBar.setSelectedNavigationItem(position);
+            mActionBar.setSelectedNavigationItem(position);
         }
     };
 
@@ -114,10 +111,10 @@ public class MainActivity extends SherlockFragmentActivity
             Fragment currentFragment = null;
 
             // Loop through the Fragment classes and instantiate the fragment at the current Position.
-            if((m_fragmentClasses != null) && (m_fragmentClasses.length > 0) && (position >= 0) && (position < m_fragmentClasses.length))
+            if((mFragmentClasses != null) && (mFragmentClasses.length > 0) && (position >= 0) && (position < mFragmentClasses.length))
             {
                 // Instantiate the current Fragment.
-                currentFragment = Fragment.instantiate(getBaseContext(), m_fragmentClasses[position]);
+                currentFragment = Fragment.instantiate(getBaseContext(), mFragmentClasses[position]);
                 currentFragment.setRetainInstance(true);
             }
 
@@ -129,7 +126,7 @@ public class MainActivity extends SherlockFragmentActivity
         public int getCount()
         {
             // Return the length of the Fragment classes array.
-            return m_fragmentClasses.length;
+            return mFragmentClasses.length;
         }
     }
 }
