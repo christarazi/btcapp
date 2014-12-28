@@ -21,8 +21,7 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.squareup.otto.Subscribe;
 
-public class FragmentSecond extends SherlockFragment
-{
+public class ProfitFragment extends SherlockFragment {
     // Declare variables for this class.
     private EditText editFirstProfit;
     private EditText editSecondProfit;
@@ -43,15 +42,13 @@ public class FragmentSecond extends SherlockFragment
 
     // Otto function to subscribe to Event Bus changes.
     @Subscribe
-    public void onPriceUpdated(String mRate)
-    {
+    public void onPriceUpdated(String mRate) {
         rate = mRate;
-        //Log.d("Chris", "This is coming from the FragmentSecond: " + rate);
+        //Log.d("Chris", "This is coming from the ProfitFragment: " + rate);
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Set options menu.
@@ -60,24 +57,21 @@ public class FragmentSecond extends SherlockFragment
 
     // Called when the activity is attached to this fragment.
     @Override
-    public void onAttach(Activity activity)
-    {
+    public void onAttach(Activity activity) {
         // Call to the super class.
         super.onAttach(activity);
     }
 
     // Create the view.
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout from the XML Resource.
         return inflater.inflate(R.layout.second, container, false);
     }
 
     // Creates the activity for the fragment.
     @Override
-    public void onActivityCreated(Bundle savedInstanceState)
-    {
+    public void onActivityCreated(Bundle savedInstanceState) {
         // Call to the super class.
         super.onActivityCreated(savedInstanceState);
 
@@ -88,20 +82,20 @@ public class FragmentSecond extends SherlockFragment
         BusProvider.getInstance().register(this);
 
         // Initialize text fields.
-        editFirstProfit   = (EditText) view.findViewById(R.id.editFirstProfit);
-        editSecondProfit  = (EditText) view.findViewById(R.id.editSecondProfit);
-        editThirdProfit   = (EditText) view.findViewById(R.id.editThirdProfit);
-        editFourthProfit  = (EditText) view.findViewById(R.id.editFourthProfit);
-        editPercent       = (EditText) view.findViewById(R.id.editPercent);
+        editFirstProfit = (EditText) view.findViewById(R.id.editFirstProfit);
+        editSecondProfit = (EditText) view.findViewById(R.id.editSecondProfit);
+        editThirdProfit = (EditText) view.findViewById(R.id.editThirdProfit);
+        editFourthProfit = (EditText) view.findViewById(R.id.editFourthProfit);
+        editPercent = (EditText) view.findViewById(R.id.editPercent);
 
-        seekBar           = (SeekBar)  view.findViewById(R.id.percentageBar);
+        seekBar = (SeekBar) view.findViewById(R.id.percentageBar);
 
-        calculationsText  = (TextView) view.findViewById(R.id.calculationsText);
-        feeTransResult    = (TextView) view.findViewById(R.id.feeTrans);
-        subtotalResult    = (TextView) view.findViewById(R.id.subtotal);
+        calculationsText = (TextView) view.findViewById(R.id.calculationsText);
+        feeTransResult = (TextView) view.findViewById(R.id.feeTrans);
+        subtotalResult = (TextView) view.findViewById(R.id.subtotal);
         totalProfitResult = (TextView) view.findViewById(R.id.totalProfit);
 
-        calcBtn           = (Button)   view.findViewById(R.id.calcBtn);
+        calcBtn = (Button) view.findViewById(R.id.calcBtn);
 
         // Initialize percentage variable which is attached to seekbar and editPercent.
         final float[] percentage = new float[1];
@@ -110,44 +104,36 @@ public class FragmentSecond extends SherlockFragment
         // EditText element is clicked in order to enable and show the keyboard to the user.
         // The corresponding XML element has android:imeOptions="actionNext".
         // All EditText elements below are now programmed to show keyboard when pressed.
-        editFirstProfit.setOnClickListener(new View.OnClickListener()
-        {
+        editFirstProfit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 v = getActivity().getCurrentFocus();
                 inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
             }
         });
 
-        editSecondProfit.setOnClickListener(new View.OnClickListener()
-        {
+        editSecondProfit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 v = getActivity().getCurrentFocus();
                 inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
             }
         });
 
-        editThirdProfit.setOnClickListener(new View.OnClickListener()
-        {
+        editThirdProfit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 v = getActivity().getCurrentFocus();
                 inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
             }
         });
 
-        editFourthProfit.setOnClickListener(new View.OnClickListener()
-        {
+        editFourthProfit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 v = getActivity().getCurrentFocus();
                 inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
@@ -155,42 +141,37 @@ public class FragmentSecond extends SherlockFragment
         });
 
         // Listens for the editPercent field to change in order to update the seek bar.
-        editPercent.addTextChangedListener(new TextWatcher()
-        {
+        editPercent.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
 
             @Override
-            public void afterTextChanged(Editable s)
-            {
-                try
-                {
+            public void afterTextChanged(Editable s) {
+                try {
                     // Update Seekbar value after entering a number
                     seekBar.setProgress(Integer.parseInt(s.toString()));
                     // Log.d("Chris", "editPercent.addTextChangedListener, percentage = " + percentage[0]);
+                } catch (Exception ignored) {
                 }
-                catch(Exception ignored) {}
             }
         });
 
-        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
-        {
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, final int progress, boolean fromUser)
-            {
+            public void onProgressChanged(SeekBar seekBar, final int progress, boolean fromUser) {
                 percentage[0] = progress;
                 // Log.d("Chris", "seekBar.setOnSeekBarChangeListener before, percentage = " + percentage[0]);
                 editPercent.setText(String.valueOf(progress));
 
                 // Sets the editPercent selection at the end of the input.
-                editPercent.post(new Runnable()
-                {
+                editPercent.post(new Runnable() {
                     @Override
-                    public void run()
-                    {
+                    public void run() {
                         editPercent.setSelection(String.valueOf(progress).length());
                     }
                 });
@@ -198,19 +179,19 @@ public class FragmentSecond extends SherlockFragment
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {}
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
 
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {}
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
         });
 
-        calcBtn.setOnClickListener( new View.OnClickListener()
-        {
+        calcBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 float buyAmount, buyCost, sellAmount, sellPrice, remainder,
-                      subtotalCost, subtotalPrice, subtotal, fee;
+                        subtotalCost, subtotalPrice, subtotal, fee;
                 float total = 0;
 
                 boolean didItWork = true;
@@ -226,13 +207,12 @@ public class FragmentSecond extends SherlockFragment
 
 
                 // Error checking to prevent crashes.
-                try
-                {
+                try {
                     // Gets the input entered from the user.
-                    buyAmount  = Float.valueOf(editFirstProfit.getText().toString());
-                    buyCost    = Float.valueOf(editSecondProfit.getText().toString());
+                    buyAmount = Float.valueOf(editFirstProfit.getText().toString());
+                    buyCost = Float.valueOf(editSecondProfit.getText().toString());
                     sellAmount = Float.valueOf(editThirdProfit.getText().toString());
-                    sellPrice  = Float.valueOf(editFourthProfit.getText().toString());
+                    sellPrice = Float.valueOf(editFourthProfit.getText().toString());
 
                     percentage[0] = (float) ((Float.valueOf(editPercent.getText().toString())) / 100.0);
                     percentage[0] = (float) (seekBar.getProgress() / 100.0);
@@ -240,8 +220,7 @@ public class FragmentSecond extends SherlockFragment
 
                     remainder = Math.abs((buyAmount - sellAmount));
 
-                    if(sellAmount > buyAmount)
-                    {
+                    if (sellAmount > buyAmount) {
                         // Create new dialog popup.
                         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
@@ -251,10 +230,8 @@ public class FragmentSecond extends SherlockFragment
                         // Sets dialog message.
                         alertDialog.setMessage("You cannot sell more than you own.");
                         alertDialog.setCancelable(false);
-                        alertDialog.setNeutralButton("Ok", new DialogInterface.OnClickListener()
-                        {
-                            public void onClick(DialogInterface dialog, int id)
-                            {
+                        alertDialog.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                                 // If this button is clicked, close current dialog.
                                 dialog.cancel();
                             }
@@ -266,35 +243,27 @@ public class FragmentSecond extends SherlockFragment
                     }
 
                     // Calculations to output.
-                    subtotalCost  = buyAmount * buyCost;
+                    subtotalCost = buyAmount * buyCost;
                     subtotalPrice = sellPrice * sellAmount;
-                    subtotal      = subtotalPrice - subtotalCost;
+                    subtotal = subtotalPrice - subtotalCost;
 
-                    fee   = subtotal * percentage[0];
+                    fee = subtotal * percentage[0];
                     total = subtotal - fee;
 
                     // Checks if the user made a profit.
-                    if(total > 0)
-                    {
+                    if (total > 0) {
                         feeTransResult.setText("$" + fee);
                         subtotalResult.setText("$" + subtotal);
                         totalProfitResult.setText("$" + total);
-                    }
-                    else
-                    {
+                    } else {
                         total = Math.abs(total);
                         calculationsText.setText("You lost: $" + total);
                     }
-                }
-                catch(Exception e)
-                {
+                } catch (Exception e) {
                     // Sets bool to false in order to execute "finally" block below.
                     didItWork = false;
-                }
-                finally
-                {
-                    if(!didItWork)
-                    {
+                } finally {
+                    if (!didItWork) {
                         // Creates new dialog popup.
                         final AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(getActivity());
 
@@ -304,10 +273,8 @@ public class FragmentSecond extends SherlockFragment
                         // Sets dialog message.
                         alertDialog2.setMessage("Please fill in all fields.");
                         alertDialog2.setCancelable(false);
-                        alertDialog2.setNeutralButton("Ok", new DialogInterface.OnClickListener()
-                        {
-                            public void onClick(DialogInterface dialog, int id)
-                            {
+                        alertDialog2.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                                 // If this button is clicked, close current dialog.
                                 dialog.cancel();
                             }
@@ -324,27 +291,27 @@ public class FragmentSecond extends SherlockFragment
 
     // Create Options Menu.
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
-    {
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu, menu);
     }
 
     // When Options Menu items are selected.
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch(item.getItemId())
-        {
-            case R.id.AddCurrent: AddCurrent(); break;
-            case R.id.RemoveCurrent: RemoveCurrent(); break;
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.AddCurrent:
+                AddCurrent();
+                break;
+            case R.id.RemoveCurrent:
+                RemoveCurrent();
+                break;
         }
         return false;
     }
 
     // Adds the current price to the text field.
-    public void AddCurrent()
-    {
+    public void AddCurrent() {
         EditText editSecondProfit;
         View v = getView();
 
@@ -356,8 +323,7 @@ public class FragmentSecond extends SherlockFragment
     }
 
     // Removes the price and sets text field to default.
-    public void RemoveCurrent()
-    {
+    public void RemoveCurrent() {
         EditText editSecondProfit;
         View v = getView();
 
