@@ -74,3 +74,11 @@ Changelog
 
 6/4/14  (v1.5.1)
 - Refactored code for better readability and consistency.
+
+11/24/15 (v2.0)
+- Big update:
+  - Finally Material design is here! With a new logo as well.
+  - Loads of performance improvements, especially memory management.
+  - Improved layout of all tabs and menus.
+  - Swipe to refresh on Price tab.
+  - And of course, plenty of bug fixes.
