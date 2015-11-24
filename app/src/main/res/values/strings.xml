@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BTC Calculator</string>
+    <string name="connectionFailed">Connection failed. Try again.</string>
+    <string formatted="false" name="resultText">You need to sell %s BTC  at $%s to break-even.</string>
+    <string name="disclaimerMsg">Powered by CoinDesk.com. This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org.</string>
+    <string name="loading">Loading…</string>
+    <string name="editBuyField">Add/remove current price to Buy field</string>
+    <string name="editSellField">Add/remove current price to Sell field</string>
+    <string name="resetAllFields">Reset all fields</string>
+    <string name="optimalBTCErrorMsg">You are trying to buy more Bitcoins than your current balance can allow. Your limit when trying to break-even is how much you have sold. When entering the buy back price, we calculate the optimal amount of Bitcoins you should buy automatically.</string>
+</resources>

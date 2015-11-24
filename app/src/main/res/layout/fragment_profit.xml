@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingRight="@dimen/_15sdp"
+    android:paddingLeft="@dimen/_5sdp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:paddingTop="@dimen/_5sdp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Bitcoins bought:"
+                android:id="@+id/btcBoughtView"
+                android:textSize="@dimen/_16sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:layout_weight=".5" />
+
+            <EditText
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/btcBought"
+                android:editable="true"
+                android:hint="BTC"
+                android:textSize="@dimen/_12sdp"
+                android:numeric="decimal"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at"
+                android:id="@+id/textView"
+                android:padding="@dimen/_1sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/btcBoughtPrice"
+                android:editable="true"
+                android:hint="$"
+                android:textSize="@dimen/_12sdp"
+                android:numeric="decimal"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@id/linearLayout3"
+        android:layout_alignLeft="@id/linearLayout3"
+        android:paddingTop="@dimen/_5sdp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Bitcoins to sell:"
+                android:id="@+id/textView2"
+                android:textSize="@dimen/_16sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:layout_weight=".5" />
+
+            <EditText
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/btcSell"
+                android:editable="true"
+                android:hint="BTC"
+                android:textSize="@dimen/_12sdp"
+                android:numeric="decimal"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at"
+                android:id="@+id/textView3"
+                android:padding="@dimen/_1sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/btcSellPrice"
+                android:editable="true"
+                android:hint="$"
+                android:textSize="@dimen/_12sdp"
+                android:numeric="decimal"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout9"
+        android:layout_below="@id/linearLayout4"
+        android:layout_alignLeft="@id/linearLayout4"
+        android:paddingTop="@dimen/_5sdp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Transaction fee:"
+                android:id="@+id/textView6"
+                android:textSize="@dimen/_16sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:layout_weight=".5" />
+
+            <EditText
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/transPercent"
+                android:editable="true"
+                android:hint="%"
+                android:textSize="@dimen/_12sdp"
+                android:numeric="decimal"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"/>
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:layout_below="@id/linearLayout9"
+        android:layout_alignLeft="@id/linearLayout9"
+        android:padding="@dimen/_5sdp">
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/transFeeSeekBar"
+        android:padding="@dimen/_15sdp"
+        android:indeterminate="false" />
+
+        <Button
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/calculate"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout11"
+        android:layout_below="@id/linearLayout10"
+        android:layout_alignLeft="@id/linearLayout10"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fee on the transaction:"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/textView7"
+                android:layout_weight="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="$"
+                android:id="@+id/transFeeCost"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Subtotal: "
+                android:id="@+id/textView8"
+                android:layout_marginTop="@dimen/_2sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="$"
+                android:id="@+id/subtotal"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Total profit: "
+                android:id="@+id/textView9"
+                android:layout_marginTop="@dimen/_2sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="$"
+                android:id="@+id/totalProfit"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </TableRow>
+    </LinearLayout>
+</RelativeLayout>

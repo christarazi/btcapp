@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text_default_material_dark">#ffffff</color>
+    <color name="accent">#6666cc</color>
+    <color name="amberDark">#cc9900</color>
+    <color name="primary_material_light">#ffc107</color>
+    <color name="accent_material_light">#6666cc</color>
+</resources>

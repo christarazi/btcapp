@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/editCurrentBuyField"
+        android:title="@string/editBuyField"
+        android:titleCondensed="Modify Buy field"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/editCurrentSellField"
+        android:title="@string/editSellField"
+        android:titleCondensed="Modify Sell field"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/resetAll"
+        android:title="@string/resetAllFields"
+        app:showAsAction="never" />
+</menu>
