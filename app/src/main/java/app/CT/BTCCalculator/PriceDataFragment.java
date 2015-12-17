@@ -33,8 +33,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
     private SwipeRefreshLayout swipeRefreshLayout;
 
-    private Bus eventBus = new Bus(ThreadEnforcer.ANY);
-
     // Sets the rate and calls sendRate() to publish to Otto Event Bus.
     public void setRate(String mRate) {
         this.rate = mRate;
@@ -45,13 +43,12 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     // Otto Event Bus method to publish the rate to the Event Bus.
     public void sendRate() {
         BusProvider.getInstance().post(rate);
+        Log.d("CHRIS", "Posting rate");
     }
 
     // Create the view.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.d("CHRIS", "onCreateView() returned: " + container);
-
         View view = inflater.inflate(R.layout.fragment_price, container, false);
 
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
@@ -64,13 +61,34 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.d("CHRIS", "onActivityCreated() returned: void");
 
         // Register Bus Provider instance.
         BusProvider.getInstance().register(this);
 
+        Log.d("CHRIS", "PriceDataFragment onActivityCreated. Register bus");
+
         // Execute the ConnectInBackground class.
         new ConnectInBackground().execute();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        // Unregister the bus when pausing the application
+        BusProvider.getInstance().unregister(this);
+
+        Log.d("CHRIS", "PriceDataFragment onPause. Unregister bus");
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // Register the bus when resuming the application
+        BusProvider.getInstance().register(this);
+
+        Log.d("CHRIS", "PriceDataFragment onResume. register bus");
     }
 
     @Override

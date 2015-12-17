@@ -6,6 +6,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,24 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override protected void onPause() {
+        super.onPause();
+
+        // Always unregister when an object no longer should be on the bus.
+        BusProvider.getInstance().unregister(this);
+
+        Log.d("CHRIS", "MainActivity onPause. Unregister bus");
+    }
+
+    @Override protected void onResume() {
+        super.onResume();
+
+        // Register ourselves so that we can provide the initial value.
+        BusProvider.getInstance().register(this);
+
+        Log.d("CHRIS", "MainActivity onResume. register bus");
     }
 
     private void hideKeyboard() {

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,7 +35,7 @@ public class BreakevenFragment extends Fragment {
 
     private String rate;
 
-    private boolean[] fieldsAdded = {false, false};
+    private boolean[] containsCurrentRate = {false, false};
 
     // Function round to two decimals.
     public double roundTwoDecimals(double d) {
@@ -46,7 +47,12 @@ public class BreakevenFragment extends Fragment {
     @Subscribe
     public void onPriceUpdated(String mRate) {
         rate = mRate;
-        //Log.d("Chris", "This is coming from the Fragment: " + rate);
+
+        // If btcBoughtPrice field has the current price, update it.
+        if (containsCurrentRate[0]) btcBoughtPrice.setText(rate);
+        // If btcSoldPrice has the current price, update it as well.
+        if (containsCurrentRate[1]) btcSoldPrice.setText(rate);
+        Log.d("Chris", "This is coming from the Fragment: " + rate);
     }
 
     @Override
@@ -150,6 +156,36 @@ public class BreakevenFragment extends Fragment {
                 } catch (Exception ignored) {
                 }
 
+            }
+        });
+
+        btcBoughtPrice.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                containsCurrentRate[0] = false;
+            }
+        });
+
+        btcSoldPrice.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                containsCurrentRate[1] = false;
             }
         });
 
@@ -289,12 +325,12 @@ public class BreakevenFragment extends Fragment {
                     EditText btcBoughtPrice = (EditText) getView().findViewById(R.id.btcBoughtPrice);
 
                     // If field contains the current price, remove it; else, add the current price.
-                    if (fieldsAdded[0]) {
+                    if (containsCurrentRate[0]) {
                         btcBoughtPrice.setText("");
-                        fieldsAdded[0] = false;
+                        containsCurrentRate[0] = false;
                     } else {
                         btcBoughtPrice.setText(rate);
-                        fieldsAdded[0] = true;
+                        containsCurrentRate[0] = true;
                     }
                 } catch (Exception ignored) {
                 }
@@ -308,12 +344,12 @@ public class BreakevenFragment extends Fragment {
 
 
                     // If field contains the current price, remove it; else, add the current price.
-                    if (fieldsAdded[1]) {
+                    if (containsCurrentRate[1]) {
                         btcSoldPrice.setText("");
-                        fieldsAdded[1] = false;
+                        containsCurrentRate[1] = false;
                     } else {
                         btcSoldPrice.setText(rate);
-                        fieldsAdded[1] = true;
+                        containsCurrentRate[1] = true;
                     }
                 }
                 catch (Exception ignored) {
@@ -329,6 +365,7 @@ public class BreakevenFragment extends Fragment {
                 optimalBTC.setText("");
                 optimalBTCPrice.setText("");
                 resultText.setText("");
+                containsCurrentRate[0] = containsCurrentRate[1] = false;
             }
             default:
                 return super.onOptionsItemSelected(item);
