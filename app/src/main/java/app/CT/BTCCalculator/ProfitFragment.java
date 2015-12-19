@@ -51,7 +51,7 @@ public class ProfitFragment extends Fragment {
         if (containsCurrentRate[0]) btcBoughtPrice.setText(rate);
         // If btcSellPrice has the current price, update it as well.
         if (containsCurrentRate[1]) btcSellPrice.setText(rate);
-        Log.d("Chris", "This is coming from the ProfitFragment: " + rate);
+        //Log.d("Chris", "This is coming from the ProfitFragment: " + rate);
     }
 
     // Function round to two decimals.

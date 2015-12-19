@@ -43,7 +43,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     // Otto Event Bus method to publish the rate to the Event Bus.
     public void sendRate() {
         BusProvider.getInstance().post(rate);
-        Log.d("CHRIS", "Posting rate");
+        //Log.d("CHRIS", "Posting rate");
     }
 
     // Create the view.
@@ -65,7 +65,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         // Register Bus Provider instance.
         BusProvider.getInstance().register(this);
 
-        Log.d("CHRIS", "PriceDataFragment onActivityCreated. Register bus");
+        //Log.d("CHRIS", "PriceDataFragment onActivityCreated. Register bus");
 
         // Execute the ConnectInBackground class.
         new ConnectInBackground().execute();
@@ -78,7 +78,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         // Unregister the bus when pausing the application
         BusProvider.getInstance().unregister(this);
 
-        Log.d("CHRIS", "PriceDataFragment onPause. Unregister bus");
+        //Log.d("CHRIS", "PriceDataFragment onPause. Unregister bus");
     }
 
     @Override
@@ -88,7 +88,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         // Register the bus when resuming the application
         BusProvider.getInstance().register(this);
 
-        Log.d("CHRIS", "PriceDataFragment onResume. register bus");
+        //Log.d("CHRIS", "PriceDataFragment onResume. register bus");
     }
 
     @Override
@@ -163,8 +163,8 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             try {
                 JSONObject jObjectTime = new JSONObject(result);
 
-                Log.d("JSON time", String.valueOf(jObjectTime.getJSONObject("time")));
-                Log.d("JSON BPI", String.valueOf(jObjectTime.getJSONObject("bpi")));
+                //Log.d("JSON time", String.valueOf(jObjectTime.getJSONObject("time")));
+                //Log.d("JSON BPI", String.valueOf(jObjectTime.getJSONObject("bpi")));
 
                 time = jObjectTime.getJSONObject("time").getString("updateduk");
                 rate = jObjectTime.getJSONObject("bpi").getJSONObject("USD").getString("rate");
@@ -204,7 +204,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 message.show();
             }
             catch (Exception ignored) {
-                Log.d("CHRIS", "onPostExecute() returned: " + ignored.getMessage());
+                //Log.d("CHRIS", "onPostExecute() returned: " + ignored.getMessage());
             }
 
         }

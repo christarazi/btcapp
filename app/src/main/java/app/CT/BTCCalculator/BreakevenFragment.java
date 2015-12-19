@@ -52,7 +52,7 @@ public class BreakevenFragment extends Fragment {
         if (containsCurrentRate[0]) btcBoughtPrice.setText(rate);
         // If btcSoldPrice has the current price, update it as well.
         if (containsCurrentRate[1]) btcSoldPrice.setText(rate);
-        Log.d("Chris", "This is coming from the Fragment: " + rate);
+        //Log.d("Chris", "This is coming from the Fragment: " + rate);
     }
 
     @Override

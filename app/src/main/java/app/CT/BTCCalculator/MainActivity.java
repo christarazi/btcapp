@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         // Always unregister when an object no longer should be on the bus.
         BusProvider.getInstance().unregister(this);
 
-        Log.d("CHRIS", "MainActivity onPause. Unregister bus");
+        //Log.d("CHRIS", "MainActivity onPause. Unregister bus");
     }
 
     @Override protected void onResume() {
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         // Register ourselves so that we can provide the initial value.
         BusProvider.getInstance().register(this);
 
-        Log.d("CHRIS", "MainActivity onResume. register bus");
+        //Log.d("CHRIS", "MainActivity onResume. register bus");
     }
 
     private void hideKeyboard() {
