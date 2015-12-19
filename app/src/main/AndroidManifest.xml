@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="app.CT.BTCCalculator"
     android:installLocation="auto"
-    android:versionCode="7"
-    android:versionName="2.0">
+    android:versionCode="8"
+    android:versionName="2.1">
 
     <uses-sdk
         android:minSdkVersion="8"
