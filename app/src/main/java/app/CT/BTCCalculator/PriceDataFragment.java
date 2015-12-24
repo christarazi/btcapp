@@ -1,6 +1,5 @@
 package app.CT.BTCCalculator;
 
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,12 +8,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.squareup.otto.Bus;
-import com.squareup.otto.ThreadEnforcer;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,12 +26,21 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
     private String rate;
     private String time;
 
     private SwipeRefreshLayout swipeRefreshLayout;
+    GraphView graph;
+    LineGraphSeries dataPoints;
 
     // Sets the rate and calls sendRate() to publish to Otto Event Bus.
     public void setRate(String mRate) {
@@ -53,6 +62,8 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
         swipeRefreshLayout.setOnRefreshListener(this);
+        graph = (GraphView) view.findViewById(R.id.graph);
+        graph.getViewport().setScalable(true);
 
         return view;
     }
@@ -67,8 +78,9 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
         //Log.d("CHRIS", "PriceDataFragment onActivityCreated. Register bus");
 
-        // Execute the ConnectInBackground class.
-        new ConnectInBackground().execute();
+        // Execute the async tasks.
+        new GetCurrentPriceTask().execute();
+        new GetGraphDataTask().execute();
     }
 
     @Override
@@ -93,11 +105,11 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
     @Override
     public void onRefresh() {
-        new ConnectInBackground().execute();
+        new GetCurrentPriceTask().execute();
     }
 
     // Class that runs in the background to connect to the Internet and parse the JSON file.
-    public class ConnectInBackground extends AsyncTask<String, String, String> {
+    public class GetCurrentPriceTask extends AsyncTask<String, String, String> {
         // Get view and initialize text field.
         View view = getView();
         TextView priceData = (TextView) view.findViewById(R.id.priceData);
@@ -110,10 +122,10 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             HttpURLConnection urlConnection = null;
             try {
                 // Connect to this URL.
-                URL url = new URL("http://api.coindesk.com/v1/bpi/currentprice/USD.json");
+                URL priceURL = new URL("http://api.coindesk.com/v1/bpi/currentprice/USD.json");
 
                 // Establish HTTP connection and get JSON file.
-                urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection = (HttpURLConnection) priceURL.openConnection();
                 in = new BufferedInputStream(urlConnection.getInputStream());
             }
             catch (Exception ignored) {
@@ -207,6 +219,85 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 //Log.d("CHRIS", "onPostExecute() returned: " + ignored.getMessage());
             }
 
+        }
+    }
+
+    // Get historical price data from CoinDesk and graph it
+    public class GetGraphDataTask extends AsyncTask<LineGraphSeries, Void, LineGraphSeries> {
+
+        @Override
+        protected LineGraphSeries doInBackground(LineGraphSeries... params) {
+            InputStream in = null;
+            HttpURLConnection urlConnection = null;
+            try {
+                URL graphURL = new URL("http://api.coindesk.com/v1/bpi/historical/close.json");
+
+                // Establish HTTP connection and get JSON file.
+                urlConnection = (HttpURLConnection) graphURL.openConnection();
+                in = new BufferedInputStream(urlConnection.getInputStream());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            String result = null;
+            try {
+                assert in != null;
+                BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"), 8);
+                StringBuilder sb = new StringBuilder();
+
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    sb.append(line).append("\n");
+                }
+                result = sb.toString();
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+            finally {
+                try {
+                    if (in != null) in.close();
+                    if (urlConnection != null) urlConnection.disconnect();
+                }
+                catch (Exception ignored) {
+                }
+            }
+
+            // Create JSON Objects and get the strings they hold.
+            try {
+                JSONObject jObjectGraph = new JSONObject(result).getJSONObject("bpi");
+
+                Iterator<String> iter = jObjectGraph.keys();
+
+                LineGraphSeries<DataPoint> dataPointLineGraph = new LineGraphSeries<>();
+                TreeMap<Date, String> sortedMap = new TreeMap<>();
+
+                DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                while (iter.hasNext()) {
+                    String key = iter.next();
+                    Date date = format.parse(key);
+                    String val = String.valueOf(jObjectGraph.get(key));
+                    sortedMap.put(date, val);
+                }
+                for (Map.Entry<Date, String> elem: sortedMap.entrySet()) {
+                    dataPointLineGraph.appendData(new DataPoint(elem.getKey(), Double.valueOf(elem.getValue())), true, 31);
+                }
+                return dataPointLineGraph;
+            }
+            catch (JSONException | ParseException e) {
+                e.printStackTrace();
+                Log.d("CHRIS", "error parsing graph data " + e.toString());
+                return null;
+            }
+        }
+
+        @Override
+        protected void onPostExecute(LineGraphSeries data) {
+            super.onPostExecute(data);
+            dataPoints = data;
+            graph.addSeries(dataPoints);
+            graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(getActivity(), new SimpleDateFormat("MM/dd")));
         }
     }
 }
