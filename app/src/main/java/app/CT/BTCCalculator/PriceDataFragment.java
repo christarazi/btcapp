@@ -14,7 +14,10 @@ import android.widget.Toast;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter;
 import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.DataPointInterface;
 import com.jjoe64.graphview.series.LineGraphSeries;
+import com.jjoe64.graphview.series.OnDataPointTapListener;
+import com.jjoe64.graphview.series.Series;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -270,7 +273,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
                 Iterator<String> iter = jObjectGraph.keys();
 
-                LineGraphSeries<DataPoint> dataPointLineGraph = new LineGraphSeries<>();
+                LineGraphSeries<DataPoint> dataPointLineSeries = new LineGraphSeries<>();
                 TreeMap<Date, String> sortedMap = new TreeMap<>();
 
                 DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -281,9 +284,9 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                     sortedMap.put(date, val);
                 }
                 for (Map.Entry<Date, String> elem: sortedMap.entrySet()) {
-                    dataPointLineGraph.appendData(new DataPoint(elem.getKey(), Double.valueOf(elem.getValue())), true, 31);
+                    dataPointLineSeries.appendData(new DataPoint(elem.getKey(), Double.valueOf(elem.getValue())), true, 31);
                 }
-                return dataPointLineGraph;
+                return dataPointLineSeries;
             }
             catch (JSONException | ParseException e) {
                 e.printStackTrace();
@@ -293,11 +296,24 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         }
 
         @Override
-        protected void onPostExecute(LineGraphSeries data) {
+        protected void onPostExecute(final LineGraphSeries data) {
             super.onPostExecute(data);
             dataPoints = data;
+            dataPoints.setDrawDataPoints(true);
+            dataPoints.setDataPointsRadius(8);
+            dataPoints.setOnDataPointTapListener(new OnDataPointTapListener() {
+                @Override
+                public void onTap(Series series, DataPointInterface dataPoint) {
+                    DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+                    Date date = new Date((long) dataPoint.getX());
+                    String dateStr = String.valueOf(dateFormat.format(date));
+                    Toast.makeText(getActivity(), String.format("%s: $%s", dateStr, dataPoint.getY()), Toast.LENGTH_SHORT).show();
+                }
+            });
+            graph.onDataChanged(true, true);
             graph.addSeries(dataPoints);
-            graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(getActivity(), new SimpleDateFormat("MM/dd")));
+            graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(getActivity(), new SimpleDateFormat("MM/dd/yy")));
+            graph.getGridLabelRenderer().setLabelVerticalWidth(100);
         }
     }
 }

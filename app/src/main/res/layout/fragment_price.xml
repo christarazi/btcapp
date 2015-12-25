@@ -37,13 +37,13 @@
                     android:gravity="center_horizontal">
 
                     <TextView
-                        android:id="@+id/timeInfo"
+                        android:id="@+id/timeData"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CURRENT PRICE"
+                        android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:paddingTop="@dimen/_5sdp"
-                        android:layout_gravity="center_horizontal" />
+                        android:textSize="@dimen/_10sdp" />
 
                     <TextView
                         android:id="@+id/priceData"
@@ -53,15 +53,6 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textSize="@dimen/_28sdp"
                         android:paddingTop="@dimen/_5sdp" />
-
-                    <TextView
-                        android:id="@+id/timeData"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/loading"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:paddingTop="@dimen/_5sdp"
-                        android:textSize="@dimen/_10sdp" />
 
                 </LinearLayout>
 
@@ -76,7 +67,7 @@
 
         <com.jjoe64.graphview.GraphView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/_225sdp"
+            android:layout_height="@dimen/_250sdp"
             android:id="@+id/graph"
             android:layout_gravity="center"
             android:layout_above="@+id/disclaimer"
