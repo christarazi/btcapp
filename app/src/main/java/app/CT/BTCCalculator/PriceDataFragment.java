@@ -4,20 +4,21 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.DataPointInterface;
-import com.jjoe64.graphview.series.LineGraphSeries;
-import com.jjoe64.graphview.series.OnDataPointTapListener;
-import com.jjoe64.graphview.series.Series;
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.YAxisValueFormatter;
+import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
+import com.github.mikephil.charting.utils.Utils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,21 +30,17 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.TreeMap;
 
-public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, OnChartValueSelectedListener {
     private String rate;
     private String time;
 
     private SwipeRefreshLayout swipeRefreshLayout;
-    GraphView graph;
-    LineGraphSeries dataPoints;
+    private LineChart graph;
+    private Toast priceInfoToast;
 
     // Sets the rate and calls sendRate() to publish to Otto Event Bus.
     public void setRate(String mRate) {
@@ -65,8 +62,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
         swipeRefreshLayout.setOnRefreshListener(this);
-        graph = (GraphView) view.findViewById(R.id.graph);
-        graph.getViewport().setScalable(true);
+        graph = (LineChart) view.findViewById(R.id.graph);
 
         return view;
     }
@@ -80,6 +76,32 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         BusProvider.getInstance().register(this);
 
         //Log.d("CHRIS", "PriceDataFragment onActivityCreated. Register bus");
+
+        // Initialize toast for displaying a highlighted value on graph
+        priceInfoToast = Toast.makeText(getActivity(), "", Toast.LENGTH_SHORT);
+
+        // Initialize graph settings
+        graph.setOnChartValueSelectedListener(this);
+        graph.getAxisLeft().setStartAtZero(false);
+        graph.getAxisRight().setEnabled(false);
+        graph.setDoubleTapToZoomEnabled(false);
+        graph.setHighlightPerDragEnabled(true);
+        graph.setAutoScaleMinMaxEnabled(true);
+        graph.setDescription("BTC price for past 30 days");
+
+        // Format Y axis labels to have dollar sign in front of price
+        graph.getAxisLeft().setValueFormatter(new YAxisValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, YAxis yAxis) {
+                return String.format("$%.1f", value);
+            }
+        });
+        graph.getAxisRight().setValueFormatter(new YAxisValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, YAxis yAxis) {
+                return String.format("$%.1f", value);
+            }
+        });
 
         // Execute the async tasks.
         new GetCurrentPriceTask().execute();
@@ -109,6 +131,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     @Override
     public void onRefresh() {
         new GetCurrentPriceTask().execute();
+        new GetGraphDataTask().execute();
     }
 
     // Class that runs in the background to connect to the Internet and parse the JSON file.
@@ -209,7 +232,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             }
 
             // Set text field with the rate.
-            priceData.setText(String.format("$%s USD/BTC", mRate));
+            priceData.setText(String.format("$%s", mRate));
             setRate(mRate);
             timeData.setText(time);
 
@@ -219,17 +242,20 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 message.show();
             }
             catch (Exception ignored) {
-                //Log.d("CHRIS", "onPostExecute() returned: " + ignored.getMessage());
+                //Log.d("Chris", "onPostExecute() returned: " + ignored.getMessage());
             }
 
         }
     }
 
     // Get historical price data from CoinDesk and graph it
-    public class GetGraphDataTask extends AsyncTask<LineGraphSeries, Void, LineGraphSeries> {
+    public class GetGraphDataTask extends AsyncTask<LineData, Void, LineData> {
+
+        TextView timeData = (TextView) getView().findViewById(R.id.timeData);
+        int graphLabelAxisColor = timeData.getCurrentTextColor();
 
         @Override
-        protected LineGraphSeries doInBackground(LineGraphSeries... params) {
+        protected LineData doInBackground(LineData... params) {
             InputStream in = null;
             HttpURLConnection urlConnection = null;
             try {
@@ -273,47 +299,65 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
                 Iterator<String> iter = jObjectGraph.keys();
 
-                LineGraphSeries<DataPoint> dataPointLineSeries = new LineGraphSeries<>();
-                TreeMap<Date, String> sortedMap = new TreeMap<>();
+                TreeMap<String, Entry> stringEntryTreeMap = new TreeMap<>();
+                int index = 0;
 
-                DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                // Insert json data into sorted tree map because json ordering is not guaranteed
+                String key;
                 while (iter.hasNext()) {
-                    String key = iter.next();
-                    Date date = format.parse(key);
-                    String val = String.valueOf(jObjectGraph.get(key));
-                    sortedMap.put(date, val);
+                    key = iter.next();
+                    stringEntryTreeMap.put(key, new Entry((float) jObjectGraph.getDouble(key), 0));
                 }
-                for (Map.Entry<Date, String> elem: sortedMap.entrySet()) {
-                    dataPointLineSeries.appendData(new DataPoint(elem.getKey(), Double.valueOf(elem.getValue())), true, 31);
+
+                // Convert sorted data from json to array lists so we can pass it to the graphing library
+                ArrayList<String> xVals = new ArrayList<>(stringEntryTreeMap.keySet());
+                ArrayList<Entry> yVals = new ArrayList<>(stringEntryTreeMap.values());
+
+                // Modify the index of each entry so that it is ordered
+                for (Entry entry : yVals) {
+                    entry.setXIndex(index);
+                    index++;
                 }
-                return dataPointLineSeries;
+
+                LineDataSet lineDataSet = new LineDataSet(yVals, "$ / BTC");
+
+                int color = getResources().getColor(R.color.accent);
+                lineDataSet.setColor(color);
+                lineDataSet.setCircleColor(color);
+                lineDataSet.setCircleColorHole(color);
+                lineDataSet.setDrawValues(false);
+                lineDataSet.setLineWidth(Utils.convertPixelsToDp(6));
+                lineDataSet.setHighlightLineWidth(Utils.convertPixelsToDp(4));
+
+                return new LineData(xVals, lineDataSet);
             }
-            catch (JSONException | ParseException e) {
+            catch (JSONException e) {
                 e.printStackTrace();
-                Log.d("CHRIS", "error parsing graph data " + e.toString());
+                //Log.d("CHRIS", "error parsing graph data " + e.toString());
                 return null;
             }
         }
 
         @Override
-        protected void onPostExecute(final LineGraphSeries data) {
+        protected void onPostExecute(LineData data) {
             super.onPostExecute(data);
-            dataPoints = data;
-            dataPoints.setDrawDataPoints(true);
-            dataPoints.setDataPointsRadius(8);
-            dataPoints.setOnDataPointTapListener(new OnDataPointTapListener() {
-                @Override
-                public void onTap(Series series, DataPointInterface dataPoint) {
-                    DateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
-                    Date date = new Date((long) dataPoint.getX());
-                    String dateStr = String.valueOf(dateFormat.format(date));
-                    Toast.makeText(getActivity(), String.format("%s: $%s", dateStr, dataPoint.getY()), Toast.LENGTH_SHORT).show();
-                }
-            });
-            graph.onDataChanged(true, true);
-            graph.addSeries(dataPoints);
-            graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(getActivity(), new SimpleDateFormat("MM/dd/yy")));
-            graph.getGridLabelRenderer().setLabelVerticalWidth(100);
+            graph.getAxisLeft().setTextColor(graphLabelAxisColor);
+            graph.getXAxis().setTextColor(graphLabelAxisColor);
+            graph.setData(data);
+            graph.invalidate();
+            graph.animateXY(1000, 1000);
         }
+    }
+
+    // When value on graph is selected, set toast to value
+    @Override
+    public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
+        priceInfoToast.setText(graph.getXValue(e.getXIndex()) + ": $" + e.getVal());
+        priceInfoToast.show();
+    }
+
+    @Override
+    public void onNothingSelected() {
+
     }
 }

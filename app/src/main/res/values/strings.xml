@@ -3,7 +3,7 @@
     <string name="app_name">BTC Calculator</string>
     <string name="connectionFailed">Connection failed. Try again.</string>
     <string formatted="false" name="resultText">You need to sell %s BTC  at $%s to break-even.</string>
-    <string name="disclaimerMsg">Powered by CoinDesk.com. This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org.</string>
+    <string name="disclaimerMsg">Powered by CoinDesk.com</string>
     <string name="loading">Loading…</string>
     <string name="editBuyField">Add/remove current price to Buy field</string>
     <string name="editSellField">Add/remove current price to Sell field</string>

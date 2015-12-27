@@ -4,11 +4,36 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_290sdp"
+            android:id="@+id/graph"
+            android:layout_gravity="center"
+            android:layout_above="@+id/disclaimer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimerMsg"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="@dimen/_8sdp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/_5sdp" />
+    </RelativeLayout>
+
     <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/swipe_container"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="@dimen/_150sdp">
 
         <ScrollView
             android:layout_width="fill_parent"
@@ -52,7 +77,8 @@
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textSize="@dimen/_28sdp"
-                        android:paddingTop="@dimen/_5sdp" />
+                        android:paddingTop="@dimen/_5sdp"
+                        android:gravity="center_horizontal" />
 
                 </LinearLayout>
 
@@ -60,28 +86,4 @@
         </ScrollView>
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="true">
-
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_250sdp"
-            android:id="@+id/graph"
-            android:layout_gravity="center"
-            android:layout_above="@+id/disclaimer"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:id="@+id/disclaimer"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/disclaimerMsg"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:gravity="bottom"
-            android:textSize="@dimen/_8sdp"
-            android:layout_alignParentBottom="true"/>
-    </RelativeLayout>
 </RelativeLayout>
