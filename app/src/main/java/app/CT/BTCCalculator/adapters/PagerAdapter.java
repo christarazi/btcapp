@@ -1,7 +1,11 @@
-package app.CT.BTCCalculator;
+package app.CT.BTCCalculator.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import app.CT.BTCCalculator.fragments.BreakevenFragment;
+import app.CT.BTCCalculator.fragments.PriceDataFragment;
+import app.CT.BTCCalculator.fragments.ProfitFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int numOfTabs;

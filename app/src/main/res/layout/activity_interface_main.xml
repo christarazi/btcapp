@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -28,7 +28,7 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Light"/>
 
-        <app.CT.BTCCalculator.NonSwipeableViewPager
+        <app.CT.BTCCalculator.adapters.NonSwipeableViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"

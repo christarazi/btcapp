@@ -1,4 +1,4 @@
-package app.CT.BTCCalculator;
+package app.CT.BTCCalculator.adapters;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
