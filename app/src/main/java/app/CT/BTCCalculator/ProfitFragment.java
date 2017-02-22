@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.squareup.otto.Subscribe;
@@ -25,21 +24,18 @@ import com.squareup.otto.Subscribe;
 import java.text.DecimalFormat;
 
 public class ProfitFragment extends Fragment {
-    // Declare variables for this class.
     private EditText btcBought;
     private EditText btcBoughtPrice;
     private EditText btcSell;
     private EditText btcSellPrice;
     private EditText transPercent;
 
-    private SeekBar transFeeSeekBar;
-
     private TextView feeTransResult;
     private TextView subtotalResult;
     private TextView totalProfitResult;
 
     private String rate;
-
+    private float feePercent;
     private boolean[] containsCurrentRate = {false, false};
 
     // Otto function to subscribe to Event Bus changes.
@@ -102,17 +98,11 @@ public class ProfitFragment extends Fragment {
         btcSellPrice = (EditText) view.findViewById(R.id.btcSellPrice);
         transPercent = (EditText) view.findViewById(R.id.transPercent);
 
-        transFeeSeekBar = (SeekBar) view.findViewById(R.id.transFeeSeekBar);
-
         feeTransResult = (TextView) view.findViewById(R.id.transFeeCost);
         subtotalResult = (TextView) view.findViewById(R.id.subtotal);
         totalProfitResult = (TextView) view.findViewById(R.id.totalProfit);
 
         Button calculate = (Button) view.findViewById(R.id.calculate);
-
-        // Initialize percentage variable which is attached to transFeeSeekBar and transPercent.
-        final float[] percentage = new float[1];
-        percentage[0] = (float) 0.0;
 
         // EditText element is clicked in order to enable and show the keyboard to the user.
         // The corresponding XML element has android:imeOptions="actionNext".
@@ -175,53 +165,6 @@ public class ProfitFragment extends Fragment {
             }
         });
 
-        // Listens for the transPercent field to change in order to update the seek bar.
-        transPercent.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                try {
-                    // Update transFeeSeekBar value after entering a number
-                    transFeeSeekBar.setProgress(Integer.parseInt(s.toString()));
-                    // Log.d("Chris", "transPercent.addTextChangedListener, percentage = " + percentage[0]);
-                } catch (Exception ignored) {
-                }
-            }
-        });
-
-        transFeeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar transFeeSeekBar, final int progress, boolean fromUser) {
-                percentage[0] = progress;
-                // Log.d("Chris", "transFeeSeekBar.setOnSeekBarChangeListener before, percentage = " + percentage[0]);
-                transPercent.setText(String.valueOf(progress));
-
-                // Sets the transPercent selection at the end of the input.
-                transPercent.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        transPercent.setSelection(String.valueOf(progress).length());
-                    }
-                });
-                // Log.d("Chris", "transFeeSeekBar.setOntransFeeSeekBarChangeListener after, percentage = " + percentage[0]);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar transFeeSeekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar transFeeSeekBar) {
-            }
-        });
-
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -250,9 +193,7 @@ public class ProfitFragment extends Fragment {
                     sellAmount = Float.valueOf(btcSell.getText().toString());
                     sellPrice = Float.valueOf(btcSellPrice.getText().toString());
 
-                    percentage[0] = (float) ((Float.valueOf(transPercent.getText().toString())) / 100.0);
-                    percentage[0] = (float) (transFeeSeekBar.getProgress() / 100.0);
-                    // Log.d("Chris", "calculate.setOnClickListener, percentage = " + percentage[0]);
+                    feePercent = (Float.valueOf(transPercent.getText().toString())) / 100.0f;
 
                     if (sellAmount > buyAmount) {
                         // Create new dialog popup.
@@ -280,7 +221,7 @@ public class ProfitFragment extends Fragment {
                     subtotalPrice = sellPrice * sellAmount;
                     subtotal = subtotalPrice - subtotalCost;
 
-                    fee = subtotal * percentage[0];
+                    fee = subtotalPrice * feePercent;
                     total = subtotal - fee;
 
                     if (validTrans) {

@@ -163,13 +163,6 @@
         android:layout_alignLeft="@id/linearLayout9"
         android:padding="@dimen/_5sdp">
 
-    <SeekBar
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/transFeeSeekBar"
-        android:padding="@dimen/_15sdp"
-        android:indeterminate="false" />
-
         <Button
             android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
