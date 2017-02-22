@@ -45,7 +45,7 @@ public class ProfitFragment extends Fragment {
     // Otto function to subscribe to Event Bus changes.
     @Subscribe
     public void onPriceUpdated(String mRate) {
-        rate = mRate;
+        rate = mRate.replace(",", "");
 
         // If btcBoughtPrice field has the current price, update it.
         if (containsCurrentRate[0]) btcBoughtPrice.setText(rate);
