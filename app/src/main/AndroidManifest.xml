@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="app.CT.BTCCalculator"
     android:installLocation="auto"
-    android:versionCode="9"
-    android:versionName="2.5">
-
-    <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="23"
-        tools:overrideLibrary="com.intuit.sdp" />
+    android:versionCode="10"
+    android:versionName="2.5.1">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
