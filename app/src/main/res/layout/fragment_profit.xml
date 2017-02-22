@@ -145,10 +145,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:id="@+id/transPercent"
-                android:editable="true"
                 android:hint="%"
                 android:textSize="@dimen/_12sdp"
-                android:numeric="decimal"
                 android:inputType="numberDecimal"
                 android:imeOptions="actionDone"/>
         </TableRow>
