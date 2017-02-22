@@ -168,22 +168,11 @@ public class ProfitFragment extends Fragment {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float buyAmount, buyCost, sellAmount, sellPrice,
-                        subtotalCost, subtotalPrice, subtotal, fee;
-                float total = 0;
+                float buyAmount, buyCost, sellAmount, sellPrice, subtotalCost, subtotalPrice,
+                        subtotal, fee, total;
 
                 boolean validTrans = true;
-
                 boolean didItWork = true;
-
-                /* Dismisses the keyboard.
-                InputMethodManager inputManager = (InputMethodManager)
-                        getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-
-                inputManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),
-                        InputMethodManager.HIDE_NOT_ALWAYS);
-                        */
-
 
                 // Error checking to prevent crashes.
                 try {
