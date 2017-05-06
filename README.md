@@ -1,84 +1,23 @@
-Bitcoin Calculator App
-====
+# Bitcoin Calculator App
 
-A utility designed to calculate the breakeven point and profit for your Bitcoin transactions.
-It can help minimize losses for Bitcoin traders as well maximize profits.
+An Android app designed for Bitcoin trading. It can calculate the breakeven point and profit margins for your Bitcoin trades. 
+It is useful for minimizing losses as well as maximizing profits especially because Bitcoin tends to be volatile.
 
-https://play.google.com/store/apps/details?id=app.CT.BTCCalculator
-====
+[![PlayStore][playstore-image]][playstore-url]
 
-Changelog
-====
+## Contributing
 
-3/4/14  (v0.5)
-- Initial code.
+Please feel free to submit a pull request if you have any improvements or suggestions. If you run into any issues, please do submit them and give feedback wherever you can.
 
-3/5/14  (v0.8)
-- Added error checking.
-- Updated from default icon.
-- Fixed display to work on most devices.
+## Building
 
-3/5/14  (v0.8.1)
-- Fixed keyboard bug.
-- Added new icon.
+Building is quite simple with gradle:
 
-3/6/14  (v0.9)
-- Optimized for most screen sizes.
-- Replaced with original icon.
-
-3/7/14  (v1.0)
-- Fixed bug with the dialog crashing.
-- Added extra documentation.
-- Ready for initial release.
-
-3/12/14  (v1.0.1)
-- Added scrollable view.
-
-3/18/14  (v1.0.2)
-- Added ActionBar buttons, "add" and "remove".
-- Added the ability to add/remove text fields for more transactions.
-*   Note: the text fields are unfunctional as of this build version.    *
-- Cleaned up some dirty code.
-
-3/18/14  (v1.0.5)
-- Added additional text fields.
-- Added ability to add one by one.
-- Text fields still not functional.
-
-3/23/14  (v1.0.6)
-- Removed additional text field feature.
-- Updated UI for better aesthetics.
-
-4/1/14  (v1.1.0)
-- Changed theme to Holo Light.
-- Added Tabbed Navigation (also swippable).
-- Added new feature - profit calculator.
-- Updated UI for better aesthetics (padding on text fields).
-
-4/1/14  (v1.1.1)
-- Fixed crashing -- ABS library and ProGuard didn't like each other.
-- Made orientation fixed to portrait.
-
-5/8/14  (v1.4.5)
-- Added new feature to check CoinDesk.com for current BTC prices.
-- Refactored some code and updated comments.
-
-5/9/14  (v1.4.9)
-- Added Options Menu to allow for the usage of current BTC price in calculator functions.
-- Fixed Fragments to "SherlockFragments" instead of just "Fragment".
-- Updated price page.
-
-5/10/14  (v1.5)
-- Updated aesthetics of app.
-- App ready for Play Store deployment.
-
-6/4/14  (v1.5.1)
-- Refactored code for better readability and consistency.
-
-11/24/15 (v2.0)
-- Big update:
-  - Finally Material design is here! With a new logo as well.
-  - Loads of performance improvements, especially memory management.
-  - Improved layout of all tabs and menus.
-  - Swipe to refresh on Price tab.
-  - And of course, plenty of bug fixes.
+```shell
+git clone https://github.com/christarazi/btcapp.git
+cd btcapp/
+./gradlew build
+```
+  
+[playstore-image]: https://mrpatiwi.github.io/app-badges/playstore.png
+[playstore-url]: https://play.google.com/store/apps/details?id=app.CT.BTCCalculator
