@@ -8,7 +8,7 @@ import app.CT.BTCCalculator.fragments.PriceDataFragment;
 import app.CT.BTCCalculator.fragments.ProfitFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
-    int numOfTabs;
+    private int numOfTabs;
 
     public PagerAdapter(android.support.v4.app.FragmentManager fm, int tabs) {
         super(fm);
