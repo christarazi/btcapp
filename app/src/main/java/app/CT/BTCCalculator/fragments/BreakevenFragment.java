@@ -39,6 +39,8 @@ public class BreakevenFragment extends Fragment {
 
     private boolean[] containsCurrentRate = {false, false};
 
+    private Menu menu;
+
     // Function round to two decimals.
     public double roundTwoDecimals(double d) {
         DecimalFormat df = new DecimalFormat("###.##");
@@ -287,6 +289,8 @@ public class BreakevenFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu, menu);
+        this.menu = menu;
+        updateMenuTitles();
     }
 
     // When Options Menu items are selected; adds or removes the current price from their corresponding fields.
@@ -298,7 +302,6 @@ public class BreakevenFragment extends Fragment {
         */
         switch (item.getItemId()) {
             case R.id.editCurrentBuyField: {
-
                 try {
                     EditText btcBoughtPrice = (EditText) getView().findViewById(R.id.btcBoughtPrice);
 
@@ -312,11 +315,9 @@ public class BreakevenFragment extends Fragment {
                     }
                 } catch (Exception ignored) {
                 }
-
-                return true;
+                break;
             }
             case R.id.editCurrentSellField: {
-
                 try {
                     EditText btcSoldPrice = (EditText) getView().findViewById(R.id.btcSoldPrice);
 
@@ -331,8 +332,7 @@ public class BreakevenFragment extends Fragment {
                 }
                 catch (Exception ignored) {
                 }
-
-                return true;
+                break;
             }
             case R.id.resetAll: {
                 btcBought.setText("");
@@ -343,10 +343,26 @@ public class BreakevenFragment extends Fragment {
                 optimalBTCPrice.setText("");
                 resultText.setText("");
                 containsCurrentRate[0] = containsCurrentRate[1] = false;
+                break;
             }
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+        updateMenuTitles();
+        return true;
+    }
+
+    private void updateMenuTitles() {
+        if (containsCurrentRate[0])
+            menu.findItem(R.id.editCurrentBuyField).setTitle(R.string.removeBuyField);
+        else
+            menu.findItem(R.id.editCurrentBuyField).setTitle(R.string.addBuyField);
+
+        if (containsCurrentRate[1])
+            menu.findItem(R.id.editCurrentSellField).setTitle(R.string.removeSellField);
+        else
+            menu.findItem(R.id.editCurrentSellField).setTitle(R.string.addSellField);
     }
 }
 

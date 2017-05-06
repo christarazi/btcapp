@@ -4,13 +4,13 @@
 
     <item
         android:id="@+id/editCurrentBuyField"
-        android:title="@string/editBuyField"
+        android:title="@string/addBuyField"
         android:titleCondensed="Modify Buy field"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/editCurrentSellField"
-        android:title="@string/editSellField"
+        android:title="@string/addSellField"
         android:titleCondensed="Modify Sell field"
         app:showAsAction="never" />
 

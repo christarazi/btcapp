@@ -5,8 +5,10 @@
     <string formatted="false" name="resultText">You need to sell %s BTC  at $%s to break-even.</string>
     <string name="disclaimerMsg">Powered by CoinDesk.com</string>
     <string name="loading">Loading…</string>
-    <string name="editBuyField">Add/remove current price to Buy field</string>
-    <string name="editSellField">Add/remove current price to Sell field</string>
     <string name="resetAllFields">Reset all fields</string>
     <string name="optimalBTCErrorMsg">You are trying to buy more Bitcoins than your current balance can allow. Your limit when trying to break-even is how much you have sold. When entering the buy back price, we calculate the optimal amount of Bitcoins you should buy automatically.</string>
+    <string name="removeBuyField">Remove current price from Buy field</string>
+    <string name="addBuyField">Add current price to Buy field</string>
+    <string name="removeSellField">Remove current price from Sell field</string>
+    <string name="addSellField">Add current price to Sell field</string>
 </resources>
