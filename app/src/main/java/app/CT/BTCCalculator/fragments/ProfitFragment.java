@@ -40,6 +40,8 @@ public class ProfitFragment extends Fragment {
     private float feePercent;
     private boolean[] containsCurrentRate = {false, false};
 
+    private Menu menu;
+
     // Otto function to subscribe to Event Bus changes.
     @Subscribe
     public void onPriceUpdated(String mRate) {
@@ -241,6 +243,9 @@ public class ProfitFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu, menu);
+        this.menu = menu;
+        updateMenuTitles();
+
     }
 
     // When Options Menu items are selected; adds or removes the current price from their corresponding fields.
@@ -252,7 +257,6 @@ public class ProfitFragment extends Fragment {
         */
         switch (item.getItemId()) {
             case R.id.editCurrentBuyField: {
-
                 try {
                     EditText btcBoughtPrice = (EditText) getView().findViewById(R.id.btcBoughtPrice);
 
@@ -266,11 +270,9 @@ public class ProfitFragment extends Fragment {
                     }
                 } catch (Exception ignored) {
                 }
-
-                return true;
+                break;
             }
             case R.id.editCurrentSellField: {
-
                 try {
                     EditText btcSellPrice = (EditText) getView().findViewById(R.id.btcSellPrice);
 
@@ -285,8 +287,7 @@ public class ProfitFragment extends Fragment {
                 }
                 catch (Exception ignored) {
                 }
-
-                return true;
+                break;
             }
             case R.id.resetAll: {
                 btcBought.setText("");
@@ -298,9 +299,25 @@ public class ProfitFragment extends Fragment {
                 subtotalResult.setText("$");
                 totalProfitResult.setText("$");
                 containsCurrentRate[0] = containsCurrentRate[1] = false;
+                break;
             }
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+        updateMenuTitles();
+        return true;
+    }
+
+    private void updateMenuTitles() {
+        if (containsCurrentRate[0])
+            menu.findItem(R.id.editCurrentBuyField).setTitle(R.string.removeBuyField);
+        else
+            menu.findItem(R.id.editCurrentBuyField).setTitle(R.string.addBuyField);
+
+        if (containsCurrentRate[1])
+            menu.findItem(R.id.editCurrentSellField).setTitle(R.string.removeSellField);
+        else
+            menu.findItem(R.id.editCurrentSellField).setTitle(R.string.addSellField);
     }
 }
