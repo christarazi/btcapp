@@ -3,6 +3,7 @@ package app.CT.BTCCalculator.fragments;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -324,7 +325,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
                 LineDataSet lineDataSet = new LineDataSet(yVals, "$ / BTC");
 
-                int color = getResources().getColor(R.color.accent);
+                int color = ContextCompat.getColor(getContext(), R.color.accent);
                 lineDataSet.setColor(color);
                 lineDataSet.setCircleColor(color);
                 lineDataSet.setCircleColorHole(color);
