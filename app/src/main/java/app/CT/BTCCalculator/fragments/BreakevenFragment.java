@@ -205,8 +205,8 @@ public class BreakevenFragment extends Fragment {
                     // Calculates remainder from the buying and selling.
                     remainder = Math.abs((buyAmount - sellAmount));
 
-                    // If the user's transaction doesn't make sense.
-                    if (roundTwoDecimals(optimalBTCAmount*optimalBTCCost) > roundTwoDecimals(sellAmount*sellPrice)) {
+                    // User cannot sell more than they own.
+                    if (roundTwoDecimals(optimalBTCAmount * optimalBTCCost) > roundTwoDecimals(sellAmount*sellPrice)) {
                         final android.support.v7.app.AlertDialog.Builder alertDialog = new android.support.v7.app.AlertDialog.Builder(getActivity());
                         alertDialog.setTitle("Error");
                         alertDialog.setMessage(getString(R.string.optimalBTCErrorMsg));
