@@ -49,7 +49,6 @@ public class ProfitFragment extends Fragment {
         if (containsCurrentRate[0]) btcBoughtPrice.setText(rate);
         // If btcSellPrice has the current price, update it as well.
         if (containsCurrentRate[1]) btcSellPrice.setText(rate);
-        //Log.d("Chris", "This is coming from the ProfitFragment: " + rate);
     }
 
     // Function round to two decimals.
@@ -62,34 +61,20 @@ public class ProfitFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set options menu.
         setHasOptionsMenu(true);
     }
 
-    /* Called when the activity is attached to this fragment.
-    @Override
-    public void onAttach(Activity activity) {
-        // Call to the super class.
-        super.onAttach(activity);
-    }*/
-
-    // Create the view.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout from the XML Resource.
         return inflater.inflate(R.layout.fragment_profit, container, false);
     }
 
-    // Creates the activity for the fragment.
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        // Call to the super class.
         super.onActivityCreated(savedInstanceState);
 
-        // Get View.
         View view = getView();
-
-        // Register Bus Provider instance.
         BusProvider.getInstance().register(this);
 
         // Initialize text fields.
@@ -190,10 +175,7 @@ public class ProfitFragment extends Fragment {
                         // Create new dialog popup.
                         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
-                        // Sets title.
                         alertDialog.setTitle("Error");
-
-                        // Sets dialog message.
                         alertDialog.setMessage("You cannot sell more than you own.");
                         alertDialog.setCancelable(false);
                         alertDialog.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
@@ -228,10 +210,7 @@ public class ProfitFragment extends Fragment {
                         // Creates new dialog popup.
                         final AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(getActivity());
 
-                        // Sets title.
                         alertDialog2.setTitle("Error");
-
-                        // Sets dialog message.
                         alertDialog2.setMessage("Please fill in all fields.");
                         alertDialog2.setCancelable(false);
                         alertDialog2.setNeutralButton("Ok", new DialogInterface.OnClickListener() {

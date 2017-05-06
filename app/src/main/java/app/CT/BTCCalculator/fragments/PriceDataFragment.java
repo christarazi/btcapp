@@ -44,19 +44,16 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
     private SwipeRefreshLayout swipeRefreshLayout;
     private LineChart graph;
-    private Toast priceInfoToast;
 
     // Sets the rate and calls sendRate() to publish to Otto Event Bus.
     public void setRate(String mRate) {
         this.rate = mRate;
-        //Log.d("Chris", "setRate = " + rate);
         sendRate();
     }
 
     // Otto Event Bus method to publish the rate to the Event Bus.
     public void sendRate() {
         BusProvider.getInstance().post(rate);
-        //Log.d("CHRIS", "Posting rate");
     }
 
     // Create the view.
@@ -78,11 +75,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
         // Register Bus Provider instance.
         BusProvider.getInstance().register(this);
-
-        //Log.d("CHRIS", "PriceDataFragment onActivityCreated. Register bus");
-
-        // Initialize toast for displaying a highlighted value on graph
-        priceInfoToast = Toast.makeText(getActivity(), "", Toast.LENGTH_SHORT);
 
         // Initialize graph settings
         graph.setOnChartValueSelectedListener(this);
@@ -118,8 +110,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
         // Unregister the bus when pausing the application
         BusProvider.getInstance().unregister(this);
-
-        //Log.d("CHRIS", "PriceDataFragment onPause. Unregister bus");
     }
 
     @Override
@@ -128,8 +118,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
         // Register the bus when resuming the application
         BusProvider.getInstance().register(this);
-
-        //Log.d("CHRIS", "PriceDataFragment onResume. register bus");
     }
 
     @Override
@@ -159,7 +147,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 in = new BufferedInputStream(urlConnection.getInputStream());
             }
             catch (Exception ignored) {
-                if (urlConnection == null && in == null)
+                if (urlConnection == null)
                     return null;
 
                 if (urlConnection != null && in != null) {
@@ -186,7 +174,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                     sb.append(line).append("\n");
                 }
                 result = sb.toString();
-                //Log.d("Chris", result);
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -195,7 +182,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             finally {
                 try {
                     if (in != null) in.close();
-                    if (urlConnection != null) urlConnection.disconnect();
+                    urlConnection.disconnect();
                 }
                 catch (Exception ignored) {
                 }
@@ -215,8 +202,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 e.printStackTrace();
             }
 
-            //Log.d("Chris", rate);
-
             return rate;
         }
 
@@ -230,8 +215,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
             if (mRate == null) {
                 priceData.setText(R.string.connectionFailed);
-                Toast message = Toast.makeText(getActivity(), "Try again...", Toast.LENGTH_SHORT);
-                message.show();
+                Toast.makeText(getActivity(), "Try again...", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -242,11 +226,9 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
             // Creates a toast that indicates the price has updated.
             try {
-                Toast message = Toast.makeText(getActivity(), "Updated.", Toast.LENGTH_SHORT);
-                message.show();
+                Toast.makeText(getActivity(), "Updated.", Toast.LENGTH_SHORT).show();
             }
             catch (Exception ignored) {
-                //Log.d("Chris", "onPostExecute() returned: " + ignored.getMessage());
             }
 
         }
@@ -337,7 +319,6 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             }
             catch (JSONException e) {
                 e.printStackTrace();
-                //Log.d("CHRIS", "error parsing graph data " + e.toString());
                 return null;
             }
         }
@@ -356,8 +337,10 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     // When value on graph is selected, set toast to value
     @Override
     public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
-        priceInfoToast.setText(graph.getXValue(e.getXIndex()) + ": $" + e.getVal());
-        priceInfoToast.show();
+        Toast.makeText(getActivity(),
+                String.format("%s: $%s", graph.getXValue(e.getXIndex()), e.getVal()),
+                Toast.LENGTH_SHORT)
+                .show();
     }
 
     @Override

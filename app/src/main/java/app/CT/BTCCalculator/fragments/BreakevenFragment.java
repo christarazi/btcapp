@@ -54,26 +54,20 @@ public class BreakevenFragment extends Fragment {
         if (containsCurrentRate[0]) btcBoughtPrice.setText(rate);
         // If btcSoldPrice has the current price, update it as well.
         if (containsCurrentRate[1]) btcSoldPrice.setText(rate);
-        //Log.d("Chris", "This is coming from the Fragment: " + rate);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set options menu.
         setHasOptionsMenu(true);
     }
 
-    // Create the view.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Return the view.
-        // Log.d("Chris", "onCreateView from BreakevenFragment was called");
         return inflater.inflate(R.layout.fragment_breakeven, container, false);
     }
 
-    // Creates the activity for the fragment.
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -93,7 +87,6 @@ public class BreakevenFragment extends Fragment {
         optimalBTC = (EditText) view.findViewById(R.id.optimalBTC);
         resultText = (TextView) view.findViewById(R.id.resultText);
 
-        // Initialize buttons.
         Button buttonCalculate = (Button) view.findViewById(R.id.buttonCalculate);
 
         // Checks whether the first visible EditText element is focused in order to enable
@@ -191,7 +184,6 @@ public class BreakevenFragment extends Fragment {
             }
         });
 
-        // Listens to when "Calculate" button is pressed.
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -199,14 +191,6 @@ public class BreakevenFragment extends Fragment {
                         optimalBTCAmount, remainder, totalCost, totalAmount, finalPrice;
                 boolean didItWork = true;
                 boolean validTransaction = true;
-
-                /* Dismisses the keyboard.
-                InputMethodManager inputManager = (InputMethodManager)
-                        getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-
-                inputManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),
-                        InputMethodManager.HIDE_NOT_ALWAYS);
-                        */
 
                 // Error checking to prevent crashes.
                 try {
@@ -242,10 +226,7 @@ public class BreakevenFragment extends Fragment {
                         // Create new dialog popup.
                         final android.support.v7.app.AlertDialog.Builder alertDialog = new android.support.v7.app.AlertDialog.Builder(getActivity());
 
-                        // Sets title.
                         alertDialog.setTitle("Error");
-
-                        // Sets dialog message.
                         alertDialog.setMessage("You cannot sell more than you own.");
                         alertDialog.setCancelable(false);
                         alertDialog.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
@@ -265,7 +246,6 @@ public class BreakevenFragment extends Fragment {
                     totalAmount = optimalBTCAmount + remainder;
                     finalPrice = totalCost / totalAmount;
 
-                    // Checks if valid.
                     if (validTransaction) {
                         resultText.setText(String.format(getString(R.string.resultText), String.valueOf(totalAmount), String.valueOf(roundTwoDecimals(finalPrice))));
                     }
@@ -277,10 +257,7 @@ public class BreakevenFragment extends Fragment {
                         // Creates new dialog popup.
                         final AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(getActivity());
 
-                        // Sets title.
                         alertDialog2.setTitle("Error");
-
-                        // Sets dialog message.
                         alertDialog2.setMessage("Please fill in all fields.");
                         alertDialog2.setCancelable(false);
                         alertDialog2.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
@@ -306,7 +283,6 @@ public class BreakevenFragment extends Fragment {
         }
     }
 
-    // Create Options Menu.
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
@@ -343,7 +319,6 @@ public class BreakevenFragment extends Fragment {
 
                 try {
                     EditText btcSoldPrice = (EditText) getView().findViewById(R.id.btcSoldPrice);
-
 
                     // If field contains the current price, remove it; else, add the current price.
                     if (containsCurrentRate[1]) {
