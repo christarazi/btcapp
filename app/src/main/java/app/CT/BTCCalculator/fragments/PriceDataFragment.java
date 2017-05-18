@@ -198,6 +198,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 rate = jObjectTime.getJSONObject("bpi").getJSONObject("USD").getString("rate");
             }
             catch (JSONException e) {
+                Toast.makeText(getActivity(), R.string.api_failed, Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
             }
 

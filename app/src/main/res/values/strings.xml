@@ -11,4 +11,5 @@
     <string name="addBuyField">Add current price to Buy field</string>
     <string name="removeSellField">Remove current price from Sell field</string>
     <string name="addSellField">Add current price to Sell field</string>
+    <string name="api_failed">Querying CoinDesk API has failed.</string>
 </resources>
