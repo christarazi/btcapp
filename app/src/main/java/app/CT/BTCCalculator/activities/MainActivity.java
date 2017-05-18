@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
-import app.CT.BTCCalculator.events.BusProvider;
+import app.CT.BTCCalculator.R;
 import app.CT.BTCCalculator.adapters.NonSwipeableViewPager;
 import app.CT.BTCCalculator.adapters.PagerAdapter;
-import app.CT.BTCCalculator.R;
+import app.CT.BTCCalculator.events.BusProvider;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -67,7 +68,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void hideKeyboard() {
-        InputMethodManager keyboard = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        keyboard.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        View focus = getCurrentFocus();
+        if (focus != null) {
+            InputMethodManager keyboard = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            keyboard.hideSoftInputFromWindow(focus.getWindowToken(), 0);
+        }
     }
 }
