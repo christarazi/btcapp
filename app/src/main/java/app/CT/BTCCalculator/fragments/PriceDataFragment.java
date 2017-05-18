@@ -184,8 +184,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                     if (in != null) in.close();
                     urlConnection.disconnect();
                 }
-                catch (Exception ignored) {
-                }
+                catch (Exception ignored) {}
             }
 
             // Create JSON Objects and get the strings they hold.

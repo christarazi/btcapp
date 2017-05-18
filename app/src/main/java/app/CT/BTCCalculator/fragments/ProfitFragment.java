@@ -255,10 +255,16 @@ public class ProfitFragment extends Fragment {
             0 represents the buy field
             1 represents the sell field
         */
+
+        View view = getView();
+        if (view == null) {
+            return false;
+        }
+
         switch (item.getItemId()) {
             case R.id.editCurrentBuyField: {
                 try {
-                    EditText btcBoughtPrice = (EditText) getView().findViewById(R.id.btcBoughtPrice);
+                    EditText btcBoughtPrice = (EditText) view.findViewById(R.id.btcBoughtPrice);
 
                     // If field contains the current price, remove it; else, add the current price.
                     if (containsCurrentRate[0]) {
@@ -274,7 +280,7 @@ public class ProfitFragment extends Fragment {
             }
             case R.id.editCurrentSellField: {
                 try {
-                    EditText btcSellPrice = (EditText) getView().findViewById(R.id.btcSellPrice);
+                    EditText btcSellPrice = (EditText) view.findViewById(R.id.btcSellPrice);
 
                     // If field contains the current price, remove it; else, add the current price.
                     if (containsCurrentRate[1]) {
