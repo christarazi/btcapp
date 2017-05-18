@@ -210,12 +210,12 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         protected void onPostExecute(final String mRate) {
             super.onPostExecute(mRate);
 
-            // Tell swipe to refresh animation to stop.
+            // Tell swipe-to-refresh animation to stop.
             swipeRefreshLayout.setRefreshing(false);
 
             if (mRate == null) {
                 priceData.setText(R.string.connectionFailed);
-                Toast.makeText(getActivity(), "Try again...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.connectionFailed, Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -228,8 +228,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             try {
                 Toast.makeText(getActivity(), "Updated.", Toast.LENGTH_SHORT).show();
             }
-            catch (Exception ignored) {
-            }
+            catch (Exception ignored) {}
 
         }
     }
