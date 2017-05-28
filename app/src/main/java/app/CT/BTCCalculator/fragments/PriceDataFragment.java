@@ -1,6 +1,7 @@
 package app.CT.BTCCalculator.fragments;
 
 import android.content.Intent;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -45,6 +46,7 @@ import app.CT.BTCCalculator.events.BusProvider;
 import app.CT.BTCCalculator.R;
 
 public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, OnChartValueSelectedListener {
+    private Context context;
     private String rate;
     private String time;
 
@@ -73,6 +75,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_price, container, false);
 
+        context = getContext();
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
         swipeRefreshLayout.setOnRefreshListener(this);
         graph = (LineChart) view.findViewById(R.id.graph);
@@ -227,7 +230,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 rate = jObjectTime.getJSONObject("bpi").getJSONObject("USD").getString("rate");
             }
             catch (JSONException e) {
-                Toast.makeText(getActivity(), R.string.api_failed, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, R.string.api_failed, Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
             }
 
@@ -244,7 +247,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
             if (mRate == null) {
                 priceData.setText(R.string.connectionFailed);
-                Toast.makeText(getActivity(), R.string.connectionFailed, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, R.string.connectionFailed, Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -254,20 +257,12 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             timeData.setText(time);
 
             // Creates a toast that indicates the price has updated.
-            try {
-                Toast.makeText(getActivity(), "Updated.", Toast.LENGTH_SHORT).show();
-            }
-            catch (Exception ignored) {}
-
+            Toast.makeText(context, "Updated.", Toast.LENGTH_SHORT).show();
         }
     }
 
     // Get historical price data from CoinDesk and graph it
     public class GetGraphDataTask extends AsyncTask<LineData, Void, LineData> {
-
-        TextView timeData = (TextView) getView().findViewById(R.id.timeData);
-        int graphLabelAxisColor = timeData.getCurrentTextColor();
-
         @Override
         protected LineData doInBackground(LineData... params) {
             InputStream in = null;
@@ -310,11 +305,8 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
             // Create JSON Objects and get the strings they hold.
             try {
                 JSONObject jObjectGraph = new JSONObject(result).getJSONObject("bpi");
-
                 Iterator<String> iter = jObjectGraph.keys();
-
                 TreeMap<String, Entry> stringEntryTreeMap = new TreeMap<>();
-                int index = 0;
 
                 // Insert json data into sorted tree map because json ordering is not guaranteed
                 String key;
@@ -328,6 +320,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
                 ArrayList<Entry> yVals = new ArrayList<>(stringEntryTreeMap.values());
 
                 // Modify the index of each entry so that it is ordered
+                int index = 0;
                 for (Entry entry : yVals) {
                     entry.setXIndex(index);
                     index++;
@@ -335,7 +328,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
 
                 LineDataSet lineDataSet = new LineDataSet(yVals, "$ / BTC");
 
-                int color = ContextCompat.getColor(getContext(), R.color.accent);
+                int color = ContextCompat.getColor(context, R.color.accent);
                 lineDataSet.setColor(color);
                 lineDataSet.setCircleColor(color);
                 lineDataSet.setCircleColorHole(color);
@@ -354,6 +347,15 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         @Override
         protected void onPostExecute(LineData data) {
             super.onPostExecute(data);
+
+            View view = getView();
+            if (view == null) {
+                return;
+            }
+
+            TextView timeData = (TextView) view.findViewById(R.id.timeData);
+            int graphLabelAxisColor = timeData.getCurrentTextColor();
+
             graph.getAxisLeft().setTextColor(graphLabelAxisColor);
             graph.getXAxis().setTextColor(graphLabelAxisColor);
             graph.setData(data);
@@ -365,7 +367,7 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     // When value on graph is selected, set toast to value
     @Override
     public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
-        Toast.makeText(getActivity(),
+        Toast.makeText(context,
                 String.format("%s: $%s", graph.getXValue(e.getXIndex()), e.getVal()),
                 Toast.LENGTH_SHORT)
                 .show();
