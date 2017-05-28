@@ -12,4 +12,7 @@
     <string name="removeSellField">Remove current price from Sell field</string>
     <string name="addSellField">Add current price to Sell field</string>
     <string name="api_failed">Querying CoinDesk API has failed.</string>
+    <string name="license">License: MIT</string>
+    <string name="aboutText">An Android app designed for Bitcoin trading. It can calculate the breakeven point and profit margins for your Bitcoin trades. It is useful for minimizing losses as well as maximizing profits especially because Bitcoin tends to be volatile.</string>
+    <string name="about">About</string>
 </resources>

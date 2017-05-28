@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="accent_material_light">#4070ff</color>
+    <color xmlns:tools="http://schemas.android.com/tools"
+        tools:override="true"
+        name="accent_material_light">#4070ff
+    </color>
     <color name="accent">#FF4070FF</color>
     <color name="primary_material_light_1">#d7d7d7</color>
-    <color name="primary_dark_material_light">#8a8a8a</color>
+    <color xmlns:tools="http://schemas.android.com/tools"
+        tools:override="true"
+        name="primary_dark_material_light">#8a8a8a
+    </color>
 </resources>

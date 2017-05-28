@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="mytheme" parent="@style/Theme.AppCompat.Light.NoActionBar" >
+    <style name="appTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primary_material_light_1</item>
+    </style>
+
+    <style name="aboutTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/accent</item>
     </style>
 </resources>

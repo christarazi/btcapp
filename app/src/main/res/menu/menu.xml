@@ -6,16 +6,25 @@
         android:id="@+id/editCurrentBuyField"
         android:title="@string/addBuyField"
         android:titleCondensed="Modify Buy field"
+        android:enabled="false"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/editCurrentSellField"
         android:title="@string/addSellField"
         android:titleCondensed="Modify Sell field"
+        android:enabled="false"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/resetAll"
         android:title="@string/resetAllFields"
+        android:enabled="false"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/aboutPage"
+        android:title="@string/about"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_info_outline_black_24dp" />
 </menu>

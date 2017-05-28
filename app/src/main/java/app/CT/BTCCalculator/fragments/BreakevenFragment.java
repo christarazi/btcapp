@@ -3,6 +3,7 @@ package app.CT.BTCCalculator.fragments;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
@@ -22,8 +23,9 @@ import com.squareup.otto.Subscribe;
 
 import java.text.DecimalFormat;
 
-import app.CT.BTCCalculator.events.BusProvider;
 import app.CT.BTCCalculator.R;
+import app.CT.BTCCalculator.activities.AboutActivity;
+import app.CT.BTCCalculator.events.BusProvider;
 
 public class BreakevenFragment extends Fragment {
     private EditText btcBought;
@@ -61,7 +63,6 @@ public class BreakevenFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setHasOptionsMenu(true);
     }
 
@@ -291,6 +292,7 @@ public class BreakevenFragment extends Fragment {
         inflater.inflate(R.menu.menu, menu);
         this.menu = menu;
         updateMenuTitles();
+        enableMenuItems();
     }
 
     // When Options Menu items are selected; adds or removes the current price from their corresponding fields.
@@ -351,6 +353,9 @@ public class BreakevenFragment extends Fragment {
                 containsCurrentRate[0] = containsCurrentRate[1] = false;
                 break;
             }
+            case R.id.aboutPage: {
+                startActivity(new Intent(getContext(), AboutActivity.class));
+            }
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -359,16 +364,32 @@ public class BreakevenFragment extends Fragment {
         return true;
     }
 
+    private void enableMenuItems() {
+        MenuItem buy = menu.findItem(R.id.editCurrentBuyField);
+        MenuItem sell = menu.findItem(R.id.editCurrentSellField);
+        MenuItem reset = menu.findItem(R.id.resetAll);
+
+        if (!buy.isEnabled())
+            buy.setEnabled(true);
+        if (!sell.isEnabled())
+            sell.setEnabled(true);
+        if (!reset.isEnabled())
+            reset.setEnabled(true);
+    }
+
     private void updateMenuTitles() {
+        MenuItem buy = menu.findItem(R.id.editCurrentBuyField);
+        MenuItem sell = menu.findItem(R.id.editCurrentSellField);
+
         if (containsCurrentRate[0])
-            menu.findItem(R.id.editCurrentBuyField).setTitle(R.string.removeBuyField);
+            buy.setTitle(R.string.removeBuyField);
         else
-            menu.findItem(R.id.editCurrentBuyField).setTitle(R.string.addBuyField);
+            buy.setTitle(R.string.addBuyField);
 
         if (containsCurrentRate[1])
-            menu.findItem(R.id.editCurrentSellField).setTitle(R.string.removeSellField);
+            sell.setTitle(R.string.removeSellField);
         else
-            menu.findItem(R.id.editCurrentSellField).setTitle(R.string.addSellField);
+            sell.setTitle(R.string.addSellField);
     }
 }
 

@@ -1,11 +1,16 @@
 package app.CT.BTCCalculator.fragments;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -35,6 +40,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.TreeMap;
 
+import app.CT.BTCCalculator.activities.AboutActivity;
 import app.CT.BTCCalculator.events.BusProvider;
 import app.CT.BTCCalculator.R;
 
@@ -54,6 +60,12 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
     // Otto Event Bus method to publish the rate to the Event Bus.
     public void sendRate() {
         BusProvider.getInstance().post(rate);
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
     }
 
     // Create the view.
@@ -102,6 +114,23 @@ public class PriceDataFragment extends Fragment implements SwipeRefreshLayout.On
         // Execute the async tasks.
         new GetCurrentPriceTask().execute();
         new GetGraphDataTask().execute();
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.aboutPage: {
+                startActivity(new Intent(getContext(), AboutActivity.class));
+            }
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
